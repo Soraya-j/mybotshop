@@ -79,6 +79,11 @@ class CustomJoyControls:
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'recovery_stand'}\""
             self.execute_ros2_command(command)
         
+        if msg.buttons[8] == 1:         # LZ
+            self.node.get_logger().info(f'{self.colorize("Damp mode","red")}')           
+            command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'damp'}\""
+            self.execute_ros2_command(command)
+
         if msg.buttons[6] == 1:         # L
             self.node.get_logger().info(
                 f'{self.colorize("Euler","orange")}')
