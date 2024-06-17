@@ -74,11 +74,21 @@ def generate_launch_description():
         parameters=[filepath_config_joy]
     )
 
+    high_ros_control = Node(
+        namespace=nsp,
+        remappings=rmp,
+        name='go2_highroscontrol',
+        package='go2_platform',
+        executable='go2_highroscontrol',
+        output='screen',
+    )
+
     ld = LaunchDescription()
     
     ld.add_action(node_joy)
     ld.add_action(go2_control_domain_id)
     ld.add_action(node_teleop_twist_joy_custom_controls)
+    ld.add_action(high_ros_control)
 
     return ld
 
