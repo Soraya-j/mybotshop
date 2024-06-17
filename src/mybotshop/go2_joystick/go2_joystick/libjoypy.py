@@ -56,17 +56,19 @@ class CustomJoyControls:
         self.node.get_logger().info(
             f'{self.colorize("GO2 Logitech F710 Joystick Activated","green")}', once=True)
 
-        if msg.axes[5] == -1.0 and msg.buttons[3] == 1:  # RT + Y
+        if msg.axes[1] == 1.0 and msg.buttons[0] == 1:  # LeftUp + A
             self.node.get_logger().info(
-                f'{self.colorize("Logitech F710 GO2 Stand","yellow")}')
-            command = "ros2 service call /go2/modes go2_interface/srv/Go2Modes \"{request_data: 'recovery_stand'}\""
+                f'{self.colorize("Logitech F710 GO2 Stand up","yellow")}')
+            command = "ros2 service call /modes go2_interface/srv/Go2Modes \"{request_data: 'stand_up'}\""
+            #"ros2 service call /go2/modes go2_interface/srv/Go2Modes \"{request_data: 'recovery_stand'}\""
             self.execute_ros2_command(command)
             time.sleep(2)
 
-        if msg.axes[5] == -1.0 and msg.buttons[0] == 1:  # RT + A
+        if msg.axes[1] == -1.0 and msg.buttons[0] == 1:  # LeftUp + A
             self.node.get_logger().info(
-                f'{self.colorize("Logitech F710 GO2 Sit","yellow")}')
-            command = "ros2 service call /go2/modes go2_interface/srv/Go2Modes \"{request_data: 'stand_down'}\""
+                f'{self.colorize("Logitech F710 GO2 Stand down","yellow")}')
+            command = "ros2 service call /modes go2_interface/srv/Go2Modes \"{request_data: 'stand_down'}\"" 
+            #"ros2 service call /modes go2_interface/srv/Go2Modes \"{request_data: 'stand_down'}\""
             self.execute_ros2_command(command)
             time.sleep(2)
 
@@ -115,17 +117,19 @@ class CustomJoyControls:
             process = subprocess.Popen(
                 command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             stdout, stderr = process.communicate()
-
+            
             # Check if the command was successful
             if process.returncode == 0:
-                print("Command executed successfully:")
-                print(stdout.decode('utf-8'))
+                self.node.get_logger().info(f'{self.colorize("Command executed successfully:","green")}')
+                self.node.get_logger().info(stdout.decode('utf-8'))
+
             else:
-                print("Error executing command:")
-                print(stderr.decode('utf-8'))
+                self.node.get_logger().info(f'{self.colorize("Error executing command:","red")}')
+                self.node.get_logger().info(stdout.decode('utf-8'))
 
         except Exception as e:
-            print("Exception occurred:", e)
+            self.node.get_logger().info(f'{self.colorize("Exception occurred: ", "red")}')
+            self.node.get_logger().info(e)
 
     def colorize(self, text, color):
         color_codes = {

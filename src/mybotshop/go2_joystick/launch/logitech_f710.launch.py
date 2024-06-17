@@ -37,6 +37,8 @@ import os
 from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.actions import SetEnvironmentVariable
+from launch.substitutions import PathJoinSubstitution
+from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
@@ -48,6 +50,10 @@ def generate_launch_description():
         ('/tf', 'tf'),
         ('/tf_static', 'tf_static'),
     ]
+
+    filepath_config_joy = PathJoinSubstitution(
+        [FindPackageShare('go2_control'), 'config', ('teleop_control.yaml')]
+    )
     
     node_teleop_twist_joy_custom_controls = Node(
         namespace=nsp,
@@ -58,8 +64,19 @@ def generate_launch_description():
         output='screen',
     )
 
+    node_joy = Node(
+        namespace=nsp,
+        remappings=rmp,
+        name='joy_node',
+        package='joy',
+        executable='joy_node',
+        output='screen',
+        parameters=[filepath_config_joy]
+    )
+
     ld = LaunchDescription()
     
+    ld.add_action(node_joy)
     ld.add_action(go2_control_domain_id)
     ld.add_action(node_teleop_twist_joy_custom_controls)
 
