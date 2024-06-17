@@ -74,7 +74,7 @@ class CustomJoyControls:
             self.execute_ros2_command(command)
             time.sleep(2)
         
-        if msg.buttons[3] == 1:         # X
+        if msg.buttons[6] == 1:         # L
             self.node.get_logger().info(
                 f'{self.colorize("Euler","orange")}')
 
