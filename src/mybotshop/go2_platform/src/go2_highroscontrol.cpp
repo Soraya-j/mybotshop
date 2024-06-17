@@ -44,9 +44,9 @@ public:
         // }
 
         sub_go2_cmd_vel = this->create_subscription<geometry_msgs::msg::Twist>(
-            "hardware/cmd_vel", 10, std::bind(&go2_highlevel_request::callback_go2_cmd, this, _1));
+            "hardware/cmd_vel", 11, std::bind(&go2_highlevel_request::callback_go2_cmd, this, _1));
         sub_euler_cmd = this->create_subscription<geometry_msgs::msg::Twist>(
-            "euler_cmd", 10, std::bind(&go2_highlevel_request::callback_euler_cmd, this, _1));
+            "euler_cmd", 1, std::bind(&go2_highlevel_request::callback_euler_cmd, this, _1));
 
         // Service
         srv_go2_modes = this->create_service<go2_interface::srv::Go2Modes>(
@@ -96,59 +96,71 @@ private:
      */
     void callback_go2_cmd(geometry_msgs::msg::Twist::SharedPtr msg)
     {
-        RCLCPP_INFO(this->get_logger(), "MOVE CALLBACK TRIGGERED");
-        float linear_x = 0.0;
-        float linear_y = 0.0;
-        float angular_z = 0.0;
-        // if (mode_ == NORMAL)
-        // {
-        if (msg->linear.x && msg->linear.y && msg->angular.z)
+        //RCLCPP_INFO(this->get_logger(), "MOVE CALLBACK TRIGGERED");
+        if (msg->linear.x == 0.0 && msg->linear.y == 0.0 && msg->angular.z == 0.0)
         {
-            linear_x = msg->linear.x;
-            linear_y = msg->linear.y;
-            angular_z = msg->angular.z;
-        }
-        else if (msg->linear.x && msg->linear.y)
-        {
-            linear_x = msg->linear.x;
-            linear_y = msg->linear.y;
-        }
-        else if (msg->linear.x && msg->angular.z)
-        {
-            linear_x = msg->linear.x;
-            angular_z = msg->angular.z;
-        }
-        else if (msg->linear.y && msg->angular.z)
-        {
-            linear_y = msg->linear.y;
-            angular_z = msg->angular.z;
-        }
-        else if (msg->linear.x)
-        {
-            linear_x = msg->linear.x;
-        }
-        else if (msg->linear.y)
-        {
-            linear_y = msg->linear.y;
-        }
-        else if (msg->angular.z)
-        {
-            angular_z = msg->angular.z;
+            sport_client_->StopMove();
         }
         else
-        {   
-            return;
+        {
+            sport_client_->Move(
+                msg->linear.x,
+                msg->linear.y,
+                msg->angular.z
+            );
         }
-        sport_client_->Move(linear_x, linear_y, angular_z);
+        // float linear_x = 0.0;
+        // float linear_y = 0.0;
+        // float angular_z = 0.0;
+        // // if (mode_ == NORMAL)
+        // // {
+        // if (msg->linear.x && msg->linear.y && msg->angular.z)
+        // {
+        //     linear_x = msg->linear.x;
+        //     linear_y = msg->linear.y;
+        //     angular_z = msg->angular.z;
+        // }
+        // else if (msg->linear.x && msg->linear.y)
+        // {
+        //     linear_x = msg->linear.x;
+        //     linear_y = msg->linear.y;
+        // }
+        // else if (msg->linear.x && msg->angular.z)
+        // {
+        //     linear_x = msg->linear.x;
+        //     angular_z = msg->angular.z;
+        // }
+        // else if (msg->linear.y && msg->angular.z)
+        // {
+        //     linear_y = msg->linear.y;
+        //     angular_z = msg->angular.z;
+        // }
+        // else if (msg->linear.x)
+        // {
+        //     linear_x = msg->linear.x;
+        // }
+        // else if (msg->linear.y)
+        // {
+        //     linear_y = msg->linear.y;
+        // }
+        // else if (msg->angular.z)
+        // {
+        //     angular_z = msg->angular.z;
+        // }
+        // else
+        // {   
+        //     return;
+        // }
+        // sport_client_->Move(linear_x, linear_y, angular_z);
     }
 
     //callback for the Euler function
     void callback_euler_cmd(const geometry_msgs::msg::Twist::SharedPtr msg)
     {
         //mode_ = EULER;
-        RCLCPP_INFO(this->get_logger(), "EULER CALLBACK TRIGGERED");
-        RCLCPP_INFO(this->get_logger(), "Euler values - x: %f, y: %f, z: %f",
-            msg->linear.x, msg->linear.y, msg->angular.z);
+        // RCLCPP_INFO(this->get_logger(), "EULER CALLBACK TRIGGERED");
+        // RCLCPP_INFO(this->get_logger(), "Euler values - x: %f, y: %f, z: %f",
+        //     msg->linear.x, msg->linear.y, msg->angular.z);
 
         //sport_client_->Euler(-0.5,0,0);
         sport_client_->BalanceStand();

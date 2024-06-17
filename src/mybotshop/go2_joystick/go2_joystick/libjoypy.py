@@ -47,10 +47,11 @@ class CustomJoyControls:
         rclpy.init()
         self.node = rclpy.create_node('go2_joystick_commands')
         self.subscription = self.node.create_subscription(
-            Joy, 'joy', self.joy_callback, 10)
-        self.euler_pub = self.node.create_publisher(Twist, 'euler_cmd', 10)
-        self.move_pub = self.node.create_publisher(Twist, 'hardware/cmd_vel', 10)
+            Joy, 'joy', self.joy_callback, 1)
+        self.euler_pub = self.node.create_publisher(Twist, 'euler_cmd', 1)
+        self.move_pub = self.node.create_publisher(Twist, 'hardware/cmd_vel', 1)
         self.activate = False
+        self.moving = False
         self.jump_requested = False
         self.jump_request_time = 0
 
@@ -129,21 +130,28 @@ class CustomJoyControls:
         # Move with low velocity command       ->      R + joystick
         if msg.buttons[7] == 1:
             self.node.get_logger().info(f'{self.colorize("Move","orange")}')
+            self.moving = True
             twist = Twist()
             twist.linear.x = msg.axes[1] * 0.5   
             twist.linear.y = msg.axes[0] * 0.5   
             twist.angular.z = msg.axes[2] * 0.5  
             self.move_pub.publish(twist)
 
-
         # Move with high velocity command      ->      RZ + joystick
-        if msg.buttons[9] == 1:         
+        elif msg.buttons[9] == 1:         
             self.node.get_logger().info(f'{self.colorize("Move Faster, be carreful","orange")}')
+            self.moving = True
             twist = Twist()
             twist.linear.x = msg.axes[1]   
             twist.linear.y = msg.axes[0]   
             twist.angular.z = msg.axes[2] 
             self.move_pub.publish(twist)
+        
+        # Stop the movement
+        elif self.moving:
+            self.node.get_logger().info(f'{self.colorize("STOP","red")}')
+            self.moving = False
+            self.move_pub.publish(Twist())
         
 
         # Switch avoid mode command      ->      Y
