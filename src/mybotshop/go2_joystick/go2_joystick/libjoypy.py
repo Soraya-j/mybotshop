@@ -38,6 +38,7 @@ import rclpy
 import subprocess
 
 from sensor_msgs.msg import Joy
+from geometry_msgs.msg import Twist
 
 
 class CustomJoyControls:
@@ -47,6 +48,8 @@ class CustomJoyControls:
         self.node = rclpy.create_node('go2_joystick_commands')
         self.subscription = self.node.create_subscription(
             Joy, 'joy', self.joy_callback, 10)
+        self.euler_pub = self.node.create_publisher(Twist, 'euler_cmd', 10)
+        self.move_pub = self.node.create_publisher(Twist, 'hardware/cmd_vel', 10)
 
     def execute_program(self):
         rclpy.spin(self.node)
@@ -59,25 +62,39 @@ class CustomJoyControls:
         if msg.axes[1] == 1.0 and msg.buttons[0] == 1:  # LeftUp + A
             self.node.get_logger().info(
                 f'{self.colorize("Logitech F710 GO2 Stand up","yellow")}')
-            command = "ros2 service call /modes go2_interface/srv/Go2Modes \"{request_data: 'stand_up'}\""
-            #"ros2 service call /go2/modes go2_interface/srv/Go2Modes \"{request_data: 'recovery_stand'}\""
+            command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'stand_up'}\""
             self.execute_ros2_command(command)
-            time.sleep(2)
+            time.sleep(3)
 
         if msg.axes[1] == -1.0 and msg.buttons[0] == 1:  # LeftUp + A
             self.node.get_logger().info(
                 f'{self.colorize("Logitech F710 GO2 Stand down","yellow")}')
-            command = "ros2 service call /modes go2_interface/srv/Go2Modes \"{request_data: 'stand_down'}\"" 
-            #"ros2 service call /modes go2_interface/srv/Go2Modes \"{request_data: 'stand_down'}\""
+            command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'stand_down'}\"" 
             self.execute_ros2_command(command)
             time.sleep(2)
         
         if msg.buttons[3] == 1:         # X
             self.node.get_logger().info(
                 f'{self.colorize("Euler","orange")}')
-            command = "ros2 service call /modes go2_interface/srv/Go2Modes \"{request_data: 'euler'}\"";"ros2 service call /modes go2_interface/srv/Go2Modes \"{request_data: 'balance_stand'}\""
-            self.execute_ros2_command(command)
-            time.sleep(2)
+
+            twist = Twist()
+            twist.linear.x = msg.axes[1] * 0.5   
+            twist.linear.y = msg.axes[0] * 0.5   
+            twist.angular.z = msg.axes[2] * 0.5  
+
+            self.euler_pub.publish(twist)
+
+        if msg.buttons[9] == 1:         #RZ
+            self.node.get_logger().info(
+                f'{self.colorize("Move","orange")}')
+            twist = Twist()
+            
+            twist.linear.x = msg.axes[1] * 0.5   
+            twist.linear.y = msg.axes[0] * 0.5   
+            twist.angular.z = msg.axes[2] * 0.5  
+
+            self.move_pub.publish(twist)
+    time.sleep(1)
         
 
         

@@ -21,18 +21,32 @@ public:
     go2_highlevel_request(
         std::shared_ptr<unitree::robot::go2::SportClient> sport_client,
         std::shared_ptr<unitree::robot::b2::MotionSwitcherClient> switcher_client,
-        std::shared_ptr<unitree::robot::go2::VuiClient> vui_client)
-        : Node("go2_highroscontrol"),
+        std::shared_ptr<unitree::robot::go2::VuiClient> vui_client,
+        //: Node("go2_highroscontrol"),
+        const std::string & ns = "/go2_unit_49702")
+        : Node("go2_highroscontrol", ns),
           sport_client_(sport_client),
           switcher_client_(switcher_client),
           vui_client_(vui_client)
     {
         // Initialization
         RCLCPP_INFO(get_logger(), BOLD(FGRN("Initializing GO2 ROS Hardware Communication")));
-
+        RCLCPP_INFO(get_logger(), BOLD(FGRN("test")));
         // Subscribers
+        // try {
+        //     sub_euler_cmd = this->create_subscription<geometry_msgs::msg::Twist>(
+        //         "euler_cmd", 10,
+        //         std::bind(&go2_highlevel_request::callback_euler_cmd, this, std::placeholders::_1)
+        //     );
+        //     RCLCPP_INFO(get_logger(), "euler_cmd subscriber created: %s", sub_euler_cmd->get_topic_name());
+        // } catch (const std::exception &e) {
+        //     RCLCPP_ERROR(get_logger(), "FAILED to create euler_cmd subscriber: %s", e.what());
+        // }
+
         sub_go2_cmd_vel = this->create_subscription<geometry_msgs::msg::Twist>(
-            "hardware/cmd_vel", 1, std::bind(&go2_highlevel_request::callback_go2_cmd, this, _1));
+            "hardware/cmd_vel", 10, std::bind(&go2_highlevel_request::callback_go2_cmd, this, _1));
+        sub_euler_cmd = this->create_subscription<geometry_msgs::msg::Twist>(
+            "euler_cmd", 10, std::bind(&go2_highlevel_request::callback_euler_cmd, this, _1));
 
         // Service
         srv_go2_modes = this->create_service<go2_interface::srv::Go2Modes>(
@@ -82,10 +96,12 @@ private:
      */
     void callback_go2_cmd(geometry_msgs::msg::Twist::SharedPtr msg)
     {
-        float linear_x = 0.0;
-        float linear_y = 0.0;
-        float angular_z = 0.0;
-
+        RCLCPP_INFO(this->get_logger(), "MOVE CALLBACK TRIGGERED");
+        // float linear_x = 0.0;
+        // float linear_y = 0.0;
+        // float angular_z = 0.0;
+        // if (mode_ == NORMAL)
+        // {
         if (msg->linear.x && msg->linear.y && msg->angular.z)
         {
             linear_x = msg->linear.x;
@@ -120,10 +136,27 @@ private:
             angular_z = msg->angular.z;
         }
         else
-        {
+        {   
             return;
         }
         sport_client_->Move(linear_x, linear_y, angular_z);
+    }
+
+    //callback for the Euler function
+    void callback_euler_cmd(const geometry_msgs::msg::Twist::SharedPtr msg)
+    {
+        //mode_ = EULER;
+        RCLCPP_INFO(this->get_logger(), "EULER CALLBACK TRIGGERED");
+        RCLCPP_INFO(this->get_logger(), "Euler values - x: %f, y: %f, z: %f",
+            msg->linear.x, msg->linear.y, msg->angular.z);
+
+        //sport_client_->Euler(-0.5,0,0);
+        sport_client_->BalanceStand();
+        sport_client_->Euler(
+            msg->linear.x,
+            msg->linear.y,
+            msg->angular.z
+        );
     }
 
     // Callback for Subscribers and Services
@@ -291,15 +324,13 @@ private:
         else if (request->request_data == "euler")
         {
             RCLCPP_INFO(this->get_logger(), "Entering EULER mode");
-            sport_client_->Euler(-0.5,0,0);
-            RCLCPP_INFO(this->get_logger(), "Received mode: [%s]", request->request_data.c_str());
-
             return true;
         }
         else if (request->request_data == "stand_down")
         {
-            sport_client_->StandUp();
-            std::this_thread::sleep_for(std::chrono::seconds(2));
+            RCLCPP_INFO(this->get_logger(), "Entering down mode");
+            //sport_client_->StandUp();
+            //std::this_thread::sleep_for(std::chrono::seconds(2));
             sport_client_->StandDown();
             
             return true;
@@ -476,6 +507,7 @@ private:
 
     // Initialize Subscribers
     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr sub_go2_cmd_vel;
+    rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr sub_euler_cmd;
 
     // Initialize Service
     rclcpp::Service<go2_interface::srv::Go2Modes>::SharedPtr srv_go2_modes;
