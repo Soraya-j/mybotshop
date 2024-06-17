@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_navigation/launch/slam.launch.py

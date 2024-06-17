@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/opt/mybotshop/build/go2_platform/go2_highroscontrol" "/opt/mybotshop/build/go2_platform/go2_lowroscontrol" "/opt/mybotshop/build/go2_platform/go2_scan" "/opt/mybotshop/build/go2_platform/go2_video_publisher" "TARGETS" "go2_highroscontrol" "go2_lowroscontrol" "go2_scan" "go2_video_publisher" "DESTINATION" "lib/go2_platform")

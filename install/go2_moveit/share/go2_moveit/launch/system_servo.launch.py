@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_moveit/launch/system_servo.launch.py

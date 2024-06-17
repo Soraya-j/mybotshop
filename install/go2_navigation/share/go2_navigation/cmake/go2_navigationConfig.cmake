@@ -1,1 +1,0 @@
-/opt/mybotshop/build/go2_navigation/ament_cmake_core/go2_navigationConfig.cmake

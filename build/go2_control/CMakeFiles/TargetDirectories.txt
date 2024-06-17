@@ -1,9 +1,0 @@
-/opt/mybotshop/build/go2_control/CMakeFiles/install/local.dir
-/opt/mybotshop/build/go2_control/CMakeFiles/install.dir
-/opt/mybotshop/build/go2_control/CMakeFiles/list_install_components.dir
-/opt/mybotshop/build/go2_control/CMakeFiles/rebuild_cache.dir
-/opt/mybotshop/build/go2_control/CMakeFiles/edit_cache.dir
-/opt/mybotshop/build/go2_control/CMakeFiles/test.dir
-/opt/mybotshop/build/go2_control/CMakeFiles/install/strip.dir
-/opt/mybotshop/build/go2_control/CMakeFiles/go2_control_uninstall.dir
-/opt/mybotshop/build/go2_control/CMakeFiles/uninstall.dir

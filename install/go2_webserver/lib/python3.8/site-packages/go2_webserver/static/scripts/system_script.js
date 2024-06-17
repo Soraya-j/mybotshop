@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_webserver/go2_webserver/static/scripts/system_script.js

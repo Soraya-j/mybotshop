@@ -1,1 +1,0 @@
-/opt/mybotshop/build/go2_moveit/ament_cmake_core/go2_moveitConfig-version.cmake

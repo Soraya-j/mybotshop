@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_depth_camera/launch/realsense_d405.launch.py

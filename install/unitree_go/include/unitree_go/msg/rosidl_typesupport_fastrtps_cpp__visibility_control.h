@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_go/rosidl_typesupport_fastrtps_cpp/unitree_go/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h

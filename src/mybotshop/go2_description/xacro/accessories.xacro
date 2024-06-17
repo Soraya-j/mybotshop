@@ -24,6 +24,10 @@
   </xacro:if>
 
   <!-- Wheels -->
+  <!-- Pour à passer en ligne de commande pour rétablir que les pattes soit par défaut au lieu des roues (regarder pour les accessoires encore)
+    export GO2_WHEELED=0
+    export GO2_FOOT=1
+  -->
   <xacro:if value="$(optenv GO2_WHEELED 0)">
     <xacro:include filename="$(find go2_description)/xacro/go2/foot_wheeled.xacro"/>
     <xacro:foot name="FR" mirror="-1" mirror_dae= "False" front_hind="1" front_hind_dae="True" />

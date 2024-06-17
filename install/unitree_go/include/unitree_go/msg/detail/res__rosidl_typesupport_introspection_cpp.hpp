@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_go/rosidl_typesupport_introspection_cpp/unitree_go/msg/detail/res__rosidl_typesupport_introspection_cpp.hpp

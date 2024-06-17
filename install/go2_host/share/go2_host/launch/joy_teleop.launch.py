@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_host/launch/joy_teleop.launch.py

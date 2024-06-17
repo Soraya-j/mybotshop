@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_moveit/launch/moveit_fake.launch.py

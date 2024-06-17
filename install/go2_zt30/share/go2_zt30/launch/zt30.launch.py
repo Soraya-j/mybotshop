@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_zt30/launch/zt30.launch.py

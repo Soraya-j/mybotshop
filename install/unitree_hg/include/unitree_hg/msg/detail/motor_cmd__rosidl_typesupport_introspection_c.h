@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_hg/rosidl_typesupport_introspection_c/unitree_hg/msg/detail/motor_cmd__rosidl_typesupport_introspection_c.h

@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_ros2_example/ament_cmake_environment_hooks/local_setup.zsh

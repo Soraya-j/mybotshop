@@ -1,8 +1,0 @@
-/opt/mybotshop/build/unitree_api/rosidl_adapter/unitree_api:msg/Request.idl
-/opt/mybotshop/build/unitree_api/rosidl_adapter/unitree_api:msg/RequestHeader.idl
-/opt/mybotshop/build/unitree_api/rosidl_adapter/unitree_api:msg/RequestIdentity.idl
-/opt/mybotshop/build/unitree_api/rosidl_adapter/unitree_api:msg/RequestLease.idl
-/opt/mybotshop/build/unitree_api/rosidl_adapter/unitree_api:msg/RequestPolicy.idl
-/opt/mybotshop/build/unitree_api/rosidl_adapter/unitree_api:msg/Response.idl
-/opt/mybotshop/build/unitree_api/rosidl_adapter/unitree_api:msg/ResponseHeader.idl
-/opt/mybotshop/build/unitree_api/rosidl_adapter/unitree_api:msg/ResponseStatus.idl

@@ -1,1 +1,0 @@
-/opt/mybotshop/build/go2_control/ament_cmake_core/go2_controlConfig.cmake

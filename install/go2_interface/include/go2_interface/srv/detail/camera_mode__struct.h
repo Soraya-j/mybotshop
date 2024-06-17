@@ -1,1 +1,0 @@
-/opt/mybotshop/build/go2_interface/rosidl_generator_c/go2_interface/srv/detail/camera_mode__struct.h

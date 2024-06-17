@@ -1,9 +1,0 @@
-/opt/mybotshop/build/go2_joystick/CMakeFiles/install/local.dir
-/opt/mybotshop/build/go2_joystick/CMakeFiles/install.dir
-/opt/mybotshop/build/go2_joystick/CMakeFiles/list_install_components.dir
-/opt/mybotshop/build/go2_joystick/CMakeFiles/rebuild_cache.dir
-/opt/mybotshop/build/go2_joystick/CMakeFiles/edit_cache.dir
-/opt/mybotshop/build/go2_joystick/CMakeFiles/test.dir
-/opt/mybotshop/build/go2_joystick/CMakeFiles/install/strip.dir
-/opt/mybotshop/build/go2_joystick/CMakeFiles/go2_joystick_uninstall.dir
-/opt/mybotshop/build/go2_joystick/CMakeFiles/uninstall.dir

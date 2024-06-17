@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_go/rosidl_typesupport_fastrtps_c/unitree_go/msg/detail/bms_cmd__rosidl_typesupport_fastrtps_c.h

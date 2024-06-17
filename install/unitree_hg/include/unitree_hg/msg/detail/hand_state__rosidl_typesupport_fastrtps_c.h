@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_hg/rosidl_typesupport_fastrtps_c/unitree_hg/msg/detail/hand_state__rosidl_typesupport_fastrtps_c.h

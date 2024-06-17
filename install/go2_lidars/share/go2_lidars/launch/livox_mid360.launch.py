@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_lidars/launch/livox_mid360.launch.py

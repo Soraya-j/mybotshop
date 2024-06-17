@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_manipulation/launch/openmanipulator.launch.py

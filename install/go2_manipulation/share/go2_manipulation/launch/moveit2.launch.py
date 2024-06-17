@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_manipulation/launch/moveit2.launch.py

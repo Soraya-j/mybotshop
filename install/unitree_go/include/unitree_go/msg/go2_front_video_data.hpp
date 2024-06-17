@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_go/rosidl_generator_cpp/unitree_go/msg/go2_front_video_data.hpp

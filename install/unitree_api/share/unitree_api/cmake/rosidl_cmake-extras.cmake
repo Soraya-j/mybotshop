@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_api/rosidl_cmake/rosidl_cmake-extras.cmake

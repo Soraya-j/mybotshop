@@ -1,1 +1,0 @@
-/opt/mybotshop/build/go2_joystick/ament_cmake_core/go2_joystickConfig-version.cmake

@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_webserver/go2_webserver/__init__.py

@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_control/launch/ekf_localization.launch.py

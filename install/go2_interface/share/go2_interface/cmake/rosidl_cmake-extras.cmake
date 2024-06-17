@@ -1,1 +1,0 @@
-/opt/mybotshop/build/go2_interface/rosidl_cmake/rosidl_cmake-extras.cmake

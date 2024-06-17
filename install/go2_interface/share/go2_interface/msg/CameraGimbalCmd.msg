@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_interface/msg/CameraGimbalCmd.msg

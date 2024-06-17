@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_viz/launch/view_robot.launch.py

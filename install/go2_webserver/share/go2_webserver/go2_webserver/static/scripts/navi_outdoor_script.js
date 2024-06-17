@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_webserver/go2_webserver/static/scripts/navi_outdoor_script.js

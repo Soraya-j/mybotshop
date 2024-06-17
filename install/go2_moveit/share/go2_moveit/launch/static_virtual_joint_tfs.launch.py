@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_moveit/launch/static_virtual_joint_tfs.launch.py

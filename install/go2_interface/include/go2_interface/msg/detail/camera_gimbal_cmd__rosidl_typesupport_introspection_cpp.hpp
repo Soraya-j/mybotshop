@@ -1,1 +1,0 @@
-/opt/mybotshop/build/go2_interface/rosidl_typesupport_introspection_cpp/go2_interface/msg/detail/camera_gimbal_cmd__rosidl_typesupport_introspection_cpp.hpp

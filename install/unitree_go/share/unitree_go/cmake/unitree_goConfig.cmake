@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_go/ament_cmake_core/unitree_goConfig.cmake

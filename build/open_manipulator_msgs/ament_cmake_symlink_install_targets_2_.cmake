@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/opt/mybotshop/build/open_manipulator_msgs/rosidl_generator_py/open_manipulator_msgs/open_manipulator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" "TARGETS" "open_manipulator_msgs__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.8/site-packages/open_manipulator_msgs")

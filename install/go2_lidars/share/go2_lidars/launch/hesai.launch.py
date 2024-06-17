@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_lidars/launch/hesai.launch.py

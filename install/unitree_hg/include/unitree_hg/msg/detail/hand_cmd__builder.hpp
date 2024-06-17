@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_hg/rosidl_generator_cpp/unitree_hg/msg/detail/hand_cmd__builder.hpp

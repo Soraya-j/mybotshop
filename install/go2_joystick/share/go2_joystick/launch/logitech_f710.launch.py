@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_joystick/launch/logitech_f710.launch.py

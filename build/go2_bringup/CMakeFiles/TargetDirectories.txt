@@ -1,9 +1,0 @@
-/opt/mybotshop/build/go2_bringup/CMakeFiles/install/strip.dir
-/opt/mybotshop/build/go2_bringup/CMakeFiles/install/local.dir
-/opt/mybotshop/build/go2_bringup/CMakeFiles/install.dir
-/opt/mybotshop/build/go2_bringup/CMakeFiles/list_install_components.dir
-/opt/mybotshop/build/go2_bringup/CMakeFiles/rebuild_cache.dir
-/opt/mybotshop/build/go2_bringup/CMakeFiles/edit_cache.dir
-/opt/mybotshop/build/go2_bringup/CMakeFiles/test.dir
-/opt/mybotshop/build/go2_bringup/CMakeFiles/go2_bringup_uninstall.dir
-/opt/mybotshop/build/go2_bringup/CMakeFiles/uninstall.dir

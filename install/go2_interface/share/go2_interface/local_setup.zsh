@@ -1,1 +1,0 @@
-/opt/mybotshop/build/go2_interface/ament_cmake_environment_hooks/local_setup.zsh

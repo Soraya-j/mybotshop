@@ -1,1 +1,0 @@
-/opt/mybotshop/build/go2_lidars/ament_cmake_core/go2_lidarsConfig.cmake

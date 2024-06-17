@@ -1,6 +1,0 @@
-Invoking command in '/opt/mybotshop/build/go2_depth_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_depth_camera -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_depth_camera
-Invoked command in '/opt/mybotshop/build/go2_depth_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_depth_camera -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_depth_camera
-Invoking command in '/opt/mybotshop/build/go2_depth_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/go2_depth_camera -- -j6 -l6
-Invoked command in '/opt/mybotshop/build/go2_depth_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/go2_depth_camera -- -j6 -l6
-Invoking command in '/opt/mybotshop/build/go2_depth_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/go2_depth_camera
-Invoked command in '/opt/mybotshop/build/go2_depth_camera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/go2_depth_camera

@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_go/rosidl_typesupport_introspection_c/unitree_go/msg/detail/bms_state__rosidl_typesupport_introspection_c.h

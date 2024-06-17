@@ -1,1 +1,0 @@
-/opt/mybotshop/build/unitree_go/rosidl_generator_c/unitree_go/msg/detail/imu_state__functions.h

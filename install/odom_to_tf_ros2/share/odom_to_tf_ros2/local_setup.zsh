@@ -1,1 +1,0 @@
-/opt/mybotshop/build/odom_to_tf_ros2/ament_cmake_environment_hooks/local_setup.zsh

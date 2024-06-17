@@ -1,1 +1,0 @@
-/opt/mybotshop/build/open_manipulator_msgs/rosidl_cmake/srv/SetActuatorState_Response.msg

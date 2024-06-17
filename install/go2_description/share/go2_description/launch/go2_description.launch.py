@@ -1,1 +1,0 @@
-/opt/mybotshop/src/mybotshop/go2_description/launch/go2_description.launch.py

@@ -1,1 +1,0 @@
-/opt/mybotshop/build/go2_manipulation/ament_cmake_core/go2_manipulationConfig.cmake

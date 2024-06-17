@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/opt/mybotshop/build/unitree_hg/libunitree_hg__rosidl_typesupport_fastrtps_c.so" "TARGETS" "unitree_hg__rosidl_typesupport_fastrtps_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

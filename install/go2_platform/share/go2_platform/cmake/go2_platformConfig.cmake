@@ -1,1 +1,0 @@
-/opt/mybotshop/build/go2_platform/ament_cmake_core/go2_platformConfig.cmake

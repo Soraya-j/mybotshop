@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/opt/mybotshop/build/unitree_hg/rosidl_generator_py/unitree_hg/libunitree_hg__python.so" "TARGETS" "unitree_hg__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
