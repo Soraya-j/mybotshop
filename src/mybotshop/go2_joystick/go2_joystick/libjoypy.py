@@ -74,6 +74,11 @@ class CustomJoyControls:
             self.execute_ros2_command(command)
             time.sleep(2)
         
+        if msg.buttons[3] == 1:         # X
+            self.node.get_logger().info(f'{self.colorize("Recovery Stand","green")}')           
+            command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'recovery_stand'}\""
+            self.execute_ros2_command(command)
+        
         if msg.buttons[6] == 1:         # L
             self.node.get_logger().info(
                 f'{self.colorize("Euler","orange")}')
@@ -93,7 +98,7 @@ class CustomJoyControls:
             twist.angular.z = msg.axes[2] * 0.5  
             self.move_pub.publish(twist)
 
-        if msg.buttons[9] == 1:
+        if msg.buttons[9] == 1:         #RZ
             self.node.get_logger().info(f'{self.colorize("Move Faster, be carreful","orange")}')
             twist = Twist()
             twist.linear.x = msg.axes[1]   
@@ -101,22 +106,20 @@ class CustomJoyControls:
             twist.angular.z = msg.axes[2] 
             self.move_pub.publish(twist)
         
-        if msg.buttons[4] == 1:
-            self.node.get_logger().info(f'{self.colorize("Switch avoid mode","orange")}')           
+        if msg.buttons[4] == 1:         #Y
+            self.node.get_logger().info(f'{self.colorize("Switch avoid mode","yellow")}')           
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'obstacle_avoidance'}\""
             self.execute_ros2_command(command)
-            time.sleep(1)
-
 
         if msg.buttons[1] == 1:         #B
             if self.activate == False:
                 self.activate = True
-                self.node.get_logger().info(f'{self.colorize("Enter economic walk","orange")}')           
+                self.node.get_logger().info(f'{self.colorize("Enter economic walk","blue")}')           
                 command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'gait_type_economic'}\""
                 self.execute_ros2_command(command)
             else :
                 self.activate = False
-                self.node.get_logger().info(f'{self.colorize("Enter classical walk","orange")}')           
+                self.node.get_logger().info(f'{self.colorize("Enter classical walk","blue")}')           
                 command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'gait_type_classic'}\""
                 self.execute_ros2_command(command)
         
