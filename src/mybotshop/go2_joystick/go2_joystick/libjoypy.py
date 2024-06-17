@@ -51,6 +51,8 @@ class CustomJoyControls:
         self.euler_pub = self.node.create_publisher(Twist, 'euler_cmd', 10)
         self.move_pub = self.node.create_publisher(Twist, 'hardware/cmd_vel', 10)
         self.activate = False
+        self.jump_requested = False
+        self.jump_request_time = 0
 
     def execute_program(self):
         rclpy.spin(self.node)
@@ -106,11 +108,22 @@ class CustomJoyControls:
             self.euler_pub.publish(twist)
 
 
-        # Jump Forward command      ->      LeftJoystick (button) and RZ
-        if msg.buttons[13] == 1 and msg.buttons[9] == 1:         
-            self.node.get_logger().info(f'{self.colorize("Jump forward","red")}')           
+        # Jump Forward command      ->      push on the LeftJoystick (button)
+        if msg.buttons[13] == 1 and not self.jump_requested:     
+            self.node.get_logger().info(self.colorize("Jump requested - make sure there is space in front of the robot \n And press + to confirm", "red"))
+            self.jump_requested = True
+            self.jump_request_time = time.time()
+
+        if self.jump_requested and msg.buttons[11] == 1:
+            self.node.get_logger().info(self.colorize("Jump forward confirmed", "yellow"))
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'front_jump'}\""
             self.execute_ros2_command(command)
+            self.jump_requested = False
+        
+        # Jump forward time out after 3sec
+        if self.jump_requested and (time.time() - self.jump_request_time > 3):
+            self.node.get_logger().info(self.colorize("Jump request timeout", "blue"))
+            self.jump_requested = False
 
 
         # Move with low velocity command       ->      R + joystick
@@ -134,7 +147,7 @@ class CustomJoyControls:
         
 
         # Switch avoid mode command      ->      Y
-        if msg.buttons[4] == 1:
+        if msg.buttons[4] == 1 :
             self.node.get_logger().info(f'{self.colorize("Switch avoid mode","yellow")}')           
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'obstacle_avoidance'}\""
             self.execute_ros2_command(command)
