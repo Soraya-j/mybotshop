@@ -52,6 +52,7 @@ class CustomJoyControls:
         self.move_pub = self.node.create_publisher(Twist, 'hardware/cmd_vel', 1)
         self.activate = False
         self.moving = False
+        self.euler = False
         self.jump_requested = False
         self.jump_request_time = 0
 
@@ -97,16 +98,22 @@ class CustomJoyControls:
 
 
         # Euler command      ->      L
-        if msg.buttons[6] == 1:       
+        if msg.buttons[6] == 1 and not self.moving :       
             self.node.get_logger().info(
                 f'{self.colorize("Euler","orange")}')
-
+            self.euler = True
             twist = Twist()
             twist.linear.x = msg.axes[0] #* 0.5   
             twist.linear.y = msg.axes[1] * 0.5   
             twist.angular.z = msg.axes[2] * 0.2  
 
             self.euler_pub.publish(twist)
+
+        # Stop the euler mode
+        elif self.euler :
+            self.node.get_logger().info(f'{self.colorize("Stop euler","red")}')
+            self.euler = False
+            self.euler_pub.publish(Twist())
 
 
         # Jump Forward command      ->      push on the LeftJoystick (button)
@@ -128,7 +135,7 @@ class CustomJoyControls:
 
 
         # Move with low velocity command       ->      R + joystick
-        if msg.buttons[7] == 1:
+        if msg.buttons[7] == 1 and not self.euler:
             self.node.get_logger().info(f'{self.colorize("Move","orange")}')
             self.moving = True
             twist = Twist()
@@ -138,7 +145,7 @@ class CustomJoyControls:
             self.move_pub.publish(twist)
 
         # Move with high velocity command      ->      RZ + joystick
-        elif msg.buttons[9] == 1:         
+        elif msg.buttons[9] == 1 and not self.euler:         
             self.node.get_logger().info(f'{self.colorize("Move Faster, be carreful","orange")}')
             self.moving = True
             twist = Twist()
