@@ -69,7 +69,7 @@ class CustomJoyControls:
                 f'{self.colorize("Logitech F710 GO2 Stand up","yellow")}')
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'stand_up'}\""
             self.execute_ros2_command(command)
-            time.sleep(3)
+            time.sleep(2)
 
 
         # Stand-down command      ->      Left joystick Down + A
@@ -101,9 +101,9 @@ class CustomJoyControls:
                 f'{self.colorize("Euler","orange")}')
 
             twist = Twist()
-            twist.linear.x = msg.axes[1] * 0.5   
-            twist.linear.y = msg.axes[0] * 0.5   
-            twist.angular.z = msg.axes[2] * 0.5  
+            twist.linear.x = msg.axes[0] #* 0.5   
+            twist.linear.y = msg.axes[1] * 0.5   
+            twist.angular.z = msg.axes[2] * 0.2  
 
             self.euler_pub.publish(twist)
 
