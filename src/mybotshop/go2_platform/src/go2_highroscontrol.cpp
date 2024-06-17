@@ -97,9 +97,9 @@ private:
     void callback_go2_cmd(geometry_msgs::msg::Twist::SharedPtr msg)
     {
         RCLCPP_INFO(this->get_logger(), "MOVE CALLBACK TRIGGERED");
-        // float linear_x = 0.0;
-        // float linear_y = 0.0;
-        // float angular_z = 0.0;
+        float linear_x = 0.0;
+        float linear_y = 0.0;
+        float angular_z = 0.0;
         // if (mode_ == NORMAL)
         // {
         if (msg->linear.x && msg->linear.y && msg->angular.z)
