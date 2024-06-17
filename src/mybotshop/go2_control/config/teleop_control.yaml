@@ -16,13 +16,13 @@
       x: 1.0
       y: 1.0
     axis_angular:
-      yaw: 3
+      yaw: 2        # axe z (en verticale au dessus du robot)
     scale_angular:
       yaw: 0.6
     scale_angular_turbo:
       yaw: 1.2
-    enable_button: 4
-    enable_turbo_button: 5
+    enable_button: 9
+    enable_turbo_button: 7
 
   # twist_server_node:
     link_name: base_link
@@ -81,45 +81,55 @@
         priority: 255
 
 
-# Teleop configuration for Logitech F710 Gamepad using the x-pad configuration.
+# Teleop configuration for wireless Gamepad using the x-pad configuration.
 # Left thumb-stick up/down for velocity, left/right for twist
-# LB for enable
-# RB for enable-turbo
+# RZ for enable
+# R for enable-turbo
 #
-#         (LB)                                 (RB)
-#         (LT)                                 (RT)
-#       _=====_            D(  .)X            _=====_
+#         (LZ)                                 (RZ)
+#         (L)                                  (R)
+#       _=====_                               _=====_
 #      / _____ \                             / _____ \
 #    +.-'_____'-.---------------------------.-'_____'-.+
 #   /   |     |  '.                       .'  |      |   \
-#  / ___| /|\ |___ \ (back)(Lgtc)(strt)  / ___| (Y)  |___ \
-# / |      |      | ;  __           __  ; |              | |
-# | | <---   ---> | | (__) .       (__) | | (X)       (B)| |
-# | |___   |   ___| ; MODE         VIBE ; |___       ____| /
+#  / ___| /|\ |___ \   (-)         (+)   / ___| (Y)  |___ \
+# / |      |      | ;                   ; |              | |
+# | | <---   ---> | |                   | | (X)       (B)| |
+# | |___   |   ___| ;                   ; |___       ____| /
 # |\    | \|/ |    /  _     ___      _   \    | (A) |    /|
 # | \   |_____|  .','" "', |___|  ,'" "', '.  |_____|  .' |
-# |  '-.______.-' /       \ANALOG/       \  '-._____.-'   |
-# |               |  LJ   |------|   RJ  |                |
+# |  '-.______.-' /       \ HOME /       \  '-._____.-'   |
+# |               |   LJ  |------|   RJ  |                |
 # |              /\       /      \       /\               |
 # |             /  '.___.'        '.___.'  \              |
 # |            /                            \             |
 #  \          /                              \           /
 #   \________/                                \_________/
 #
-# BUTTON         Value
-#   LB             4
-#   RB             5
-#   A              0
-#   B              1
-#   X              2
-#   Y              3
+# BUTTON         Value      GXTrust
+#   A              0           0
+#   B              1           1
+#   X              2           3
+#   Y              3           4
+#   LZ                         8
+#   RZ                         9
+#   L                          6
+#   R                          7
+#   +                          11
+#   -                          10
+#   JoyLeft                    13
+#   JoyRight                   14
 #
 #    AXIS        Value
-# Left Horiz.      0
-# Left Vert.       1
-# Right Horiz.     3
-# Right Vert.      4
-# Left Trigger     2
-# Right Trigger    5
-# D-pad Horiz.     6
-# D-pad Vert.      7
+# Left Horiz.      0      (-1 = vers la gauche)     {sur le robot l'axe horizontale est le y}
+# Left Vert.       1      (-1 = vers le haut)
+# Right Horiz.     2      ()
+# Right Vert.      3
+# Left Trigger     
+# Right Trigger  
+
+#   DPAD 0 value ( . ; . ) avec . = [-1;1]
+# D-pad Horiz. gauche    (1,0)
+# D-pad Horiz. gauche    (-1,0)     
+# D-pad Vert. haut  (0,1)
+# D-pad Vert. bas   (0,-1)
