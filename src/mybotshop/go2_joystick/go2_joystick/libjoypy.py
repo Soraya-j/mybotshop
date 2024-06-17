@@ -92,6 +92,14 @@ class CustomJoyControls:
             twist.linear.y = msg.axes[0] * 0.5   
             twist.angular.z = msg.axes[2] * 0.5  
             self.move_pub.publish(twist)
+
+        if msg.buttons[9] == 1:
+            self.node.get_logger().info(f'{self.colorize("Move Faster, be carreful","orange")}')
+            twist = Twist()
+            twist.linear.x = msg.axes[1]   
+            twist.linear.y = msg.axes[0]   
+            twist.angular.z = msg.axes[2] 
+            self.move_pub.publish(twist)
         
         if msg.buttons[4] == 1:
             self.node.get_logger().info(f'{self.colorize("Switch avoid mode","orange")}')           
@@ -111,8 +119,6 @@ class CustomJoyControls:
                 self.node.get_logger().info(f'{self.colorize("Enter classical walk","orange")}')           
                 command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'gait_type_classic'}\""
                 self.execute_ros2_command(command)
-
-    time.sleep(1)
         
 
         
