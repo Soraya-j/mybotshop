@@ -288,6 +288,14 @@ private:
 
             return true;
         }
+        else if (request->request_data == "euler")
+        {
+            RCLCPP_INFO(this->get_logger(), "Entering EULER mode");
+            sport_client_->Euler(-0.5,0,0);
+            RCLCPP_INFO(this->get_logger(), "Received mode: [%s]", request->request_data.c_str());
+
+            return true;
+        }
         else if (request->request_data == "stand_down")
         {
             sport_client_->StandUp();
@@ -407,7 +415,8 @@ private:
         {
             RCLCPP_WARN(this->get_logger(), "Unknown mode received: %s", request->request_data.c_str());
             sport_client_->StopMove();
-
+            RCLCPP_INFO(this->get_logger(), "MY NODE RECEIVED REQUEST");
+            RCLCPP_WARN(this->get_logger(), "Unknown mode received: %s", request->request_data.c_str());
             return false;
         }
     }
@@ -432,6 +441,7 @@ private:
             "balance_stand",
             "stand_down",
             "stand_up",
+            "euler",
             "damp",
             "recovery_stand",
             "sit",
