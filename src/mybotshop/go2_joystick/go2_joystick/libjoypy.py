@@ -94,6 +94,11 @@ class CustomJoyControls:
             twist.angular.z = msg.axes[2] * 0.5  
 
             self.euler_pub.publish(twist)
+
+        if msg.buttons[13] == 1 and msg.buttons[9] == 1:         # LeftJoystick (button) and RZ
+            self.node.get_logger().info(f'{self.colorize("Jump forward","red")}')           
+            command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'front_jump'}\""
+            self.execute_ros2_command(command)
  
         if msg.buttons[7] == 1:         #R (avancer vitesse normale)
             self.node.get_logger().info(f'{self.colorize("Move","orange")}')
