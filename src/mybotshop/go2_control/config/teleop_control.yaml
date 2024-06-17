@@ -21,8 +21,8 @@
       yaw: 0.6
     scale_angular_turbo:
       yaw: 1.2
-    enable_button: 9
-    enable_turbo_button: 7
+    enable_button: 7
+    enable_turbo_button: 9
 
   # twist_server_node:
     link_name: base_link
