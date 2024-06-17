@@ -60,31 +60,41 @@ class CustomJoyControls:
         self.node.get_logger().info(
             f'{self.colorize("GO2 Logitech F710 Joystick Activated","green")}', once=True)
 
-        if msg.axes[1] == 1.0 and msg.buttons[0] == 1:  # LeftUp + A
+
+        # Stand-up command      ->      Left joystick Up + A
+        if msg.axes[1] == 1.0 and msg.buttons[0] == 1:
             self.node.get_logger().info(
                 f'{self.colorize("Logitech F710 GO2 Stand up","yellow")}')
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'stand_up'}\""
             self.execute_ros2_command(command)
             time.sleep(3)
 
-        if msg.axes[1] == -1.0 and msg.buttons[0] == 1:  # LeftUp + A
+
+        # Stand-down command      ->      Left joystick Down + A
+        if msg.axes[1] == -1.0 and msg.buttons[0] == 1:  
             self.node.get_logger().info(
                 f'{self.colorize("Logitech F710 GO2 Stand down","yellow")}')
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'stand_down'}\"" 
             self.execute_ros2_command(command)
             time.sleep(2)
         
-        if msg.buttons[3] == 1:         # X
-            self.node.get_logger().info(f'{self.colorize("Recovery Stand","green")}')           
+
+        # Recovery stand command      ->      X
+        if msg.buttons[3] == 1:        
+            self.node.get_logger().info(f'{self.colorize("Recovery Stand","yellow")}')           
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'recovery_stand'}\""
             self.execute_ros2_command(command)
         
-        if msg.buttons[8] == 1:         # LZ
+
+        # Damp mode command      ->      LZ
+        if msg.buttons[8] == 1:         
             self.node.get_logger().info(f'{self.colorize("Damp mode","red")}')           
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'damp'}\""
             self.execute_ros2_command(command)
 
-        if msg.buttons[6] == 1:         # L
+
+        # Euler command      ->      L
+        if msg.buttons[6] == 1:       
             self.node.get_logger().info(
                 f'{self.colorize("Euler","orange")}')
 
@@ -95,12 +105,16 @@ class CustomJoyControls:
 
             self.euler_pub.publish(twist)
 
-        if msg.buttons[13] == 1 and msg.buttons[9] == 1:         # LeftJoystick (button) and RZ
+
+        # Jump Forward command      ->      LeftJoystick (button) and RZ
+        if msg.buttons[13] == 1 and msg.buttons[9] == 1:         
             self.node.get_logger().info(f'{self.colorize("Jump forward","red")}')           
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'front_jump'}\""
             self.execute_ros2_command(command)
- 
-        if msg.buttons[7] == 1:         #R (avancer vitesse normale)
+
+
+        # Move with low velocity command       ->      R + joystick
+        if msg.buttons[7] == 1:
             self.node.get_logger().info(f'{self.colorize("Move","orange")}')
             twist = Twist()
             twist.linear.x = msg.axes[1] * 0.5   
@@ -108,7 +122,9 @@ class CustomJoyControls:
             twist.angular.z = msg.axes[2] * 0.5  
             self.move_pub.publish(twist)
 
-        if msg.buttons[9] == 1:         #RZ
+
+        # Move with high velocity command      ->      RZ + joystick
+        if msg.buttons[9] == 1:         
             self.node.get_logger().info(f'{self.colorize("Move Faster, be carreful","orange")}')
             twist = Twist()
             twist.linear.x = msg.axes[1]   
@@ -116,20 +132,25 @@ class CustomJoyControls:
             twist.angular.z = msg.axes[2] 
             self.move_pub.publish(twist)
         
-        if msg.buttons[4] == 1:         #Y
+
+        # Switch avoid mode command      ->      Y
+        if msg.buttons[4] == 1:
             self.node.get_logger().info(f'{self.colorize("Switch avoid mode","yellow")}')           
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'obstacle_avoidance'}\""
             self.execute_ros2_command(command)
 
-        if msg.buttons[1] == 1:         #B
+
+        # Change the type of walk (economic or classic)      ->      B
+        # Classic walk allows more difficult terrain, climb stairs, ...
+        if msg.buttons[1] == 1:        
             if self.activate == False:
                 self.activate = True
-                self.node.get_logger().info(f'{self.colorize("Enter economic walk","blue")}')           
+                self.node.get_logger().info(f'{self.colorize("Enter economic walk","yellow")}')           
                 command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'gait_type_economic'}\""
                 self.execute_ros2_command(command)
             else :
                 self.activate = False
-                self.node.get_logger().info(f'{self.colorize("Enter classical walk","blue")}')           
+                self.node.get_logger().info(f'{self.colorize("Enter classic walk","yellow")}')           
                 command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'gait_type_classic'}\""
                 self.execute_ros2_command(command)
         
