@@ -71,45 +71,57 @@ class CustomJoyControls:
             #"ros2 service call /modes go2_interface/srv/Go2Modes \"{request_data: 'stand_down'}\""
             self.execute_ros2_command(command)
             time.sleep(2)
-
-        # if msg.axes[5] == -1.0 and msg.buttons[1] == 1: # RT + B
-        #     self.node.get_logger().info(f'{self.colorize("Logitech F710 GO2 Docking Manuever","yellow")}')
-        #     command = "ros2 service call /go2/dock std_srvs/srv/Trigger \"{}\""
-        #     self.execute_ros2_command(command)
-        #     time.sleep(2)
-
-        if msg.axes[2] == -1.0 and msg.buttons[1] == 1:  # LT + B
+        
+        if msg.buttons[3] == 1:         # X
             self.node.get_logger().info(
-                f'{self.colorize("Open Manipulator Gripper Close","orange")}')
-            action_command = "ros2 action send_goal /open_manipulator/gripper_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory -f \"{trajectory: { joint_names: [gripper], points: [ { positions: [1.0], time_from_start: { sec: 0.1 } }, ] }}\""
-            self.execute_ros2_command(action_command)
+                f'{self.colorize("Euler","orange")}')
+            command = "ros2 service call /modes go2_interface/srv/Go2Modes \"{request_data: 'euler'}\"";"ros2 service call /modes go2_interface/srv/Go2Modes \"{request_data: 'balance_stand'}\""
+            self.execute_ros2_command(command)
+            time.sleep(2)
+        
 
-        if msg.axes[2] == -1.0 and msg.buttons[2] == 1:  # LT + X
-            self.node.get_logger().info(
-                f'{self.colorize("Open Manipulator Gripper Open","orange")}')
-            action_command = "ros2 action send_goal /open_manipulator/gripper_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory -f \"{trajectory: { joint_names: [gripper], points: [ { positions: [-1.0], time_from_start: { sec: 0.1 } }, ] }}\""
-            self.execute_ros2_command(action_command)
+        
+# ______________________________________________________________________________________________________________________________________________________
+# COMMAND FOR THE GRIPPER : 
 
-        # Move open manipulator to home pose
-        if msg.axes[2] == -1.0 and msg.axes[7] == -1.0:  # LT + Down
-            self.node.get_logger().info(
-                f'{self.colorize("Open Manipulator Home Pose","orange")}')
-            action_command2 = "ros2 action send_goal /open_manipulator/joint_trajectory_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory -f \"{trajectory: { joint_names: [joint1, joint2, joint3, joint4], points: [ { positions: [0.0, -1.7, 1.4, 1.2], time_from_start: { sec: 1.5} }, ] }}\""
-            self.execute_ros2_command(action_command2)
+        # # if msg.axes[5] == -1.0 and msg.buttons[1] == 1: # RT + B
+        # #     self.node.get_logger().info(f'{self.colorize("Logitech F710 GO2 Docking Manuever","yellow")}')
+        # #     command = "ros2 service call /go2/dock std_srvs/srv/Trigger \"{}\""
+        # #     self.execute_ros2_command(command)
+        # #     time.sleep(2)
 
-        # Move open manipulator to transport pose
-        if msg.axes[2] == -1.0 and msg.axes[6] == -1.0:  # LT + Right
-            self.node.get_logger().info(
-                f'{self.colorize("Open Manipulator Stand Pose","orange")}')
-            action_command2 = "ros2 action send_goal /open_manipulator/joint_trajectory_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory -f \"{trajectory: { joint_names: [joint1, joint2, joint3, joint4], points: [ { positions: [0.0, -1.169, 1.378, -0.261], time_from_start: { sec: 2 } }, ] }}\""
-            self.execute_ros2_command(action_command2)
+        # if msg.axes[2] == -1.0 and msg.buttons[1] == 1:  # LT + B
+        #     self.node.get_logger().info(
+        #         f'{self.colorize("Open Manipulator Gripper Close","orange")}')
+        #     action_command = "ros2 action send_goal /open_manipulator/gripper_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory -f \"{trajectory: { joint_names: [gripper], points: [ { positions: [1.0], time_from_start: { sec: 0.1 } }, ] }}\""
+        #     self.execute_ros2_command(action_command)
+
+        # if msg.axes[2] == -1.0 and msg.buttons[2] == 1:  # LT + X
+        #     self.node.get_logger().info(
+        #         f'{self.colorize("Open Manipulator Gripper Open","orange")}')
+        #     action_command = "ros2 action send_goal /open_manipulator/gripper_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory -f \"{trajectory: { joint_names: [gripper], points: [ { positions: [-1.0], time_from_start: { sec: 0.1 } }, ] }}\""
+        #     self.execute_ros2_command(action_command)
+
+        # # Move open manipulator to home pose
+        # if msg.axes[2] == -1.0 and msg.axes[7] == -1.0:  # LT + Down
+        #     self.node.get_logger().info(
+        #         f'{self.colorize("Open Manipulator Home Pose","orange")}')
+        #     action_command2 = "ros2 action send_goal /open_manipulator/joint_trajectory_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory -f \"{trajectory: { joint_names: [joint1, joint2, joint3, joint4], points: [ { positions: [0.0, -1.7, 1.4, 1.2], time_from_start: { sec: 1.5} }, ] }}\""
+        #     self.execute_ros2_command(action_command2)
+
+        # # Move open manipulator to transport pose
+        # if msg.axes[2] == -1.0 and msg.axes[6] == -1.0:  # LT + Right
+        #     self.node.get_logger().info(
+        #         f'{self.colorize("Open Manipulator Stand Pose","orange")}')
+        #     action_command2 = "ros2 action send_goal /open_manipulator/joint_trajectory_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory -f \"{trajectory: { joint_names: [joint1, joint2, joint3, joint4], points: [ { positions: [0.0, -1.169, 1.378, -0.261], time_from_start: { sec: 2 } }, ] }}\""
+        #     self.execute_ros2_command(action_command2)
             
-        # Move open manipulator to stand pose
-        if msg.axes[2] == -1.0 and msg.axes[7] == 1.0:  # LT + Up
-            self.node.get_logger().info(
-                f'{self.colorize("Open Manipulator Stand Pose","orange")}')
-            action_command2 = "ros2 action send_goal /open_manipulator/joint_trajectory_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory -f \"{trajectory: { joint_names: [joint1, joint2, joint3, joint4], points: [ { positions: [0.0, -0.575, -0.610, 1.134], time_from_start: { sec: 2 } }, ] }}\""
-            self.execute_ros2_command(action_command2)
+        # # Move open manipulator to stand pose
+        # if msg.axes[2] == -1.0 and msg.axes[7] == 1.0:  # LT + Up
+        #     self.node.get_logger().info(
+        #         f'{self.colorize("Open Manipulator Stand Pose","orange")}')
+        #     action_command2 = "ros2 action send_goal /open_manipulator/joint_trajectory_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory -f \"{trajectory: { joint_names: [joint1, joint2, joint3, joint4], points: [ { positions: [0.0, -0.575, -0.610, 1.134], time_from_start: { sec: 2 } }, ] }}\""
+        #     self.execute_ros2_command(action_command2)
 
     def execute_ros2_command(self, command):
         try:
