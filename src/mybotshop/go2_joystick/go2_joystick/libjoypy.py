@@ -92,6 +92,13 @@ class CustomJoyControls:
             twist.linear.y = msg.axes[0] * 0.5   
             twist.angular.z = msg.axes[2] * 0.5  
             self.move_pub.publish(twist)
+        
+        if msg.buttons[4] == 1:
+            self.node.get_logger().info(f'{self.colorize("Switch avoid mode","orange")}')           
+            command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'obstacle_avoidance'}\""
+            self.execute_ros2_command(command)
+            time.sleep(1)
+
 
         if msg.buttons[1] == 1:         #B
             if self.activate == False:
@@ -101,7 +108,7 @@ class CustomJoyControls:
                 self.execute_ros2_command(command)
             else :
                 self.activate = False
-                self.node.get_logger().info(f'{self.colorize("Enter economic walk","orange")}')           
+                self.node.get_logger().info(f'{self.colorize("Enter classical walk","orange")}')           
                 command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'gait_type_classic'}\""
                 self.execute_ros2_command(command)
 
