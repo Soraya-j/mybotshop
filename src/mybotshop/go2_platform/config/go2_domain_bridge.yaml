@@ -1,10 +1,19 @@
-name: go2_domain_bridge
+name: go2_unit_49702_domain_bridge
 from_domain: 0
 to_domain: 10
 topics:
-  sportmodestate:
+  /lf/sportmodestate:
     type: unitree_go/msg/SportModeState
-  utlidar/cloud:
+    remap: go2_unit_49702/sportmodestate
+  /utlidar/cloud_deskewed:
     type: sensor_msgs/msg/PointCloud2
-  utlidar/robot_odom:
+    remap: go2_unit_49702/utlidar/cloud
+  /utlidar/cloud:
+    type: sensor_msgs/msg/PointCloud2
+    remap: go2_unit_49702/utlidar/cloud/wheeled
+  /utlidar/robot_odom:
     type: nav_msgs/msg/Odometry
+    remap: go2_unit_49702/utlidar/robot_odom
+  /lf/lowstate:
+    type: unitree_go/msg/LowState
+    remap: go2_unit_49702/lf/lowstate
