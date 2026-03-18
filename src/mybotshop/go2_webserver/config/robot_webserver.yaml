@@ -1,0 +1,49 @@
+#@author    Salman Omar Sohail <support@mybotshop.de>
+#@copyright (c) 2025, MYBOTSHOP GmbH, Inc., All rights reserved.
+
+/**:
+  ros__parameters:
+    robot_map_topic: "map"
+    robot_cmd_vel: "webserver/cmd_vel"
+    robot_twist_stamped: False
+    robot_odom_topic: "utlidar/robot_odom"
+    robot_e_stop: "e_stop"
+    robot_gps_lat: 50.95359
+    robot_gps_lon: 6.60174
+    robot_password: "123"
+    robot_gps_topic: "fixposition/odometry_llh"
+    robot_battery_topic: "sensor/battery/state"
+    robot_joint_states_topic: "joint_states"
+    robot_diagnostics_topic: "diagnostics"
+    robot_navigation_package: "go2_navigation"
+    robot_slam_launch: "slam.launch.py"
+    robot_map_navi_launch: "map_navi.launch.py"
+    robot_map_save_path: "/opt/mybotshop/src/mybotshop/go2_navigation/maps/custom_map"
+    robot_webserver: "go2-webserver"
+    robot_max_linear_velocity: 2.0
+    robot_max_angular_velocity: 2.0
+    robot_home_dir: "/home/unitree"
+    robot_rosbag_dir: "/opt/mybotshop/bags/"
+    robot_rosbag_storage: 1000000000
+    robot_rosbag_duration: 1800
+    robot_services:
+      [
+        "go2-teleop",
+        "go2-hesai-xt16",
+        "go2-webserver",
+        "go2-laserscan",
+        "go2-description",
+        "go2-domain-bridge",
+        # "go2-sensor-fusion",
+        "go2-inbuilt-camera",
+        "go2-state-publisher",
+        # "go2-obstacle-stopper",
+        # "go2-realsense-d435i",
+        "go2-hardware-controller",
+      ]
+    web_security: true
+    web_user: "admin"
+    web_password: "mybotshop"
+    web_server_ip: "0.0.0.0"
+    web_server_port: 9000
+    web_server_threads: 2

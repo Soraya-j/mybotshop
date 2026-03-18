@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<!--
+Software License Agreement (BSD)
+
+@author    Salman Omar Sohail <support@mybotshop.de>
+@copyright (c) 2025, MYBOTSHOP GmbH, Inc., All rights reserved.
+-->
+
+<head>
+    <title>Safety Instructions - Robot Webserver</title>
+    <meta name="author" content="MYBOTSHOP - Salman Omar Sohail">
+    <link rel="icon" href="../static/media/logos/mbs_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/all.min.css" type="text/css" />
+    <script src="../static/scripts/common_script.js" defer></script>
+    <script src="../static/scripts/circuitry_background_script.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar"> </div>
+    <div class="container">
+
+        <!-- Circuitry Background -->
+        <canvas id="circuitCanvas"></canvas>
+
+        <!-- Background Media -->
+        <div class="background-media">
+            <img src="../static/media/wallpaper/wallpaper.webp" alt="Background GIF">
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="quick-nav">
+            <a href="#emergency"><i class="fas fa-ambulance"></i> Emergency</a>
+            <a href="#checklist"><i class="fas fa-clipboard-check"></i> Checklist</a>
+            <a href="#symbols"><i class="fas fa-icons"></i> Symbols</a>
+            <a href="#amr"><i class="fas fa-robot"></i> AMR Safety</a>
+            <a href="#manipulator"><i class="fas fa-hand-paper"></i> Manipulator</a>
+            <a href="#battery"><i class="fas fa-battery-full"></i> Battery</a>
+            <a href="#maintenance"><i class="fas fa-wrench"></i> Maintenance</a>
+            <a href="#environment"><i class="fas fa-cloud-sun"></i> Environment</a>
+            <a href="#standards"><i class="fas fa-certificate"></i> Standards</a>
+        </div>
+
+        <!-- Emergency Contact Panel -->
+        <div class="panel-container">
+            <div class="panel safety-panel emergency-panel" id="emergency" style="flex: 1;">
+                <h2>Emergency <span style="color: #f44336;">Response</span></h2>
+                <hr class="heading-line">
+                <p>In case of emergency, immediately press the E-STOP button and contact the appropriate services.</p>
+                <div class="emergency-grid">
+                    <div class="emergency-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div><strong>Emergency Services</strong><span>112 (EU) / 911 (US)</span></div>
+                    </div>
+                    <div class="emergency-item">
+                        <i class="fas fa-first-aid"></i>
+                        <div><strong>First Aid Kit</strong><span>Locate before operation</span></div>
+                    </div>
+                    <div class="emergency-item">
+                        <i class="fas fa-fire-extinguisher"></i>
+                        <div><strong>Fire Extinguisher</strong><span>Know locations</span></div>
+                    </div>
+                    <div class="emergency-item">
+                        <i class="fas fa-stop-circle"></i>
+                        <div><strong>E-STOP Button</strong><span>Identify before operation</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pre-Operation Checklist, Safety Symbols & Notes Row -->
+        <div class="panel-container">
+            <div class="panel safety-panel checklist-panel" id="checklist">
+                <h2>Pre-Operation <span style="color: var(--project-color);">Checklist</span></h2>
+                <hr class="heading-line">
+                <div class="checklist-header">
+
+                    <div class="checklist-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <span class="progress-text" id="progressText">0/8</span>
+                        <button class="checklist-reset" onclick="resetChecklist()"><i class="fas fa-redo"></i>
+                            </button>
+                    </div>
+                </div>
+                <div class="checklist-items" id="checklistItems">
+                    <div class="checklist-item" data-item="1">
+                        <div class="check-box"><i class="fas fa-check"></i></div><span>Emergency stop locations
+                            identified and accessible</span>
+                    </div>
+                    <div class="checklist-item" data-item="2">
+                        <div class="check-box"><i class="fas fa-check"></i></div><span>Work area clear of obstacles and
+                            unauthorized personnel</span>
+                    </div>
+                    <div class="checklist-item" data-item="3">
+                        <div class="check-box"><i class="fas fa-check"></i></div><span>Robot visual inspection completed
+                            (no visible damage)</span>
+                    </div>
+                    <div class="checklist-item" data-item="4">
+                        <div class="check-box"><i class="fas fa-check"></i></div><span>Battery level checked and
+                            sufficient for operation</span>
+                    </div>
+                    <div class="checklist-item" data-item="5">
+                        <div class="check-box"><i class="fas fa-check"></i></div><span>Sensors and safety systems
+                            functional</span>
+                    </div>
+                    <div class="checklist-item" data-item="6">
+                        <div class="check-box"><i class="fas fa-check"></i></div><span>Communication systems
+                            operational</span>
+                    </div>
+                    <div class="checklist-item" data-item="7">
+                        <div class="check-box"><i class="fas fa-check"></i></div><span>Appropriate PPE worn (if
+                            required)</span>
+                    </div>
+                    <div class="checklist-item" data-item="8">
+                        <div class="check-box"><i class="fas fa-check"></i></div><span>Other personnel notified of robot
+                            operation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel safety-panel" id="symbols">
+                <h2>Safety <span style="color: var(--project-color);">Symbols</span></h2>
+                <hr class="heading-line">
+                <div class="symbol-grid">
+                    <div class="symbol-item">
+                        <div class="symbol-icon danger"><i class="fas fa-skull-crossbones"></i></div>
+                        <div class="symbol-text"><strong>Danger</strong><span>Risk of death or serious injury</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon warning"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="symbol-text"><strong>Warning</strong><span>Potential hazard</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon warning"><i class="fas fa-exclamation-circle"></i></div>
+                        <div class="symbol-text"><strong>Caution</strong><span>Minor hazard</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon info"><i class="fas fa-hard-hat"></i></div>
+                        <div class="symbol-text"><strong>Mandatory</strong><span>Required action or PPE</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon electrical"><i class="fas fa-bolt"></i></div>
+                        <div class="symbol-text"><strong>Electrical</strong><span>Risk of electric shock</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon safe"><i class="fas fa-check-circle"></i></div>
+                        <div class="symbol-text"><strong>Safe</strong><span>Safety equipment location</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon danger"><i class="fas fa-ban"></i></div>
+                        <div class="symbol-text"><strong>Prohibited</strong><span>Action not allowed</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon danger"><i class="fas fa-fire-alt"></i></div>
+                        <div class="symbol-text"><strong>Flammable</strong><span>Fire hazard present</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon warning"><i class="fas fa-hand-paper"></i></div>
+                        <div class="symbol-text"><strong>Pinch Point</strong><span>Crushing hazard</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon warning"><i class="fas fa-cogs"></i></div>
+                        <div class="symbol-text"><strong>Moving Parts</strong><span>Rotating machinery</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon warning"><i class="fas fa-temperature-high"></i></div>
+                        <div class="symbol-text"><strong>Hot Surface</strong><span>Risk of burns</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon warning"><i class="fas fa-radiation"></i></div>
+                        <div class="symbol-text"><strong>Radiation</strong><span>Laser or RF hazard</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon info"><i class="fas fa-glasses"></i></div>
+                        <div class="symbol-text"><strong>Eye Protection</strong><span>Safety glasses required</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon info"><i class="fas fa-deaf"></i></div>
+                        <div class="symbol-text"><strong>Hearing</strong><span>Ear protection required</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon info"><i class="fas fa-mitten"></i></div>
+                        <div class="symbol-text"><strong>Hand Protection</strong><span>Gloves required</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon safe"><i class="fas fa-first-aid"></i></div>
+                        <div class="symbol-text"><strong>First Aid</strong><span>Medical kit location</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon safe"><i class="fas fa-door-open"></i></div>
+                        <div class="symbol-text"><strong>Emergency Exit</strong><span>Evacuation route</span></div>
+                    </div>
+                    <div class="symbol-item">
+                        <div class="symbol-icon danger"><i class="fas fa-smoking-ban"></i></div>
+                        <div class="symbol-text"><strong>No Smoking</strong><span>Smoking prohibited</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AMR Safety & Manipulator Safety Row -->
+        <div class="panel-container">
+            <div class="panel safety-panel" id="amr">
+                <h2>Autonomous <span style="color: var(--project-color);">Robot</span> Safety</h2>
+                <hr class="heading-line">
+                <p>When deploying autonomous mobile robots, prioritizing safety procedures is essential to prevent
+                    accidents and ensure secure operations.</p>
+
+                <div class="console-card-header">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Work Area Safety</span>
+                </div>
+
+                <ul>
+                    <li>Maintain a clean and well-lit work area. Cluttered or poorly illuminated spaces can impede the
+                        proper functioning of sensors and navigation systems.</li>
+                    <li class="critical">Avoid operating autonomous mobile robots in explosive atmospheres, such as
+                        areas with flammable liquids, gases, or dust.</li>
+                    <li>Keep bystanders and unauthorized personnel at a safe distance during robot operation to prevent
+                        interference with autonomous navigation.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-bolt"></i>
+                    <span>Electrical Safety</span>
+                </div>
+                <ul>
+                    <li class="critical">Ensure the robot's power system adheres to electrical safety standards.
+                        Regularly inspect and maintain power components.</li>
+                    <li class="warning">Implement mechanisms to protect the robot from adverse weather conditions, such
+                        as rain or wet environments.</li>
+                    <li>Regularly inspect power cables and connections and replace damaged components promptly.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-route"></i>
+                    <span>Navigation Safety</span>
+                </div>
+                <ul>
+                    <li class="critical">Implement obstacle detection and avoidance systems to prevent collisions with
+                        objects, people, or other robots.</li>
+                    <li>Define and enforce safety zones within the robot's operational area to minimize unintended
+                        interactions.</li>
+                    <li>Regularly calibrate and test the robot's navigation sensors and systems to ensure accurate
+                        performance.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Emergency Response</span>
+                </div>
+                <ul>
+                    <li class="critical">Install an emergency stop mechanism to quickly halt the robot's operation in
+                        case of unforeseen circumstances.</li>
+                    <li>Clearly mark and communicate emergency stop locations throughout the robot's operational area.
+                    </li>
+                    <li>Conduct regular emergency response drills to ensure personnel are familiar with procedures.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-lock"></i>
+                    <span>Data Security & Privacy</span>
+                </div>
+                <ul>
+                    <li>Implement robust cybersecurity measures to protect the robot's control systems and data from
+                        unauthorized access.</li>
+                    <li>Ensure compliance with privacy regulations when collecting, storing, or transmitting sensor
+                        data.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-user-friends"></i>
+                    <span>Human Interaction Safety</span>
+                </div>
+                <ul>
+                    <li>Integrate sensors and communication systems to detect and respond to the presence of humans in
+                        the robot's vicinity.</li>
+                    <li>Clearly communicate the robot's operational status and intentions using visual and audible
+                        signals.</li>
+                    <li>Establish protocols for safe human-robot collaboration in shared workspaces.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Residual Risks</span>
+                </div>
+                <ul>
+                    <li class="warning">Impairment of sensor functionality due to environmental conditions.</li>
+                    <li class="warning">Risk of collisions in crowded or dynamic environments.</li>
+                    <li class="warning">Cybersecurity vulnerabilities may exist despite protective measures.</li>
+                    <li class="warning">Unintended human interactions due to unforeseen circumstances.</li>
+                </ul>
+            </div>
+
+            <div class="panel safety-panel" id="manipulator">
+                <h2>Robotic <span style="color: var(--project-color);">Manipulator</span> Safety</h2>
+                <hr class="heading-line">
+                <p>When deploying robotic manipulators, it is imperative to prioritize safety procedures to mitigate
+                    risks and ensure secure operations.</p>
+
+                <div class="console-card-header">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Work Area Safety</span>
+                </div>
+                <ul>
+                    <li>Maintain a clean and well-organized work area. Cluttered or inadequately lit spaces can impede
+                        sensor functioning.</li>
+                    <li class="critical">Avoid operating in hazardous environments with corrosive substances, extreme
+                        temperatures, or sharp objects.</li>
+                    <li>Ensure only authorized personnel are present during manipulator operation.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-bolt"></i>
+                    <span>Electrical Safety</span>
+                </div>
+                <ul>
+                    <li class="critical">Ensure the manipulator's power system adheres to IEC and ISO electrical safety
+                        standards.</li>
+                    <li class="warning">Implement safeguards to protect from adverse conditions like moisture or extreme
+                        temperatures.</li>
+                    <li>Regularly inspect power cables and connections, replacing damaged components promptly.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-hand-rock"></i>
+                    <span>Manipulation Safety</span>
+                </div>
+                <ul>
+                    <li class="critical">Implement collision detection systems to prevent unintended contact with
+                        objects, humans, or equipment.</li>
+                    <li>Define and enforce safety zones around the manipulator's workspace.</li>
+                    <li>Regularly calibrate and test the manipulator's sensors and systems.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Emergency Response</span>
+                </div>
+                <ul>
+                    <li class="critical">Install an emergency stop mechanism to swiftly halt manipulator operation.</li>
+                    <li>Clearly mark and communicate emergency stop locations.</li>
+                    <li>Conduct regular emergency response drills.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-lock"></i>
+                    <span>Data Security & Privacy</span>
+                </div>
+                <ul>
+                    <li>Implement robust cybersecurity measures to safeguard control systems and data.</li>
+                    <li>Ensure compliance with privacy regulations for sensor-captured data.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-user-friends"></i>
+                    <span>Human Interaction Safety</span>
+                </div>
+                <ul>
+                    <li>Integrate sensors to detect and respond to human presence.</li>
+                    <li>Communicate operational status using visual and audible signals.</li>
+                    <li>Establish protocols for safe human-robot collaboration.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Residual Risks</span>
+                </div>
+                <ul>
+                    <li class="warning">Sensor functionality impairment may compromise safety.</li>
+                    <li class="warning">Risk of collisions during complex manipulation tasks.</li>
+                    <li class="warning">Unintended human interactions due to unforeseen circumstances.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Battery Safety & Maintenance Row -->
+        <div class="panel-container">
+            <div class="panel safety-panel" id="battery">
+                <h2>Battery <span style="color: var(--project-color);">Safety</span></h2>
+                <hr class="heading-line">
+                <p>Proper battery handling and maintenance is critical for safe robot operation. Lithium-ion batteries
+                    require special care.</p>
+
+                <div class="console-card-header">
+                    <i class="fas fa-charging-station"></i>
+                    <span>Charging Safety</span>
+                </div>
+                <ul>
+                    <li class="critical">Only use the manufacturer-provided charger. Third-party chargers may cause fire
+                        or damage.</li>
+                    <li class="critical">Never leave batteries charging unattended. Monitor for unusual heat, swelling,
+                        or odors.</li>
+                    <li class="warning">Charge batteries at room temperature (15-25°C). Avoid extreme conditions.</li>
+                    <li>Keep a Class D fire extinguisher nearby. Water can worsen lithium fires.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-hand-holding"></i>
+                    <span>Handling & Storage</span>
+                </div>
+                <ul>
+                    <li class="critical">Never puncture, crush, drop, or expose batteries to physical damage.</li>
+                    <li class="warning">Keep batteries dry. Water exposure can cause short circuits.</li>
+                    <li>Store batteries away from direct sunlight and heat sources (15-25°C ideal).</li>
+                    <li>For long-term storage, maintain batteries at 40-60% charge.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Warning Signs</span>
+                </div>
+                <ul>
+                    <li class="critical"><strong>Swelling:</strong> Immediately discontinue use if battery appears
+                        swollen or deformed.</li>
+                    <li class="critical"><strong>Overheating:</strong> If battery becomes excessively hot, disconnect
+                        immediately.</li>
+                    <li class="warning"><strong>Unusual Odor:</strong> Chemical or burning smells indicate potential
+                        failure.</li>
+                    <li class="warning"><strong>Rapid Discharge:</strong> Batteries draining unusually fast may have
+                        internal shorts.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-recycle"></i>
+                    <span>Disposal</span>
+                </div>
+                <ul>
+                    <li class="critical">Never dispose of batteries in regular trash. They can cause fires in waste
+                        facilities.</li>
+                    <li>Use designated battery recycling facilities.</li>
+                    <li>Tape battery terminals before disposal to prevent short circuits.</li>
+                </ul>
+            </div>
+
+            <div class="panel safety-panel" id="maintenance">
+                <h2>Maintenance <span style="color: var(--project-color);">Safety</span></h2>
+                <hr class="heading-line">
+                <p>Safe maintenance practices protect personnel and preserve robot functionality. Always follow
+                    lockout/tagout procedures.</p>
+
+                <div class="console-card-header">
+                    <i class="fas fa-lock"></i>
+                    <span>Lockout/Tagout (LOTO)</span>
+                </div>
+                <ul>
+                    <li class="critical"><strong>Power Down:</strong> Always shut down the robot completely before
+                        maintenance.</li>
+                    <li class="critical"><strong>Lock Out:</strong> Use physical locks on power disconnects.</li>
+                    <li class="warning"><strong>Tag Out:</strong> Attach warning tags indicating who locked out and why.
+                    </li>
+                    <li><strong>Verify:</strong> Attempt to start equipment to verify lockout is effective.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-hard-hat"></i>
+                    <span>Personal Protective Equipment</span>
+                </div>
+                <ul>
+                    <li><strong>Eye Protection:</strong> Wear safety glasses when working with debris-producing
+                        components.</li>
+                    <li><strong>Gloves:</strong> Use cut-resistant for sharp components, insulated for electrical work.
+                    </li>
+                    <li><strong>Clothing:</strong> Avoid loose clothing and jewelry that could catch in moving parts.
+                    </li>
+                    <li><strong>Footwear:</strong> Wear safety shoes with slip-resistant soles.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-tools"></i>
+                    <span>Safe Procedures</span>
+                </div>
+                <ul>
+                    <li class="warning">Always refer to official maintenance documentation.</li>
+                    <li>Use the buddy system for complex maintenance tasks.</li>
+                    <li>Use proper tools for the job. Improvised tools increase risk.</li>
+                    <li>Document all maintenance activities and findings.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Software Updates</span>
+                </div>
+                <ul>
+                    <li class="warning"><strong>Backup First:</strong> Always create backups before updates.</li>
+                    <li><strong>Power Supply:</strong> Ensure stable power during updates. Use UPS if available.</li>
+                    <li><strong>Test After:</strong> Thoroughly test robot functionality after updates.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Environmental Conditions & Standards Row -->
+        <div class="panel-container">
+            <div class="panel safety-panel" id="environment">
+                <h2>Environmental <span style="color: var(--project-color);">Conditions</span></h2>
+                <hr class="heading-line">
+                <p>Operating within specified environmental parameters ensures safe and reliable robot performance.</p>
+
+                <div class="console-card-header">
+                    <i class="fas fa-thermometer-half"></i>
+                    <span>Temperature</span>
+                </div>
+                <ul>
+                    <li><strong>Operating Range:</strong> Typical 0°C to 40°C. Check specifications for your model.</li>
+                    <li class="warning"><strong>High Temperature:</strong> Excessive heat causes battery degradation and
+                        electronic failures.</li>
+                    <li class="warning"><strong>Low Temperature:</strong> Cold reduces battery capacity and affects
+                        lubricant viscosity.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-tint"></i>
+                    <span>Humidity & Water</span>
+                </div>
+                <ul>
+                    <li><strong>Humidity Range:</strong> Typical 20-80% non-condensing.</li>
+                    <li class="warning"><strong>Water Ingress:</strong> Check IP rating. IP65+ required for outdoor/wet
+                        environments.</li>
+                    <li class="critical"><strong>Condensation:</strong> Allow robot to acclimate when moving between
+                        temperature zones.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-wind"></i>
+                    <span>Dust & Particles</span>
+                </div>
+                <ul>
+                    <li class="warning"><strong>Dust Protection:</strong> Check IP rating. IP6X provides complete dust
+                        protection.</li>
+                    <li><strong>Regular Cleaning:</strong> Clean sensors, vents, and filters regularly in dusty
+                        environments.</li>
+                    <li class="warning"><strong>Sensor Occlusion:</strong> Dust on sensors (LiDAR, cameras) impairs
+                        navigation.</li>
+                </ul>
+
+                <div class="console-card-header">
+                    <i class="fas fa-mountain"></i>
+                    <span>Terrain & Surface</span>
+                </div>
+                <ul>
+                    <li class="warning"><strong>Slopes:</strong> Check maximum incline rating. Typical AMRs handle 5-10°
+                        slopes.</li>
+                    <li><strong>Surface Type:</strong> Smooth, hard floors are optimal. Carpet/gravel may reduce
+                        performance.</li>
+                    <li class="warning"><strong>Slippery Surfaces:</strong> Wet or oily floors reduce traction and cause
+                        navigation errors.</li>
+                </ul>
+            </div>
+
+            <div class="panel safety-panel" id="standards">
+                <h2>Relevant <span style="color: var(--project-color);">Standards</span> & Guidelines</h2>
+                <hr class="heading-line">
+                <p>International standards and guidelines for robotic safety compliance.</p>
+                <div class="standards-grid">
+                    <a href="https://www.iso.org/standard/75539.html" target="_blank" class="standard-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <div><strong>ISO 8373:2021</strong><span>Robotics — Vocabulary</span></div>
+                    </a>
+                    <a href="https://www.iso.org/standard/73933.html" target="_blank" class="standard-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <div><strong>ISO 10218-1:2025</strong><span>Safety requirements — Industrial robots</span></div>
+                    </a>
+                    <a href="https://www.iso.org/standard/73933.html" target="_blank" class="standard-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <div><strong>ISO 10218-2:2025</strong><span>Safety requirements — Robot applications</span>
+                        </div>
+                    </a>
+                    <a href="https://www.iso.org/standard/76769.html" target="_blank" class="standard-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <div><strong>ISO 23725:2024</strong><span>Fleet management interoperability</span></div>
+                    </a>
+                    <a href="https://www.iso.org/search.html?PROD_isoorg_en%5Bquery%5D=robotics" target="_blank"
+                        class="standard-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <div><strong>ISO Robotic Standards</strong><span>Complete collection</span></div>
+                    </a>
+                    <a href="https://www.osha.gov/robotics" target="_blank" class="standard-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <div><strong>OSHA Robotics Safety</strong><span>US workplace safety practices</span></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="panel safety-panel">
+                <h2>Additional <span style="color: var(--project-color);">Notes</span></h2>
+                <hr class="heading-line">
+                <ul>
+                    <li>WebGUI is currently in experimental phase</li>
+                    <li>WebGUI LLM functionality is disabled</li>
+                    <li>WebGUI SLAM functionality is disabled</li>
+                    <li>WebGUI Indoor Navigation is disabled</li>
+                    <li>WebGUI Outdoor Navigation is disabled</li>
+                </ul>
+            </div>
+        </div>
+
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top"><i
+                class="fas fa-arrow-up"></i> Top</button>
+
+        <script>
+            // Back to Top visibility
+            window.onscroll = function () {
+                const button = document.querySelector('.back-to-top');
+                if (document.documentElement.scrollTop > 200) {
+                    button.style.display = 'block';
+                } else {
+                    button.style.display = 'none';
+                }
+            };
+
+            // Smooth scroll for quick nav
+            document.querySelectorAll('.quick-nav a').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Interactive Checklist
+            const checklistItems = document.querySelectorAll('.checklist-item');
+            const progressFill = document.getElementById('progressFill');
+            const progressText = document.getElementById('progressText');
+            const totalItems = checklistItems.length;
+
+            function loadChecklistState() {
+                const saved = localStorage.getItem('safetyChecklist');
+                if (saved) {
+                    const checked = JSON.parse(saved);
+                    checklistItems.forEach(item => {
+                        if (checked.includes(item.dataset.item)) {
+                            item.classList.add('checked');
+                        }
+                    });
+                    updateProgress();
+                }
+            }
+
+            function saveChecklistState() {
+                const checked = [];
+                checklistItems.forEach(item => {
+                    if (item.classList.contains('checked')) {
+                        checked.push(item.dataset.item);
+                    }
+                });
+                localStorage.setItem('safetyChecklist', JSON.stringify(checked));
+            }
+
+            function updateProgress() {
+                const checked = document.querySelectorAll('.checklist-item.checked').length;
+                const percentage = (checked / totalItems) * 100;
+                progressFill.style.width = percentage + '%';
+                progressText.textContent = `${checked}/${totalItems}`;
+            }
+
+            checklistItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('checked');
+                    updateProgress();
+                    saveChecklistState();
+                });
+            });
+
+            function resetChecklist() {
+                checklistItems.forEach(item => item.classList.remove('checked'));
+                updateProgress();
+                localStorage.removeItem('safetyChecklist');
+            }
+
+            loadChecklistState();
+        </script>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer_"> </div>
+
+</body>
+
+</html>

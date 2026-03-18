@@ -1,0 +1,8 @@
+/**:
+  ros__parameters:
+    odom_topic: "/fixposition/odometry_enu_smooth"
+    frame_id: "odom"
+    child_frame_id: "base_link"
+    inverse_tf: False
+    use_sim_time: False
+    use_original_timestamp: True

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--
+Software License Agreement (BSD)
+
+@author    Salman Omar Sohail <support@mybotshop.de>
+@copyright (c) 2025, MYBOTSHOP GmbH, Inc., All rights reserved.
+-->
+<html>
+
+<head>
+    <title>Telemetry - Robot Webserver</title>
+    <link rel="icon" href="../static/media/logos/mbs_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/all.min.css" type="text/css" /> <!-- Font Awesome -->
+    <script src="../static/scripts/common_script.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns" defer></script>
+    <script src="../static/scripts/telemetry_script.js" defer></script>
+    <script src="../static/scripts/circuitry_background_script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar"></div>
+
+    <!-- Circuitry Background -->
+    <canvas id="circuitCanvas"></canvas>
+
+    <!-- Background Media -->
+    <div class="background-media">
+        <img src="../static/media/wallpaper/wallpaper.webp" alt="Background GIF">
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Telemetry Grid -->
+        <div class="telemetry-grid">
+
+            <!-- Panel 1: Battery Status -->
+            <div class="telem-card telem-battery">
+                <div class="telem-card-header">
+                    <div class="telem-icon battery-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <div class="telem-title">
+                        <h3>Battery</h3>
+                        <span class="telem-subtitle" id="b_state">—</span>
+                    </div>
+                    <div class="telem-status-indicator" id="battery_indicator"></div>
+                </div>
+                <div class="telem-card-body">
+                    <!-- Battery Gauge -->
+                    <div class="battery-gauge-container">
+                        <div class="battery-gauge">
+                            <div class="battery-gauge-fill" id="b_gauge_fill"></div>
+                            <div class="battery-gauge-text">
+                                <span class="battery-percent" id="b_pct_display">—</span>
+                                <span class="battery-unit">%</span>
+                            </div>
+                        </div>
+                        <div class="battery-tip"></div>
+                    </div>
+                    <!-- Battery Stats -->
+                    <div class="telem-stats-row">
+                        <div class="telem-stat">
+                            <i class="fas fa-bolt"></i>
+                            <span class="stat-label">Voltage</span>
+                            <span class="stat-value" id="b_volt">—</span>
+                        </div>
+                        <div class="telem-stat">
+                            <i class="fas fa-percentage"></i>
+                            <span class="stat-label">Charge</span>
+                            <span class="stat-value" id="b_pct">—</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 2: Position & GPS -->
+            <div class="telem-card telem-position">
+                <div class="telem-card-header">
+                    <div class="telem-icon position-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <div class="telem-title">
+                        <h3>Position</h3>
+                        <span class="telem-subtitle">GPS + Odometry</span>
+                    </div>
+                    <div class="telem-status-indicator" id="position_indicator"></div>
+                </div>
+                <div class="telem-card-body">
+                    <!-- Position Visualizer -->
+                    <div class="position-display">
+                        <div class="position-grid">
+                            <div class="position-axis">
+                                <span class="axis-label">X</span>
+                                <span class="axis-value" id="o_x">—</span>
+                                <span class="axis-unit">m</span>
+                            </div>
+                            <div class="position-axis">
+                                <span class="axis-label">Y</span>
+                                <span class="axis-value" id="o_y">—</span>
+                                <span class="axis-unit">m</span>
+                            </div>
+                        </div>
+                        <!-- Compass for Yaw -->
+                        <div class="mini-compass">
+                            <div class="compass-ring"></div>
+                            <div class="compass-needle" id="yaw_needle"></div>
+                            <span class="compass-value" id="o_yaw">—</span>
+                        </div>
+                    </div>
+                    <!-- GPS Coordinates -->
+                    <div class="gps-coordinates">
+                        <div class="gps-coord">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="coord-label">Lat</span>
+                            <span class="coord-value" id="g_lat">—</span>
+                        </div>
+                        <div class="gps-coord">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="coord-label">Lon</span>
+                            <span class="coord-value" id="g_lon">—</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 3: Velocity -->
+            <div class="telem-card telem-velocity">
+                <div class="telem-card-header">
+                    <div class="telem-icon velocity-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="telem-title">
+                        <h3>Velocity</h3>
+                        <span class="telem-subtitle">Linear & Angular</span>
+                    </div>
+                    <div class="telem-status-indicator" id="velocity_indicator"></div>
+                </div>
+                <div class="telem-card-body">
+                    <!-- Velocity Gauges -->
+                    <div class="velocity-gauges">
+                        <div class="velocity-gauge-item">
+                            <svg class="velocity-arc" viewBox="0 0 100 60">
+                                <path class="arc-bg" d="M10,55 A40,40 0 0,1 90,55" />
+                                <path class="arc-fill arc-linear" id="vx_arc" d="M10,55 A40,40 0 0,1 90,55" />
+                            </svg>
+                            <div class="gauge-info">
+                                <span class="gauge-value" id="o_vx">—</span>
+                                <span class="gauge-label">m/s</span>
+                            </div>
+                            <span class="gauge-title">Linear Vx</span>
+                        </div>
+                        <div class="velocity-gauge-item">
+                            <svg class="velocity-arc" viewBox="0 0 100 60">
+                                <path class="arc-bg" d="M10,55 A40,40 0 0,1 90,55" />
+                                <path class="arc-fill arc-angular" id="wz_arc" d="M10,55 A40,40 0 0,1 90,55" />
+                            </svg>
+                            <div class="gauge-info">
+                                <span class="gauge-value" id="o_wz">—</span>
+                                <span class="gauge-label">rad/s</span>
+                            </div>
+                            <span class="gauge-title">Angular ωz</span>
+                        </div>
+                    </div>
+                    <!-- Speed Bar -->
+                    <div class="speed-indicator">
+                        <div class="speed-bar">
+                            <div class="speed-fill" id="speed_fill"></div>
+                        </div>
+                        <div class="speed-labels">
+                            <span>0</span>
+                            <span>MAX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 4: IMU / Orientation -->
+            <div class="telem-card telem-imu">
+                <div class="telem-card-header">
+                    <div class="telem-icon imu-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="telem-title">
+                        <h3>IMU</h3>
+                        <span class="telem-subtitle">Orientation</span>
+                    </div>
+                    <div class="telem-status-indicator" id="imu_indicator"></div>
+                </div>
+                <div class="telem-card-body">
+                    <!-- 3D Orientation Visualization -->
+                    <div class="imu-display">
+                        <div class="orientation-cube-container">
+                            <div class="orientation-cube" id="imu_cube">
+                                <div class="cube-face front">F</div>
+                                <div class="cube-face back">B</div>
+                                <div class="cube-face right">R</div>
+                                <div class="cube-face left">L</div>
+                                <div class="cube-face top">T</div>
+                                <div class="cube-face bottom">B</div>
+                            </div>
+                        </div>
+                        <!-- RPY Values -->
+                        <div class="rpy-values">
+                            <div class="rpy-item roll">
+                                <div class="rpy-icon"><i class="fas fa-sync-alt"></i></div>
+                                <span class="rpy-label">Roll</span>
+                                <span class="rpy-value" id="i_roll">—</span>
+                            </div>
+                            <div class="rpy-item pitch">
+                                <div class="rpy-icon"><i class="fas fa-arrows-alt-v"></i></div>
+                                <span class="rpy-label">Pitch</span>
+                                <span class="rpy-value" id="i_pitch">—</span>
+                            </div>
+                            <div class="rpy-item yaw">
+                                <div class="rpy-icon"><i class="fas fa-compass"></i></div>
+                                <span class="rpy-label">Yaw</span>
+                                <span class="rpy-value" id="i_yaw">—</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 5: Joint States -->
+            <div class="telem-card telem-joints">
+                <div class="telem-card-header">
+                    <div class="telem-icon joints-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="telem-title">
+                        <h3>Joint States</h3>
+                        <span class="telem-subtitle">Position / Velocity / Effort</span>
+                    </div>
+                    <div class="telem-status-indicator" id="joints_indicator"></div>
+                </div>
+                <div class="telem-card-body">
+                    <div class="joints-container" id="joints_container">
+                        <div class="joints-loading">Waiting for joint data...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 6: Diagnostics -->
+            <div class="telem-card telem-diagnostics">
+                <div class="telem-card-header">
+                    <div class="telem-icon diagnostics-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="telem-title">
+                        <h3>Diagnostics</h3>
+                        <span class="telem-subtitle">System Health</span>
+                    </div>
+                    <div class="telem-status-indicator" id="diag_indicator"></div>
+                </div>
+                <div class="telem-card-body">
+                    <div class="diagnostics-container" id="diagnostics_container">
+                        <div class="diagnostics-loading">Waiting for diagnostics...</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer_"></div>
+</body>
+
+</html>

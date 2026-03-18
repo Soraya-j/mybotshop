@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<!--
+Software License Agreement (BSD)
+
+@author    Salman Omar Sohail <support@mybotshop.de>
+@copyright (c) 2025, MYBOTSHOP GmbH, Inc., All rights reserved.
+-->
+
+<head>
+    <title>Login - Robot Webserver</title>
+    <link rel="icon" href="../static/media/logos/mbs_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/all.min.css" type="text/css" /> <!-- Font Awesome -->
+    <script src="../static/scripts/common_script.js" defer></script>
+    <script src="../static/scripts/circuitry_background_script.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar"> </div>
+    <div class="container">
+
+        <!-- Circuitry Background -->
+        <canvas id="circuitCanvas"></canvas>
+
+        <!-- Background Media -->
+        <div class="background-media">
+            <img src="../static/media/wallpaper/wallpaper.webp" alt="Background">
+        </div>
+
+        <div class="panel-container-login">
+            <!-- Login Panel -->
+            <div class="panellogin system-panel">
+
+                <!-- Header -->
+                <div class="login-header">
+                    <div class="login-header-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <div class="login-header-text">
+                        <h2>Robot <span>Access</span></h2>
+                        <p>Secure Authentication Required</p>
+                    </div>
+                </div>
+
+                <!-- Login Form -->
+                <form action="{{ url_for('login') }}" method="POST" class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="username"><i class="fas fa-user"></i> Username</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="username" name="username" placeholder="Enter username" required autocomplete="username">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password"><i class="fas fa-lock"></i> Password</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" name="password" placeholder="Enter password" required autocomplete="current-password">
+                            <i class="fas fa-lock"></i>
+                            <button type="button" class="password-toggle" onclick="togglePassword()" aria-label="Toggle password visibility">
+                                <i class="fas fa-eye" id="toggleIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="submit" class="login-button" id="submitBtn">
+                        <span class="btn-text">Access System</span>
+                        <span class="btn-loader" style="display: none;"><i class="fas fa-spinner fa-spin"></i></span>
+                        <i class="fas fa-arrow-right btn-arrow"></i>
+                    </button>
+                </form>
+                <!-- /Login Form -->
+
+                <!-- Info Accordion -->
+                <div class="login-accordion">
+                    <!-- Disclaimer -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <i class="fas fa-info-circle accordion-icon info"></i>
+                            <span>Disclaimer</span>
+                            <i class="fas fa-chevron-down accordion-chevron"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                The reader acknowledges and agrees that any information or materials provided by
+                                <a href="https://www.mybotshop.de/">MYBOTSHOP GmbH</a> are for R&amp;D purposes
+                                only. Any kind of services are provided "AS IS" and without any representation or warranty of any
+                                kind, express or implied, including but not limited to any warranty of merchantability, fitness
+                                for a particular purpose, non-infringement, or any other warranty.
+                            </p>
+                            <p>
+                                <a href="https://www.mybotshop.de/">MYBOTSHOP GmbH</a> shall not be liable for any damages,
+                                including but not limited to direct, indirect, special, incidental, or consequential
+                                damages, arising out of or in connection with the use or inability to use the information or
+                                materials provided. This limitation on liability shall apply regardless of the form of action,
+                                whether in contract, tort, or otherwise.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Update Notes -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <i class="fas fa-cog accordion-icon config"></i>
+                            <span>Update Robot Panel</span>
+                            <i class="fas fa-chevron-down accordion-chevron"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="accordion-list">
+                                <li>Username and Password can be updated in <code>(robot)_webserver</code> config file.</li>
+                                <li>To apply the changes, execute the command <code>ros2 run (robot_bringup) startup_installer.py</code></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Warning -->
+                    <div class="accordion-item open">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <i class="fas fa-exclamation-triangle accordion-icon warning"></i>
+                            <span>Warning</span>
+                            <i class="fas fa-chevron-down accordion-chevron"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="accordion-list warning">
+                                <li>Click buttons once.</li>
+                                <li>Do not spam click!</li>
+                                <li>Button activation may take +2 seconds to a minute to complete.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Info Accordion -->
+
+            </div>
+
+            <!-- Safety Notice Panel -->
+            <div class="panellogin safety-panel">
+                <!-- Header -->
+                <div class="safety-header">
+                    <i class="fas fa-shield-halved safety-header-icon"></i>
+                    <div class="safety-header-text">
+                        <h2>Safety Notice</h2>
+                        <p>Authorized Personnel Only</p>
+                    </div>
+                </div>
+
+                <!-- Content Sections -->
+                <div class="safety-body">
+
+                    <!-- Important Notice -->
+                    <div class="safety-section warning">
+                        <div class="safety-section-header">
+                            <i class="fas fa-exclamation-circle" style="color: var(--project-error-color);"></i>
+                            <span style="color: var(--project-error-color);">Important</span>
+                        </div>
+                        <ul>
+                            <li>Operated by authorized trained personnel only.</li>
+                            <li>Follow all safety protocols and guidelines.</li>
+                            <li>Be aware of your surroundings and potential hazards.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pre-Operation Checklist -->
+                    <div class="safety-section checklist">
+                        <div class="safety-section-header">
+                            <i class="fas fa-clipboard-check"></i>
+                            <span>Pre-Operation Checklist</span>
+                        </div>
+                        <ul>
+                            <li>Ensure the robot is powered on and connected to the network.</li>
+                            <li>Check that all required services are running.</li>
+                            <li>Verify that the robot's sensors are functioning properly.</li>
+                            <li>Ensure the robot is in a safe environment for operation.</li>
+                            <li>Confirm that the robot's battery is charged and ready for use.</li>
+                            <li>Ensure the robot's navigation system is calibrated.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Safety Requirements -->
+                    <div class="safety-section safety">
+                        <div class="safety-section-header">
+                            <i class="fas fa-hard-hat"></i>
+                            <span>Safety Requirements</span>
+                        </div>
+                        <ul>
+                            <li>Ensure the emergency stop button is accessible and functional.</li>
+                            <li>Ensure the communication systems are operational.</li>
+                            <li>Check that the robot's cameras and sensors are clean and unobstructed.</li>
+                            <li>Confirm that the payload is securely attached and balanced.</li>
+                            <li>Ensure the wheels or tracks are free from debris.</li>
+                            <li>Review all safety protocols and emergency procedures.</li>
+                            <li>Ensure the path is clear of obstacles and hazards.</li>
+                            <li>Verify that sensors are calibrated for the environment.</li>
+                            <li>Review system logs to ensure there are no errors.</li>
+                            <li>Ensure stable communication with the control system.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="safety-footer">
+                    <i class="fas fa-headset"></i>
+                    <span>For assistance, contact <a href="mailto:support@mybotshop.de">support@mybotshop.de</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer_"> </div>
+
+    <!-- Login Page Scripts -->
+    <script>
+        // Password visibility toggle
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const toggleIcon = document.getElementById('toggleIcon');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleIcon.classList.remove('fa-eye');
+                toggleIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                toggleIcon.classList.remove('fa-eye-slash');
+                toggleIcon.classList.add('fa-eye');
+            }
+        }
+
+        // Accordion toggle
+        function toggleAccordion(header) {
+            const item = header.parentElement;
+            item.classList.toggle('open');
+        }
+
+        // Form submit loading state
+        document.getElementById('loginForm').addEventListener('submit', function() {
+            const btn = document.getElementById('submitBtn');
+            const btnText = btn.querySelector('.btn-text');
+            const btnLoader = btn.querySelector('.btn-loader');
+            const btnArrow = btn.querySelector('.btn-arrow');
+            btnText.textContent = 'Authenticating...';
+            btnLoader.style.display = 'inline-block';
+            btnArrow.style.display = 'none';
+            btn.disabled = true;
+        });
+    </script>
+
+</body>
+
+</html>

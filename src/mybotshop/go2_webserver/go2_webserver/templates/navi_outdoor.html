@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<!--
+Software License Agreement (BSD)
+
+@author    Salman Omar Sohail <support@mybotshop.de>
+@copyright (c) 2025, MYBOTSHOP GmbH, Inc., All rights reserved.
+-->
+
+<head>
+    <title>Navigation - Robot Webserver</title>
+    <link rel="icon" href="../static/media/logos/mbs_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/all.min.css" type="text/css" /> <!-- Font Awesome -->
+    <script src="../static/scripts/common_script.js" defer></script>
+    <script src="../static/scripts/console_script.js" defer></script>
+    <script src="../static/scripts/navi_outdoor_script.js" defer></script>
+    <script src="../static/scripts/circuitry_background_script.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar"> </div>
+
+    <div class="container">
+
+        <!-- Circuitry Background -->
+        <canvas id="circuitCanvas"></canvas>
+
+        <!-- Background Media -->
+        <div class="background-media">
+            <img src="../static/media/wallpaper/wallpaper.webp" alt="Background GIF">
+        </div>
+
+        <!-- Single Unified Navigation Panel -->
+        <div class="panel navi-unified-panel">
+            <h2>Outdoor <span style="color: var(--project-color);">Navigation</span></h2>
+            <hr class="heading-line">
+
+            <div class="navi-unified-layout">
+
+                <!-- Map Section (Left - Large) -->
+                <div class="navi-map-section">
+                    <!-- Leaflet Map Container -->
+                    <div class="map-canvas-container" style="position: relative;">
+                        <div id="map" style="width: 100%; height: 100%; border-radius: 8px;"></div>
+                    </div>
+
+                    <!-- Map Controls -->
+                    <div class="map-controls">
+                        <button onclick="centerToRobot()">
+                            <i class="fas fa-crosshairs"></i> Center
+                        </button>
+                        <select id="mapTypeSelect" onchange="switchMapType(this.value)" style="padding: 8px 12px; border-radius: 4px; border: 1px solid var(--project-color); background: var(--background-color); color: var(--project-text-color); cursor: pointer;">
+                            <optgroup label="Google Maps">
+                                <option value="google-satellite">Satellite</option>
+                                <option value="google-hybrid">Hybrid</option>
+                                <option value="google-roads">Roads</option>
+                                <option value="google-terrain">Terrain</option>
+                            </optgroup>
+                            <optgroup label="ESRI Maps">
+                                <option value="esri-satellite">Satellite</option>
+                                <option value="esri-topo">Topographic</option>
+                                <option value="esri-street">Street</option>
+                            </optgroup>
+                            <optgroup label="Other">
+                                <option value="street" selected>OpenStreetMap</option>
+                                <option value="topo">TopoMap</option>
+                                <option value="dark">Dark</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <!-- Map Stats -->
+                    <div class="map-stats">
+                        <div>
+                            <span class="label">GPS</span>
+                            <span class="value" id="gpsStatus">--</span>
+                        </div>
+                        <div>
+                            <span class="label">Waypoints</span>
+                            <span class="value" id="waypointCount">0</span>
+                        </div>
+                        <div>
+                            <span class="label">No-Go Zones</span>
+                            <span class="value" id="noGoCount">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control Section (Right - Compact) -->
+                <div class="navi-control-section">
+
+                    <!-- Waypoint Management -->
+                    <div class="control-group">
+                        <div class="control-group-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Waypoints</span>
+                        </div>
+                        <div class="control-block-buttons-vertical">
+                            <button id="waypointToolToggle" onclick="toggleWaypointTool()">
+                                <i class="fas fa-plus-circle"></i> Activate Tool
+                            </button>
+                            <button onclick="saveWaypoints()">
+                                <i class="fas fa-save"></i> Save
+                            </button>
+                            <button class="config-btn" onclick="loadWaypoints()">
+                                <i class="fas fa-folder-open"></i> Load
+                            </button>
+                            <button class="deactivate-btn" onclick="clearWaypoints()">
+                                <i class="fas fa-trash"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- No-Go Zones -->
+                    <div class="control-group">
+                        <div class="control-group-header">
+                            <i class="fas fa-ban"></i>
+                            <span>No-Go Zones</span>
+                        </div>
+                        <div class="control-block-buttons-vertical">
+                            <button id="noGoZoneToggle" onclick="toggleNoGoZoneCreation()">
+                                <i class="fas fa-draw-polygon"></i> Create Zone
+                            </button>
+                            <button onclick="saveNoGoZones()">
+                                <i class="fas fa-save"></i> Save
+                            </button>
+                            <button class="config-btn" onclick="loadNoGoZones()">
+                                <i class="fas fa-folder-open"></i> Load
+                            </button>
+                            <button class="deactivate-btn" onclick="clearNoGoZones()">
+                                <i class="fas fa-trash"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Controls -->
+                    <div class="control-group">
+                        <div class="control-group-header">
+                            <i class="fas fa-route"></i>
+                            <span>Navigation</span>
+                        </div>
+                        <div class="control-block-buttons-vertical">
+                            <button onclick="webButton('gps_navi_start')">
+                                <i class="fas fa-play"></i> Start Nav2
+                            </button>
+                            <button class="deactivate-btn" onclick="webButton('gps_navi_stop')">
+                                <i class="fas fa-stop"></i> Stop Nav2
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Waypoint Following -->
+                    <div class="control-group">
+                        <div class="control-group-header">
+                            <i class="fas fa-directions"></i>
+                            <span>Follow Path</span>
+                        </div>
+                        <div class="control-block-buttons-vertical">
+                            <button onclick="loadWaypoints()">
+                                <i class="fas fa-play-circle"></i> Follow
+                            </button>
+                            <button class="config-btn" onclick="clearWaypoints()">
+                                <i class="fas fa-pause-circle"></i> Pause
+                            </button>
+                            <button class="deactivate-btn" onclick="clearWaypoints()">
+                                <i class="fas fa-times-circle"></i> Cancel
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Server Response -->
+                    <div class="control-group">
+                        <div class="control-group-header">
+                            <i class="fas fa-terminal"></i>
+                            <span>Server Log</span>
+                        </div>
+                        <div class="response-box">
+                            <span id="responseMessage">Awaiting commands...</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- /Navigation Panel -->
+
+    </div>
+    <!-- /Main Container -->
+
+    <!-- Footer -->
+    <div class="footer_"> </div>
+
+</body>
+
+</html>

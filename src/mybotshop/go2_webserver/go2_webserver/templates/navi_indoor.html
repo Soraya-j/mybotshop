@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<!--
+Software License Agreement (BSD)
+
+@author    Salman Omar Sohail <support@mybotshop.de>
+@copyright (c) 2025, MYBOTSHOP GmbH, Inc., All rights reserved.
+-->
+
+<head>
+    <title>Navigation - Robot Webserver</title>
+    <link rel="icon" href="../static/media/logos/mbs_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/all.min.css" type="text/css" /> <!-- Font Awesome -->
+    <script src="../static/scripts/common_script.js" defer></script>
+    <script src="../static/scripts/console_script.js" defer></script>
+    <script src="../static/scripts/navi_indoor_script.js" defer></script>
+    <script src="../static/scripts/circuitry_background_script.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar"> </div>
+
+    <div class="container">
+
+        <!-- Circuitry Background -->
+        <canvas id="circuitCanvas"></canvas>
+
+        <!-- Background Media -->
+        <div class="background-media">
+            <img src="../static/media/wallpaper/wallpaper.webp" alt="Background GIF">
+        </div>
+
+        <!-- Single Unified Navigation Panel -->
+        <div class="panel navi-unified-panel">
+            <h2>Indoor <span style="color: var(--project-color);">Navigation</span></h2>
+            <hr class="heading-line">
+
+            <div class="navi-unified-layout">
+
+                <!-- Map Section (Left - Large) -->
+                <div class="navi-map-section">
+                    <div id="mapLoader" class="loading_scanner" style="display: none;">
+                        <span></span>
+                    </div>
+
+                    <!-- Canvas-Based Map -->
+                    <div class="map-canvas-container">
+                        <canvas id="mapCanvas"></canvas>
+                    </div>
+
+                    <!-- Map Controls -->
+                    <div class="map-controls">
+                        <button onclick="robotMapViewer.loadMap()">
+                            <i class="fas fa-sync-alt"></i> Reload
+                        </button>
+                        <button onclick="robotMapViewer.zoomIn()">
+                            <i class="fas fa-search-plus"></i> Zoom In
+                        </button>
+                        <button onclick="robotMapViewer.zoomOut()">
+                            <i class="fas fa-search-minus"></i> Zoom Out
+                        </button>
+                        <button onclick="robotMapViewer.resetView()">
+                            <i class="fas fa-expand"></i> Reset
+                        </button>
+                        <button onclick="robotMapViewer.toggleRobotTracking()">
+                            <i class="fas fa-crosshairs"></i> <span id="trackingText">Tracking ON</span>
+                        </button>
+                    </div>
+
+                    <!-- Map Stats -->
+                    <div class="map-stats">
+                        <div>
+                            <span class="label">FPS</span>
+                            <span class="value" id="mapFPS">--</span>
+                        </div>
+                        <div>
+                            <span class="label">Robot X</span>
+                            <span class="value" id="robotX">--</span>
+                        </div>
+                        <div>
+                            <span class="label">Robot Y</span>
+                            <span class="value" id="robotY">--</span>
+                        </div>
+                        <div>
+                            <span class="label">Heading</span>
+                            <span class="value" id="robotTheta">--</span>
+                        </div>
+                        <div>
+                            <span class="label">Zoom</span>
+                            <span class="value" id="mapZoom">2.0x</span>
+                        </div>
+                        <label>
+                            <input type="checkbox" id="autoMapUpdate">
+                            Auto-update (3s)
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Control Section (Right - Compact) -->
+                <div class="navi-control-section">
+
+                    <!-- SLAM Controls -->
+                    <div class="control-group">
+                        <div class="control-group-header">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>SLAM</span>
+                        </div>
+                        <div class="control-block-buttons-vertical">
+                            <button onclick="webButton('start_slam')">
+                                <i class="fas fa-play"></i> Start SLAM
+                            </button>
+                            <button class="deactivate-btn" onclick="webButton('stop_slam')">
+                                <i class="fas fa-stop"></i> Stop SLAM
+                            </button>
+                            <button class="config-btn" onclick="webButton('save_map')">
+                                <i class="fas fa-save"></i> Save Map
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Nav2 Controls -->
+                    <div class="control-group">
+                        <div class="control-group-header">
+                            <i class="fas fa-route"></i>
+                            <span>Navigation</span>
+                        </div>
+                        <div class="control-block-buttons-vertical">
+                            <button onclick="webButton('start_map_navi')">
+                                <i class="fas fa-play"></i> Start Nav2
+                            </button>
+                            <button class="deactivate-btn" onclick="webButton('stop_map_navi')">
+                                <i class="fas fa-stop"></i> Stop Nav2
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Server Response -->
+                    <div class="control-group">
+                        <div class="control-group-header">
+                            <i class="fas fa-terminal"></i>
+                            <span>Server Log</span>
+                        </div>
+                        <div class="response-box">
+                            <span id="responseMessage">Awaiting commands...</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- /Navigation Panel -->
+
+    </div>
+    <!-- /Main Container -->
+
+    <!-- Footer -->
+    <div class="footer_"> </div>
+
+</body>
+
+</html>

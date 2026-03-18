@@ -1,0 +1,29 @@
+#@author    Salman Omar Sohail <support@mybotshop.de>
+#@copyright (c) 2025, MYBOTSHOP GmbH, Inc., All rights reserved.
+
+/**:
+  ros__parameters:
+    zt30_server_ip: "192.168.123.25"
+    zt30_server_port: 37260
+
+    # RTSP + decoding
+    rtsp_url: "rtsp://192.168.123.25:8554/video1"
+    rtsp_transport: "tcp"          # try "udp" if Wi-Fi is lossy
+    gst_latency_ms: 100            # small buffer to avoid rtspsrc data errors
+    codec: "auto"                  # auto|h264|h265|uridecodebin
+    decoder: "avdec"               # "avdec" (CPU) or "nv" (maps to nvh264/265dec) or explicit decoder name
+
+    # Topics / frames
+    topic_name: "zt30/image_raw"
+    compressed_topic_name: "zt30/image_raw/compressed"
+    camera_frame_id: "zt30_camera_link"
+
+    # Publishing
+    publish_compressed: true
+    jpeg_quality: 80               # 0..100 (lower = lighter CPU)
+    # QoS is SensorDataQoS().best_effort().keep_last(1)
+
+    # Robustness
+    reconnect_delay_ms: 1000
+    stall_empty_frames: 30
+    watchdog_no_frame_ms: 2000

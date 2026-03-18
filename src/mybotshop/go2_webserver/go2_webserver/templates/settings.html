@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="light-theme">
+<!--
+Software License Agreement (BSD)
+
+@author    Salman Omar Sohail <support@mybotshop.de>
+@copyright (c) 2025, MYBOTSHOP GmbH, Inc., All rights reserved.
+-->
+
+<head>
+    <title>Settings - Robot Webserver</title>
+    <link rel="icon" href="../static/media/logos/mbs_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/all.min.css" type="text/css" /> <!-- Font Awesome -->
+    <script src="../static/scripts/robot_status_script.js" defer></script>
+    <script src="../static/scripts/common_script.js" defer></script>
+    <script src="../static/scripts/console_script.js" defer></script>
+    <script src="../static/scripts/firmware_script.js" defer></script>
+    <script type="module" src="../static/scripts/model_scripts.js" defer></script>
+    <script src="../static/scripts/circuitry_background_script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="navbar"> </div>
+
+    <div class="container">
+
+        <!-- Circuitry Background -->
+        <canvas id="circuitCanvas"></canvas>
+
+        <!-- Background Media -->
+        <div class="background-media">
+            <img src="../static/media/wallpaper/wallpaper.webp" alt="Background GIF">
+        </div>
+
+        <!-- Settings Dashboard -->
+        <div class="console-dashboard">
+
+            <!-- Row 1: Robot Info, Model & Firmware -->
+            <div class="console-row">
+
+                <!-- Robot Info Card -->
+                <div class="console-card settings-card-flex-1">
+                    <div class="console-card-header">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Robot Information</span>
+                    </div>
+                    <div class="console-card-content">
+                        <div class="settings-info-grid">
+                            <div class="settings-info-item">
+                                <span class="settings-info-label">Model</span>
+                                <span class="settings-info-value">{{ robot_info.robot.model | default('MBS ROVO3') }}</span>
+                            </div>
+                            <div class="settings-info-item">
+                                <span class="settings-info-label">Platform</span>
+                                <span class="settings-info-value">{{ robot_info.robot.platform | default('Differential Drive') }}</span>
+                            </div>
+                            <div class="settings-info-item">
+                                <span class="settings-info-label">Serial Number</span>
+                                <span class="settings-info-value">{{ robot_info.robot.serial_number | default('N/A') }}</span>
+                            </div>
+                            <div class="settings-info-item">
+                                <span class="settings-info-label">Order Number</span>
+                                <span class="settings-info-value">{{ robot_info.robot.order_number | default('N/A') }}</span>
+                            </div>
+                        </div>
+                        <hr class="settings-divider">
+                        <div class="settings-info-item">
+                            <span class="settings-info-label">ROS Distro</span>
+                            <span class="settings-info-value">{{ robot_info.software.ros_distro | default('jazzy') | capitalize }}</span>
+                        </div>
+                        <div class="settings-info-item">
+                            <span class="settings-info-label">Webserver</span>
+                            <span class="settings-info-value">v{{ robot_info.software.webserver_version | default('2.0.0') }}</span>
+                        </div>
+                        <hr class="settings-divider">
+                        <div class="settings-info-item">
+                            <span class="settings-info-label">Manufacturer</span>
+                            <span class="settings-info-value">{{ robot_info.manufacturer.name | default('MYBOTSHOP GmbH') }}</span>
+                        </div>
+                        <div class="settings-info-item">
+                            <span class="settings-info-label">Support</span>
+                            <span class="settings-info-value highlight">{{ robot_info.manufacturer.support_email | default('support@mybotshop.de') }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robot Model Card -->
+                <div class="console-card settings-card-flex-1">
+                    <div class="console-card-header">
+                        <i class="fas fa-robot"></i>
+                        <span>Robot Model</span>
+                    </div>
+                    <div class="console-card-content">
+                        <div class="model-viewer-container">
+                            <model-viewer src="{{ robot_info.model_3d.path | default('../static/models/rovo3.glb') }}"
+                                alt="{{ robot_info.model_3d.alt_text | default('MYBOTSHOP ROBOT') }}" auto-rotate camera-controls
+                                shadow-intensity="1" exposure="0.5" camera-orbit="45deg 65deg" auto-rotate-speed="2"
+                                environment-image="neutral" shadow-softness="1" ar ar-modes="webxr scene-viewer quick-look"
+                                ar-scale="auto">
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Firmware Update Card -->
+                <div class="console-card settings-card-flex-1">
+                    <div class="console-card-header">
+                        <i class="fas fa-microchip"></i>
+                        <span>Firmware Update</span>
+                    </div>
+                    <div class="console-card-content">
+                        <form id="firmware-upload-form" enctype="multipart/form-data">
+                            <div class="drop-zone" id="drop-zone">
+                                <input type="file" id="firmware-file" name="firmware_file" accept=".zip,.tar.gz"
+                                    class="file-input">
+                                <div class="drop-zone-content">
+                                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                                    <p class="drop-text">Drop firmware file here or click to browse</p>
+                                    <p class="file-info" id="file-info">Accepts .zip or .tar.gz files</p>
+                                </div>
+                            </div>
+                            <button type="submit" class="console-btn console-btn-success settings-full-width-btn">
+                                <i class="fas fa-upload"></i> Upload & Update
+                            </button>
+                        </form>
+                        <div id="firmware-status" class="firmware-status-box"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /Row 1 -->
+
+            <!-- Row 2: Configuration Editor -->
+            <div class="console-row">
+
+                <!-- Webserver Config Card -->
+                <div class="console-card settings-card-flex-2">
+                    <div class="console-card-header">
+                        <i class="fas fa-sliders-h"></i>
+                        <span>Webserver Configuration</span>
+                    </div>
+                    <div class="console-card-content">
+                        <div class="config-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Incorrect values or formats may cause the system to malfunction. Proceed with caution.</span>
+                        </div>
+                        <div class="config-editor" id="config-editor">
+                            <div class="config-loading">Loading configuration...</div>
+                        </div>
+                        <div class="config-actions">
+                            <button onclick="saveWebserverConfig()" class="console-btn console-btn-danger">
+                                <i class="fas fa-save"></i> Save Configuration
+                            </button>
+                            <button onclick="loadWebserverConfig()" class="console-btn console-btn-secondary">
+                                <i class="fas fa-hdd"></i> Load from Disk
+                            </button>
+                            <button onclick="reactivateServices()" class="console-btn console-btn-success">
+                                <i class="fas fa-play-circle"></i> Reactivate Modules
+                            </button>
+                        </div>
+                        <div id="config-status" class="config-status"></div>
+                    </div>
+                </div>
+
+                <!-- Robot Services Card -->
+                <div class="console-card settings-card-flex-1">
+                    <div class="console-card-header">
+                        <i class="fas fa-list"></i>
+                        <span>Robot Services</span>
+                    </div>
+                    <div class="console-card-content">
+                        <div class="services-editor" id="services-editor">
+                            <div class="config-loading">Loading services...</div>
+                        </div>
+                        <div class="service-add-row">
+                            <input type="text" id="new-service-input" placeholder="New service name" class="config-input">
+                            <button onclick="addService()" class="console-btn console-btn-success">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /Row 2 -->
+
+            <!-- Row 3: Response Log -->
+            <div class="console-row">
+
+                <!-- Server Response Card -->
+                <div class="console-card console-card-log">
+                    <div class="console-card-header">
+                        <i class="fas fa-terminal"></i>
+                        <span>Server Response</span>
+                        <button onclick="sendClearData()" class="console-btn-mini console-btn-danger" title="Clear Log">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                    <div class="console-card-content">
+                        <div class="log-display-dark">
+                            <div class="log-label">Response:</div>
+                            <div id="responseMessage" class="log-content">Awaiting commands...</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /Row 3 -->
+
+        </div>
+        <!-- /Settings Dashboard -->
+
+    </div>
+    <!-- /Container -->
+
+    <!-- Footer -->
+    <div class="footer_"> </div>
+
+    <!-- Config Editor Script -->
+    <script src="../static/scripts/config_editor_script.js"></script>
+
+</body>
+
+</html>

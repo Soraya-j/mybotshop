@@ -1,0 +1,76 @@
+# Robot Information Configuration
+# @author    Salman Omar Sohail <support@mybotshop.de>
+# @copyright (c) 2025, MYBOTSHOP GmbH, Inc., All rights reserved.
+#
+# This file contains robot-specific information displayed in the webserver.
+# Edit these values to match your robot configuration.
+
+# Robot Identity
+robot:
+  name: "GO2"
+  model: "QRE GO2"
+  model_type: "Research"
+  platform: "Quadruped Robot"
+  order_number: "AU2026XXXX"
+  serial_number: 26024
+
+# Software Information
+software:
+  ros_distro: "Foxy"
+  webserver_version: "4.4.2"
+
+# Manufacturer Information
+manufacturer:
+  name: "UNITREE"
+  support_email: "support@mybotshop.de"
+  website: "https://www.mybotshop.de"
+
+# 3D Model Configuration
+model_3d:
+  path: "../static/models/go2w_d1_zt30_ouster.glb"
+  alt_text: "ROBOT"
+
+# Streaming Configuration
+streaming:
+  websocket_url: "ws://192.168.123.1:9090"
+  ros2_image_topic: "/go2_unit_001/image_raw/compressed"
+  vnc_ip: "192.168.123.18"
+
+# Network Configuration - IP Table
+# Each entry will be displayed in the dashboard IP table
+network:
+  - name: "GO2 Computer"
+    ip: "192.168.123.18"
+    port: null
+    username: "administrator"
+    password: "mybotshop"
+
+  - name: "GO2 Control System (Web)"
+    ip: "192.168.123.18"
+    port: 9000
+    username: "admin"
+    password: "mybotshop"
+
+  - name: "GO2 Steamdeck"
+    ip: "192.168.123.150"
+    port: null
+    username: "deck"
+    password: "mybotshop"
+
+  - name: "GO2 Access Point"
+    ip: "192.168.123.200"
+    port: null
+    username: "GO2-MATXXX-5G"
+    password: "mybotshop"
+
+  - name: "GO2 Access Point"
+    ip: "192.168.123.200"
+    port: null
+    username: "GO2-MATXXX-2.4G"
+    password: "mybotshop"
+
+  - name: "GO2 Access Point (Web)"
+    ip: "192.168.123.200"
+    port: null
+    username: "admin"
+    password: "Admin1232025"
