@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_webserver/go2_webserver/static/scripts/battery_status_script.js

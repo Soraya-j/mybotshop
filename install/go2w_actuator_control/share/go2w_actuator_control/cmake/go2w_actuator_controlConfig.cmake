@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2w_actuator_control/ament_cmake_core/go2w_actuator_controlConfig.cmake

@@ -1,0 +1,80 @@
+[0.839s] Invoking command in '/opt/mybotshop/build/open_manipulator_x_controller': AMENT_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/open_manipulator_x_libs/lib:/opt/mybotshop/install/robotis_manipulator/lib:/opt/mybotshop/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/open_manipulator_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/open_manipulator_x_controller
+[4.625s] -- The C compiler identification is GNU 9.4.0
+[4.625s] -- The CXX compiler identification is GNU 9.4.0
+[4.625s] -- Check for working C compiler: /usr/bin/cc
+[4.626s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.626s] -- Detecting C compiler ABI info
+[4.626s] -- Detecting C compiler ABI info - done
+[4.626s] -- Detecting C compile features
+[4.626s] -- Detecting C compile features - done
+[4.626s] -- Check for working CXX compiler: /usr/bin/c++
+[4.626s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.626s] -- Detecting CXX compiler ABI info
+[4.627s] -- Detecting CXX compiler ABI info - done
+[4.627s] -- Detecting CXX compile features
+[4.627s] -- Detecting CXX compile features - done
+[4.627s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.627s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.627s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.627s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.627s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[4.627s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.628s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.871s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.001s] -- Found FastRTPS: /opt/ros/foxy/include  
+[5.349s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.564s] -- Found open_manipulator_msgs: 2.2.0 (/opt/mybotshop/install/open_manipulator_msgs/share/open_manipulator_msgs/cmake)
+[5.749s] -- Found open_manipulator_x_libs: 2.3.0 (/opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake)
+[5.964s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[5.977s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[5.978s] -- Looking for pthread.h
+[6.366s] -- Looking for pthread.h - found
+[6.373s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.604s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.606s] -- Looking for pthread_create in pthreads
+[6.972s] -- Looking for pthread_create in pthreads - not found
+[6.973s] -- Looking for pthread_create in pthread
+[7.304s] -- Looking for pthread_create in pthread - found
+[7.314s] -- Found Threads: TRUE  
+[8.005s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[8.183s] -- Found trajectory_msgs: 2.0.5 (/opt/ros/foxy/share/trajectory_msgs/cmake)
+[8.734s] -- Configuring done
+[8.794s] -- Generating done
+[8.810s] -- Build files have been written to: /opt/mybotshop/build/open_manipulator_x_controller
+[9.631s] Invoked command in '/opt/mybotshop/build/open_manipulator_x_controller' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/open_manipulator_x_libs/lib:/opt/mybotshop/install/robotis_manipulator/lib:/opt/mybotshop/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/open_manipulator_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/open_manipulator_x_controller
+[9.634s] Invoking command in '/opt/mybotshop/build/open_manipulator_x_controller': AMENT_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/open_manipulator_x_libs/lib:/opt/mybotshop/install/robotis_manipulator/lib:/opt/mybotshop/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/open_manipulator_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/mybotshop/build/open_manipulator_x_controller -- -j6 -l6
+[9.908s] [35m[1mScanning dependencies of target open_manipulator_x_controller[0m
+[10.194s] [ 50%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_controller.dir/src/open_manipulator_x_controller.cpp.o[0m
+[21.348s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:[m[K In member function ‘[01m[Kvoid open_manipulator_x_controller::OpenManipulatorXController::init_publisher()[m[K’:
+[21.348s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_controller/src/open_manipulator_x_controller.cpp:103:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kname[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[21.349s]   103 |   for (auto const & [01;35m[Kname[m[K:tools_name)
+[21.349s]       |                     [01;35m[K^~~~[m[K
+[48.016s] [100%] [32m[1mLinking CXX executable open_manipulator_x_controller[0m
+[50.283s] [100%] Built target open_manipulator_x_controller
+[50.346s] Invoked command in '/opt/mybotshop/build/open_manipulator_x_controller' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/open_manipulator_x_libs/lib:/opt/mybotshop/install/robotis_manipulator/lib:/opt/mybotshop/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/open_manipulator_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/mybotshop/build/open_manipulator_x_controller -- -j6 -l6
+[50.590s] Invoking command in '/opt/mybotshop/build/open_manipulator_x_controller': AMENT_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/open_manipulator_x_libs/lib:/opt/mybotshop/install/robotis_manipulator/lib:/opt/mybotshop/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/open_manipulator_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/mybotshop/build/open_manipulator_x_controller
+[50.651s] -- Install configuration: ""
+[50.652s] -- Execute custom install script
+[50.659s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/lib/open_manipulator_x_controller/open_manipulator_x_controller
+[50.733s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/99-open-manipulator-cdc.rules
+[50.801s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/launch/open_manipulator_x_controller.launch.py
+[50.831s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/param/open_manipulator_x_controller_params.yaml
+[50.886s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/lib/open_manipulator_x_controller/create_udev_rules
+[50.938s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_controller
+[51.005s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_controller
+[51.064s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/environment/ament_prefix_path.sh
+[51.125s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/environment/ament_prefix_path.dsv
+[51.172s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/environment/path.sh
+[51.206s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/environment/path.dsv
+[51.253s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/local_setup.bash
+[51.288s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/local_setup.sh
+[51.324s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/local_setup.zsh
+[51.361s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/local_setup.dsv
+[51.405s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/package.dsv
+[51.459s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/ament_index/resource_index/packages/open_manipulator_x_controller
+[51.518s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[51.574s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[51.614s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/cmake/open_manipulator_x_controllerConfig.cmake
+[51.676s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/cmake/open_manipulator_x_controllerConfig-version.cmake
+[51.719s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_controller/share/open_manipulator_x_controller/package.xml
+[51.760s] Invoked command in '/opt/mybotshop/build/open_manipulator_x_controller' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_x_libs:/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/open_manipulator_msgs:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/open_manipulator_x_libs/lib:/opt/mybotshop/install/robotis_manipulator/lib:/opt/mybotshop/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/open_manipulator_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/mybotshop/build/open_manipulator_x_controller

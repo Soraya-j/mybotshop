@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_interface/rosidl_typesupport_introspection_c/go2_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h

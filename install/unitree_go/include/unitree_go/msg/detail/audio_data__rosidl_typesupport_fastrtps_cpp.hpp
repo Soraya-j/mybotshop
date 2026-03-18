@@ -1,0 +1,1 @@
+/opt/mybotshop/build/unitree_go/rosidl_typesupport_fastrtps_cpp/unitree_go/msg/detail/audio_data__rosidl_typesupport_fastrtps_cpp.hpp

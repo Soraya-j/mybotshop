@@ -1,0 +1,81 @@
+[1.763s] Invoking command in '/opt/mybotshop/build/go2_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_bringup
+[2.597s] -- The C compiler identification is GNU 9.4.0
+[2.835s] -- The CXX compiler identification is GNU 9.4.0
+[2.835s] -- Check for working C compiler: /usr/bin/cc
+[3.479s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.479s] -- Detecting C compiler ABI info
+[4.135s] -- Detecting C compiler ABI info - done
+[4.216s] -- Detecting C compile features
+[4.216s] -- Detecting C compile features - done
+[4.249s] -- Check for working CXX compiler: /usr/bin/c++
+[5.271s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[5.271s] -- Detecting CXX compiler ABI info
+[6.196s] -- Detecting CXX compiler ABI info - done
+[6.277s] -- Detecting CXX compile features
+[6.277s] -- Detecting CXX compile features - done
+[6.303s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[6.544s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[6.544s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.737s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.832s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[7.979s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.986s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.451s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[8.637s] -- Found FastRTPS: /opt/ros/foxy/include  
+[8.928s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.124s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[9.128s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[9.132s] -- Looking for pthread.h
+[9.535s] -- Looking for pthread.h - found
+[9.535s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.899s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[9.899s] -- Looking for pthread_create in pthreads
+[10.247s] -- Looking for pthread_create in pthreads - not found
+[10.247s] -- Looking for pthread_create in pthread
+[10.669s] -- Looking for pthread_create in pthread - found
+[10.681s] -- Found Threads: TRUE  
+[11.230s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[11.361s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[11.794s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.800s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.802s] -- Added test 'lint_cmake' to check CMake code style
+[11.805s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[11.808s] -- Added test 'xmllint' to check XML markup files
+[11.831s] -- Configuring done
+[11.839s] -- Generating done
+[11.857s] -- Build files have been written to: /opt/mybotshop/build/go2_bringup
+[11.939s] Invoked command in '/opt/mybotshop/build/go2_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_bringup
+[11.941s] Invoking command in '/opt/mybotshop/build/go2_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/go2_bringup -- -j6 -l6
+[12.335s] Invoked command in '/opt/mybotshop/build/go2_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/go2_bringup -- -j6 -l6
+[12.514s] Invoking command in '/opt/mybotshop/build/go2_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/go2_bringup
+[15.437s] -- Install configuration: ""
+[15.437s] -- Execute custom install script
+[15.438s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/environment/pythonpath.sh
+[15.438s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/environment/pythonpath.dsv
+[15.438s] -- Symlinking: /opt/mybotshop/install/go2_bringup/lib/python3.8/site-packages/go2_bringup/__init__.py
+[15.438s] -- Symlinking: /opt/mybotshop/install/go2_bringup/lib/go2_bringup/startup_installer.py
+[15.438s] -- Symlinking: /opt/mybotshop/install/go2_bringup/lib/go2_bringup/setup.bash
+[15.438s] -- Symlinking: /opt/mybotshop/install/go2_bringup/share/go2_bringup/launch/README.md
+[15.438s] -- Symlinking: /opt/mybotshop/install/go2_bringup/share/go2_bringup/config/10-qre-go2-om-motd
+[15.439s] -- Symlinking: /opt/mybotshop/install/go2_bringup/share/go2_bringup/config/host_setup.bash
+[15.439s] -- Symlinking: /opt/mybotshop/install/go2_bringup/share/go2_bringup/config/multi_rmw.xml
+[15.439s] -- Symlinking: /opt/mybotshop/install/go2_bringup/share/go2_bringup/config/setup.bash
+[15.439s] -- Symlinking: /opt/mybotshop/install/go2_bringup/share/go2_bringup/hooks/robot_bringup.bash
+[15.439s] -- Symlinking: /opt/mybotshop/install/go2_bringup/share/go2_bringup/environment/robot_bringup.bash
+[15.439s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/ament_index/resource_index/package_run_dependencies/go2_bringup
+[15.439s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/ament_index/resource_index/parent_prefix_path/go2_bringup
+[15.439s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/environment/ament_prefix_path.sh
+[15.440s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/environment/ament_prefix_path.dsv
+[15.440s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/environment/path.sh
+[15.440s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/environment/path.dsv
+[15.440s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/local_setup.bash
+[15.440s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/local_setup.sh
+[15.440s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/local_setup.zsh
+[15.440s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/local_setup.dsv
+[15.441s] -- Symlinking: /opt/mybotshop/install/go2_bringup/share/go2_bringup/package.dsv
+[15.441s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/ament_index/resource_index/packages/go2_bringup
+[15.442s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/cmake/go2_bringupConfig.cmake
+[15.442s] -- Up-to-date symlink: /opt/mybotshop/install/go2_bringup/share/go2_bringup/cmake/go2_bringupConfig-version.cmake
+[15.442s] -- Symlinking: /opt/mybotshop/install/go2_bringup/share/go2_bringup/package.xml
+[15.442s] Listing '/opt/mybotshop/install/go2_bringup/lib/python3.8/site-packages/go2_bringup'...
+[15.442s] Invoked command in '/opt/mybotshop/build/go2_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/go2_bringup

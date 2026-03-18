@@ -1,0 +1,1 @@
+/opt/mybotshop/build/robotis_manipulator/ament_cmake_core/robotis_manipulatorConfig-version.cmake

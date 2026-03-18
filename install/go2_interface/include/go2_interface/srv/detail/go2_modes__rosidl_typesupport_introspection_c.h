@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_interface/rosidl_typesupport_introspection_c/go2_interface/srv/detail/go2_modes__rosidl_typesupport_introspection_c.h

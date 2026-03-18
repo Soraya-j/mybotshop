@@ -1,0 +1,1 @@
+/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_moveit/dynamixel_hardware-foxy/open_manipulator_x_description/launch/open_manipulator_x_gazebo.launch.py

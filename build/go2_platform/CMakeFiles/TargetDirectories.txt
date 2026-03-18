@@ -1,0 +1,13 @@
+/opt/mybotshop/build/go2_platform/CMakeFiles/install/strip.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/install.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/list_install_components.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/rebuild_cache.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/install/local.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/go2_video_publisher.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/go2_lowroscontrol.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/go2_highroscontrol.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/go2_scan.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/edit_cache.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/test.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/go2_platform_uninstall.dir
+/opt/mybotshop/build/go2_platform/CMakeFiles/uninstall.dir

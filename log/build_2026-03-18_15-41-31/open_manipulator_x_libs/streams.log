@@ -1,0 +1,151 @@
+[0.730s] Invoking command in '/opt/mybotshop/build/open_manipulator_x_libs': AMENT_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/robotis_manipulator/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/open_manipulator_x_libs
+[4.230s] -- The C compiler identification is GNU 9.4.0
+[4.230s] -- The CXX compiler identification is GNU 9.4.0
+[4.230s] -- Check for working C compiler: /usr/bin/cc
+[4.230s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.230s] -- Detecting C compiler ABI info
+[4.231s] -- Detecting C compiler ABI info - done
+[4.231s] -- Detecting C compile features
+[4.231s] -- Detecting C compile features - done
+[4.231s] -- Check for working CXX compiler: /usr/bin/c++
+[4.231s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.231s] -- Detecting CXX compiler ABI info
+[4.231s] -- Detecting CXX compiler ABI info - done
+[4.231s] -- Detecting CXX compile features
+[4.232s] -- Detecting CXX compile features - done
+[4.232s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.232s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.232s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.232s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.232s] -- Found dynamixel_workbench_toolbox: 2.2.3 (/opt/ros/foxy/share/dynamixel_workbench_toolbox/cmake)
+[4.232s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.248s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.738s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[4.863s] -- Found FastRTPS: /opt/ros/foxy/include  
+[5.226s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.366s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[5.370s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[5.373s] -- Looking for pthread.h
+[5.824s] -- Looking for pthread.h - found
+[5.828s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.106s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.107s] -- Looking for pthread_create in pthreads
+[6.442s] -- Looking for pthread_create in pthreads - not found
+[6.442s] -- Looking for pthread_create in pthread
+[6.764s] -- Looking for pthread_create in pthread - found
+[6.767s] -- Found Threads: TRUE  
+[7.287s] -- Found robotis_manipulator: 1.0.0 (/opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/cmake)
+[7.616s] -- Configuring done
+[7.681s] -- Generating done
+[7.684s] -- Build files have been written to: /opt/mybotshop/build/open_manipulator_x_libs
+[8.255s] Invoked command in '/opt/mybotshop/build/open_manipulator_x_libs' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/robotis_manipulator/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/open_manipulator_x_libs
+[8.258s] Invoking command in '/opt/mybotshop/build/open_manipulator_x_libs': AMENT_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/robotis_manipulator/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /opt/mybotshop/build/open_manipulator_x_libs -- -j6 -l6
+[8.497s] [35m[1mScanning dependencies of target open_manipulator_x_libs[0m
+[8.767s] [ 20%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_libs.dir/src/custom_trajectory.cpp.o[0m
+[13.397s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/custom_trajectory.cpp:[m[K In member function ‘[01m[Kvirtual void custom_trajectory::Line::setOption(const void*)[m[K’:
+[13.397s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/custom_trajectory.cpp:93:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[13.398s]    93 | void Line::setOption([01;35m[Kconst void *arg[m[K) {}
+[13.398s]       |                      [01;35m[K~~~~~~~~~~~~^~~[m[K
+[13.400s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/custom_trajectory.cpp:[m[K In member function ‘[01m[Kvirtual void custom_trajectory::Circle::setOption(const void*)[m[K’:
+[13.400s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/custom_trajectory.cpp:167:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[13.400s]   167 | void Circle::setOption([01;35m[Kconst void *arg[m[K){}
+[13.400s]       |                        [01;35m[K~~~~~~~~~~~~^~~[m[K
+[13.404s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/custom_trajectory.cpp:[m[K In member function ‘[01m[Kvirtual void custom_trajectory::Rhombus::setOption(const void*)[m[K’:
+[13.404s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/custom_trajectory.cpp:260:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[13.404s]   260 | void Rhombus::setOption([01;35m[Kconst void *arg[m[K){}
+[13.404s]       |                         [01;35m[K~~~~~~~~~~~~^~~[m[K
+[13.408s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/custom_trajectory.cpp:[m[K In member function ‘[01m[Kvirtual void custom_trajectory::Heart::setOption(const void*)[m[K’:
+[13.408s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/custom_trajectory.cpp:334:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[13.408s]   334 | void Heart::setOption([01;35m[Kconst void *arg[m[K){}
+[13.408s]       |                       [01;35m[K~~~~~~~~~~~~^~~[m[K
+[14.691s] [ 40%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_libs.dir/src/open_manipulator_x.cpp.o[0m
+[20.548s] [ 60%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_libs.dir/src/kinematics.cpp.o[0m
+[25.868s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/kinematics.cpp:[m[K In member function ‘[01m[Kvirtual void kinematics::SolverUsingCRAndJacobian::setOption(const void*)[m[K’:
+[25.869s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/kinematics.cpp:25:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[25.869s]    25 | void SolverUsingCRAndJacobian::setOption([01;35m[Kconst void *arg[m[K){}
+[25.870s]       |                                          [01;35m[K~~~~~~~~~~~~^~~[m[K
+[26.374s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/kinematics.cpp:[m[K In member function ‘[01m[Kvirtual void kinematics::SolverUsingCRAndSRJacobian::setOption(const void*)[m[K’:
+[26.374s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/kinematics.cpp:179:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[26.374s]   179 | void SolverUsingCRAndSRJacobian::setOption([01;35m[Kconst void *arg[m[K){}
+[26.375s]       |                                            [01;35m[K~~~~~~~~~~~~^~~[m[K
+[26.749s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/kinematics.cpp:[m[K In member function ‘[01m[Kvirtual void kinematics::SolverUsingCRAndSRPositionOnlyJacobian::setOption(const void*)[m[K’:
+[26.749s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/kinematics.cpp:445:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[26.749s]   445 | void SolverUsingCRAndSRPositionOnlyJacobian::setOption([01;35m[Kconst void *arg[m[K){}
+[26.750s]       |                                                        [01;35m[K~~~~~~~~~~~~^~~[m[K
+[26.917s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/kinematics.cpp:[m[K In member function ‘[01m[Kvirtual void kinematics::SolverCustomizedforOMChain::setOption(const void*)[m[K’:
+[26.917s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/kinematics.cpp:711:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[26.917s]   711 | void SolverCustomizedforOMChain::setOption([01;35m[Kconst void *arg[m[K){}
+[26.917s]       |                                            [01;35m[K~~~~~~~~~~~~^~~[m[K
+[56.103s] [ 80%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_libs.dir/src/dynamixel.cpp.o[0m
+[61.268s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:[m[K In member function ‘[01m[Kbool dynamixel::JointDynamixel::write_goal_position(std::vector<unsigned char>, std::vector<double>)[m[K’:
+[61.269s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:268:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kid_array[m[K’ [[01;35m[K-Wvla[m[K]
+[61.269s]   268 |   uint8_t [01;35m[Kid_array[m[K[actuator_id.size()];
+[61.269s]       |           [01;35m[K^~~~~~~~[m[K
+[61.270s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:269:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kgoal_position[m[K’ [[01;35m[K-Wvla[m[K]
+[61.270s]   269 |   int32_t [01;35m[Kgoal_position[m[K[actuator_id.size()];
+[61.270s]       |           [01;35m[K^~~~~~~~~~~~~[m[K
+[61.273s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:[m[K In member function ‘[01m[Kstd::vector<robotis_manipulator::_Point> dynamixel::JointDynamixel::receive_all_dynamixel_value(std::vector<unsigned char>)[m[K’:
+[61.273s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:293:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kid_array[m[K’ [[01;35m[K-Wvla[m[K]
+[61.273s]   293 |   uint8_t [01;35m[Kid_array[m[K[actuator_id.size()];
+[61.274s]       |           [01;35m[K^~~~~~~~[m[K
+[61.274s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:297:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_current[m[K’ [[01;35m[K-Wvla[m[K]
+[61.275s]   297 |   int32_t [01;35m[Kget_current[m[K[actuator_id.size()];
+[61.275s]       |           [01;35m[K^~~~~~~~~~~[m[K
+[61.276s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:298:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_velocity[m[K’ [[01;35m[K-Wvla[m[K]
+[61.276s]   298 |   int32_t [01;35m[Kget_velocity[m[K[actuator_id.size()];
+[61.277s]       |           [01;35m[K^~~~~~~~~~~~[m[K
+[61.277s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:299:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_position[m[K’ [[01;35m[K-Wvla[m[K]
+[61.281s]   299 |   int32_t [01;35m[Kget_position[m[K[actuator_id.size()];
+[61.282s]       |           [01;35m[K^~~~~~~~~~~~[m[K
+[61.306s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:[m[K In member function ‘[01m[Kbool dynamixel::JointDynamixelProfileControl::write_goal_profiling_control_value(std::vector<unsigned char>, std::vector<robotis_manipulator::_Point>)[m[K’:
+[61.306s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:604:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kid_array[m[K’ [[01;35m[K-Wvla[m[K]
+[61.306s]   604 |   uint8_t [01;35m[Kid_array[m[K[actuator_id.size()];
+[61.306s]       |           [01;35m[K^~~~~~~~[m[K
+[61.306s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:605:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kgoal_value[m[K’ [[01;35m[K-Wvla[m[K]
+[61.306s]   605 |   int32_t [01;35m[Kgoal_value[m[K[actuator_id.size()];
+[61.307s]       |           [01;35m[K^~~~~~~~~~[m[K
+[61.319s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:[m[K In member function ‘[01m[Kstd::vector<robotis_manipulator::_Point> dynamixel::JointDynamixelProfileControl::receive_all_dynamixel_value(std::vector<unsigned char>)[m[K’:
+[61.319s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:641:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kid_array[m[K’ [[01;35m[K-Wvla[m[K]
+[61.319s]   641 |   uint8_t [01;35m[Kid_array[m[K[actuator_id.size()];
+[61.320s]       |           [01;35m[K^~~~~~~~[m[K
+[61.320s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:645:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_current[m[K’ [[01;35m[K-Wvla[m[K]
+[61.320s]   645 |   int32_t [01;35m[Kget_current[m[K[actuator_id.size()];
+[61.320s]       |           [01;35m[K^~~~~~~~~~~[m[K
+[61.320s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:646:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_velocity[m[K’ [[01;35m[K-Wvla[m[K]
+[61.321s]   646 |   int32_t [01;35m[Kget_velocity[m[K[actuator_id.size()];
+[61.321s]       |           [01;35m[K^~~~~~~~~~~~[m[K
+[61.321s] [01m[K/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_foxy/open_manipulator_x_libs/src/dynamixel.cpp:647:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kget_position[m[K’ [[01;35m[K-Wvla[m[K]
+[61.321s]   647 |   int32_t [01;35m[Kget_position[m[K[actuator_id.size()];
+[61.321s]       |           [01;35m[K^~~~~~~~~~~~[m[K
+[63.771s] [100%] [32m[1mLinking CXX shared library libopen_manipulator_x_libs.so[0m
+[68.298s] [100%] Built target open_manipulator_x_libs
+[68.451s] Invoked command in '/opt/mybotshop/build/open_manipulator_x_libs' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/robotis_manipulator/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /opt/mybotshop/build/open_manipulator_x_libs -- -j6 -l6
+[68.915s] Invoking command in '/opt/mybotshop/build/open_manipulator_x_libs': AMENT_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/robotis_manipulator/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /opt/mybotshop/build/open_manipulator_x_libs
+[69.576s] -- Install configuration: ""
+[69.576s] -- Execute custom install script
+[69.576s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/lib/libopen_manipulator_x_libs.so
+[69.576s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_libs/include//open_manipulator_x_libs/custom_trajectory.hpp
+[69.577s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_libs/include//open_manipulator_x_libs/dynamixel.hpp
+[69.577s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_libs/include//open_manipulator_x_libs/kinematics.hpp
+[69.577s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_libs/include//open_manipulator_x_libs/open_manipulator_x.hpp
+[69.577s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/library_path.sh
+[69.577s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/library_path.dsv
+[69.577s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_libs
+[69.577s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_libs
+[69.577s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/ament_prefix_path.sh
+[69.578s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/ament_prefix_path.dsv
+[69.578s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/path.sh
+[69.578s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/environment/path.dsv
+[69.578s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.bash
+[69.578s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.sh
+[69.578s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.zsh
+[69.578s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/local_setup.dsv
+[69.579s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/package.dsv
+[69.642s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/ament_index/resource_index/packages/open_manipulator_x_libs
+[69.643s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/ament_cmake_export_include_directories-extras.cmake
+[69.643s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/ament_cmake_export_dependencies-extras.cmake
+[69.643s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/ament_cmake_export_libraries-extras.cmake
+[69.643s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/open_manipulator_x_libsConfig.cmake
+[69.643s] -- Up-to-date symlink: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/cmake/open_manipulator_x_libsConfig-version.cmake
+[69.643s] -- Symlinking: /opt/mybotshop/install/open_manipulator_x_libs/share/open_manipulator_x_libs/package.xml
+[71.172s] Invoked command in '/opt/mybotshop/build/open_manipulator_x_libs' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/robotis_manipulator:/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/robotis_manipulator/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /opt/mybotshop/build/open_manipulator_x_libs

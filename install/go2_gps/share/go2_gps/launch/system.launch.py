@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_gps/launch/system.launch.py

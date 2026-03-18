@@ -1,0 +1,1 @@
+/opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/robotis_manipulator/include/robotis_manipulator/robotis_manipulator_log.h

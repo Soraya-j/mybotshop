@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from go2_interface/srv/CameraMode.srv
+// generated code does not contain a copyright notice
+
+
+module go2_interface {
+  module srv {
+    struct CameraMode_Request {
+      int8 camera_mode;
+    };
+    struct CameraMode_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

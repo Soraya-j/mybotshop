@@ -1,0 +1,1 @@
+/opt/mybotshop/build/unitree_api/rosidl_typesupport_fastrtps_cpp/unitree_api/msg/detail/response_header__rosidl_typesupport_fastrtps_cpp.hpp

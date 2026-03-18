@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_lidars/launch/obstacle_avoidance.launch.py

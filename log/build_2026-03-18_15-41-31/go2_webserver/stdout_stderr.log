@@ -1,0 +1,838 @@
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/mybotshop/build/go2_webserver
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/environment/pythonpath.sh
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/environment/pythonpath.dsv
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/__init__.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/audio/boat_horn.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/audio/car_horn.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/audio/llm_response.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/audio/obstruction.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/audio/voice_test.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/libaudiogen.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/libgpsconverter.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/libgpsconverter.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/libllm.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/librealtimemic.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/librealtimemic.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/libroscustom.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/librosnode.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/libwebserver.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/common/footer.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/common/navbar.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/all.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/all.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/brands.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/brands.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/fontawesome.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/fontawesome.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/regular.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/regular.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/solid.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/solid.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/svg-with-js.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/svg-with-js.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/v4-font-face.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/v4-font-face.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/v4-shims.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/v4-shims.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/v5-font-face.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css/v5-font-face.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/drawio/wallpaper.drawio
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts/quicksand/Quicksand-Bold.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts/quicksand/Quicksand-BoldItalic.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts/quicksand/Quicksand-Italic.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts/quicksand/Quicksand-Light.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts/quicksand/Quicksand-LightItalic.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts/quicksand/Quicksand-Regular.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts/quicksand/Quicksand_Dash.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts/quicksand/SIL Open Font License.txt
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts/quicksand/quicksand.jpg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts/quicksand/specimenposter_4967.jpg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/gps/location.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/gps/robot.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons/cancel.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons/down_arrow.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons/emergency_stop.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons/map.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons/navigation.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons/pause.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons/play.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons/save.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons/settings.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons/stop.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons/up_arrow.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/logos/mbs_logo.ico
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/logos/mbs_logo.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/logos/mbs_tp_logo.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/logos/qre_logo.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/robots/_robot.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/robots/robot.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/wallpaper/backup_wallpaper_web_dark.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/wallpaper/backup_wallpaper_web_light.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/wallpaper/vnc_wallpaper.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/wallpaper/wallpaper.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/wallpaper/wallpaper_web_dark.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/wallpaper/wallpaper_web_light.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/models/go2.glb
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/models/go2_simple.glb
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/models/go2w_d1_zt30_ouster.glb
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/models/gps.dae
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/audio_record_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/battery_status_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/chart.min.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/circuitry_background_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/common_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/config_editor_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/connection_status_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/console_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/draco_decoder.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/draco_decoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/draco_decoder_gltf.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/draco_decoder_gltf.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/draco_encoder.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/draco_encoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/draco_encoder_wrapper.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/draco_wasm_wrapper.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/draco_wasm_wrapper_gltf.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/README.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/bunny.drc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco3d.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_decoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_decoder_nodejs.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_encoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_encoder_nodejs.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_minimal_decoder_example.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_minimal_encoder_decoder_example.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_minimal_encoder_example.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_nodejs_example.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d/package.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/README.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/bunny.drc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco3dgltf.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco_decoder_gltf.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco_decoder_gltf_nodejs.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco_encoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco_encoder_gltf_nodejs.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco_nodejs_example.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/package.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/time_draco_decode.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_decoder.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_decoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_encoder.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_encoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_encoder_wrapper.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_wasm_wrapper.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/firmware_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/joystick_custom_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/joystick_native_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/model_scripts.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/navi_indoor_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/navi_outdoor_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/.eslintignore
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/.eslintrc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/AUTHORS
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/LICENSE.txt
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/README.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/error-handler.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/alt.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/clipboard.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/connect.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/ctrl.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/ctrlaltdel.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/disconnect.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/drag.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/error.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/esc.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/expander.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/fullscreen.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/handle.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/handle_bg.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/Makefile
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-120x120.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-144x144.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-152x152.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-16x16.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-192x192.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-24x24.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-32x32.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-48x48.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-60x60.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-64x64.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-72x72.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-76x76.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-96x96.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-icon-sm.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-icon.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/info.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/keyboard.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/power.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/settings.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/tab.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/toggleextrakeys.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/warning.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/windows.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/README
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/cs.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/de.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/el.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/es.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/fr.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/ja.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/ko.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/nl.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/pl.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/pt_BR.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/ru.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/sv.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/tr.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/zh_CN.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale/zh_TW.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/localization.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/sounds/CREDITS
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/sounds/bell.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/sounds/bell.oga
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/styles/Orbitron700.ttf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/styles/Orbitron700.woff
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/styles/base.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/ui.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/webutil.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/base64.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/copyrect.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/hextile.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/raw.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/rre.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/tight.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/tightpng.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/deflator.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/des.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/display.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/encodings.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/inflator.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/input/domkeytable.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/input/fixedkeys.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/input/gesturehandler.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/input/keyboard.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/input/keysym.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/input/keysymdef.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/input/util.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/input/vkeys.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/input/xtscancodes.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/rfb.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/util/browser.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/util/cursor.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/util/element.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/util/events.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/util/eventtarget.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/util/int.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/util/logging.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/util/strings.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/websock.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/API-internal.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/API.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/EMBEDDING.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/LIBRARY.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/LICENSE.BSD-2-Clause
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/LICENSE.BSD-3-Clause
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/LICENSE.MPL-2.0
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/LICENSE.OFL-1.1
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/flash_policy.txt
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/links
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/notes
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/novnc_proxy.1
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/rfb_notes
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/rfbproto-3.3.pdf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/rfbproto-3.7.pdf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs/rfbproto-3.8.pdf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/karma.conf.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/package.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/.eslintrc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/Makefile
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/cs.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/de.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/el.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/es.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/fr.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/ja.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/ko.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/nl.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/noVNC.pot
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/pl.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/po2js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/pt_BR.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/ru.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/sv.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/tr.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/xgettext-html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/zh_CN.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po/zh_TW.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/snap/hooks/configure
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/snap/local/svc_wrapper.sh
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/snap/snapcraft.yaml
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/.eslintrc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/assertions.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/fake.websocket.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/playback-ui.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/playback.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.base64.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.copyrect.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.deflator.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.display.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.gesturehandler.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.helper.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.hextile.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.int.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.keyboard.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.localization.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.raw.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.rfb.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.rre.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.tight.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.tightpng.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.util.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.websock.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/test.webutil.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests/vnc_playback.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/utils/.eslintrc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/utils/README.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/utils/b64-to-binary.pl
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/utils/genkeysymdef.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/utils/novnc_proxy
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/utils/u2x11
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/utils/use_require.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/utils/validate
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/LICENSE
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/README.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/utils/common.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/adler32.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/constants.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/crc32.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/deflate.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/gzheader.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/inffast.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/inflate.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/inftrees.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/messages.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/trees.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/zstream.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vnc.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vnc_lite.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/robot_status_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/slider_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/system_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/telemetry_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/video_stream_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/vnc_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/webserver_mic_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/styles.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/audio_generator
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/beeboo.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/clear_memory.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/click.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/create_logs.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/deactivating_robot_service.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/deactivation_all.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/e_stop.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/e_stop_release.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/poweroff.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/re_network_manager.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/reactivating_robot_service.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/reactivation_all.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/reboot.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/record_rosbag.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/save_rosbag.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio/udev.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webfonts/fa-brands-400.ttf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webfonts/fa-brands-400.woff2
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webfonts/fa-regular-400.ttf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webfonts/fa-regular-400.woff2
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webfonts/fa-solid-900.ttf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webfonts/fa-solid-900.woff2
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webfonts/fa-v4compatibility.ttf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webfonts/fa-v4compatibility.woff2
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/templates/console.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/templates/index.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/templates/login.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/templates/navi_indoor.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/templates/navi_outdoor.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/templates/safety.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/templates/settings.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/templates/telemetry.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/templates/vnc.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/lib/go2_webserver/webserver
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/config/robot_info.yaml
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/config/robot_webserver.yaml
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/launch/ros_test.launch.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/launch/webserver.launch.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/navi_outdoor_nogozones/gps_coordinates.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/navi_outdoor_waypoints/gps_coordinates.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/__init__.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/audio/boat_horn.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/audio/car_horn.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/audio/llm_response.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/audio/obstruction.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/audio/voice_test.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/libaudiogen.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/libgpsconverter.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/libgpsconverter.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/libllm.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/librealtimemic.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/librealtimemic.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/libroscustom.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/librosnode.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/libwebserver.so
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/common/footer.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/common/navbar.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/all.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/all.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/brands.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/brands.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/fontawesome.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/fontawesome.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/regular.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/regular.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/solid.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/solid.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/svg-with-js.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/svg-with-js.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/v4-font-face.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/v4-font-face.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/v4-shims.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/v4-shims.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/v5-font-face.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/css/v5-font-face.min.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/drawio/wallpaper.drawio
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/fonts/quicksand/Quicksand-Bold.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/fonts/quicksand/Quicksand-BoldItalic.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/fonts/quicksand/Quicksand-Italic.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/fonts/quicksand/Quicksand-Light.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/fonts/quicksand/Quicksand-LightItalic.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/fonts/quicksand/Quicksand-Regular.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/fonts/quicksand/Quicksand_Dash.otf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/fonts/quicksand/SIL Open Font License.txt
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/fonts/quicksand/quicksand.jpg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/fonts/quicksand/specimenposter_4967.jpg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/gps/location.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/gps/robot.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/icons/cancel.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/icons/down_arrow.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/icons/emergency_stop.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/icons/map.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/icons/navigation.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/icons/pause.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/icons/play.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/icons/save.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/icons/settings.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/icons/stop.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/icons/up_arrow.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/logos/mbs_logo.ico
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/logos/mbs_logo.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/logos/mbs_tp_logo.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/logos/qre_logo.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/robots/_robot.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/robots/robot.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/wallpaper/backup_wallpaper_web_dark.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/wallpaper/backup_wallpaper_web_light.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/wallpaper/vnc_wallpaper.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/wallpaper/wallpaper.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/wallpaper/wallpaper_web_dark.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/media/wallpaper/wallpaper_web_light.webp
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/models/go2.glb
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/models/go2_simple.glb
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/models/go2w_d1_zt30_ouster.glb
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/models/gps.dae
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/audio_record_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/battery_status_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/chart.min.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/circuitry_background_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/common_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/config_editor_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/connection_status_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/console_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/draco_decoder.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/draco_decoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/draco_decoder_gltf.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/draco_decoder_gltf.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/draco_encoder.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/draco_encoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/draco_encoder_wrapper.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/draco_wasm_wrapper.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/draco_wasm_wrapper_gltf.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/README.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/bunny.drc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco3d.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_decoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_decoder_nodejs.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_encoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_encoder_nodejs.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_minimal_decoder_example.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_minimal_encoder_decoder_example.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_minimal_encoder_example.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/draco_nodejs_example.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3d/package.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/README.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/bunny.drc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco3dgltf.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco_decoder_gltf.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco_decoder_gltf_nodejs.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco_encoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco_encoder_gltf_nodejs.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco_nodejs_example.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/package.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/time_draco_decode.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_decoder.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_decoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_encoder.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_encoder.wasm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_encoder_wrapper.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/draco_decoder/with_asserts/draco_wasm_wrapper.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/firmware_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/joystick_custom_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/joystick_native_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/model_scripts.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/navi_indoor_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/navi_outdoor_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/.eslintignore
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/.eslintrc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/AUTHORS
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/LICENSE.txt
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/README.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/error-handler.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/alt.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/clipboard.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/connect.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/ctrl.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/ctrlaltdel.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/disconnect.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/drag.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/error.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/esc.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/expander.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/fullscreen.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/handle.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/handle_bg.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/Makefile
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-120x120.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-144x144.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-152x152.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-16x16.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-192x192.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-24x24.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-32x32.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-48x48.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-60x60.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-64x64.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-72x72.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-76x76.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-96x96.png
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-icon-sm.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons/novnc-icon.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/info.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/keyboard.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/power.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/settings.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/tab.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/toggleextrakeys.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/warning.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/images/windows.svg
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/README
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/cs.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/de.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/el.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/es.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/fr.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/ja.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/ko.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/nl.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/pl.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/pt_BR.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/ru.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/sv.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/tr.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/zh_CN.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/locale/zh_TW.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/localization.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/sounds/CREDITS
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/sounds/bell.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/sounds/bell.oga
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/styles/Orbitron700.ttf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/styles/Orbitron700.woff
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/styles/base.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/ui.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/app/webutil.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/base64.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/copyrect.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/hextile.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/raw.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/rre.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/tight.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/decoders/tightpng.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/deflator.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/des.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/display.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/encodings.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/inflator.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/input/domkeytable.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/input/fixedkeys.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/input/gesturehandler.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/input/keyboard.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/input/keysym.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/input/keysymdef.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/input/util.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/input/vkeys.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/input/xtscancodes.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/rfb.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/util/browser.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/util/cursor.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/util/element.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/util/events.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/util/eventtarget.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/util/int.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/util/logging.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/util/strings.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/core/websock.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/API-internal.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/API.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/EMBEDDING.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/LIBRARY.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/LICENSE.BSD-2-Clause
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/LICENSE.BSD-3-Clause
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/LICENSE.MPL-2.0
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/LICENSE.OFL-1.1
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/flash_policy.txt
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/links
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/notes
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/novnc_proxy.1
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/rfb_notes
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/rfbproto-3.3.pdf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/rfbproto-3.7.pdf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/docs/rfbproto-3.8.pdf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/karma.conf.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/package.json
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/.eslintrc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/Makefile
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/cs.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/de.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/el.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/es.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/fr.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/ja.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/ko.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/nl.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/noVNC.pot
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/pl.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/po2js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/pt_BR.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/ru.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/sv.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/tr.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/xgettext-html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/zh_CN.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/po/zh_TW.po
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/snap/hooks/configure
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/snap/local/svc_wrapper.sh
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/snap/snapcraft.yaml
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/.eslintrc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/assertions.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/fake.websocket.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/playback-ui.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/playback.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.base64.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.copyrect.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.deflator.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.display.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.gesturehandler.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.helper.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.hextile.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.int.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.keyboard.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.localization.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.raw.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.rfb.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.rre.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.tight.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.tightpng.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.util.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.websock.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/test.webutil.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/tests/vnc_playback.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/utils/.eslintrc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/utils/README.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/utils/b64-to-binary.pl
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/utils/genkeysymdef.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/utils/novnc_proxy
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/utils/u2x11
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/utils/use_require.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/utils/validate
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/LICENSE
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/README.md
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/utils/common.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/adler32.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/constants.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/crc32.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/deflate.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/gzheader.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/inffast.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/inflate.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/inftrees.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/messages.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/trees.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib/zstream.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vnc.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/noVNC1.3.0/vnc_lite.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/robot_status_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/slider_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/system_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/telemetry_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/video_stream_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/vnc_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/scripts/webserver_mic_script.js
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/styles.css
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/audio_generator
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/beeboo.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/clear_memory.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/click.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/create_logs.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/deactivating_robot_service.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/deactivation_all.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/e_stop.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/e_stop_release.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/poweroff.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/re_network_manager.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/reactivating_robot_service.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/reactivation_all.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/reboot.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/record_rosbag.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/save_rosbag.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webaudio/udev.mp3
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webfonts/fa-brands-400.ttf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webfonts/fa-brands-400.woff2
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webfonts/fa-regular-400.ttf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webfonts/fa-regular-400.woff2
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webfonts/fa-solid-900.ttf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webfonts/fa-solid-900.woff2
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webfonts/fa-v4compatibility.ttf
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/static/webfonts/fa-v4compatibility.woff2
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/templates/console.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/templates/index.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/templates/login.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/templates/navi_indoor.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/templates/navi_outdoor.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/templates/safety.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/templates/settings.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/templates/telemetry.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/go2_webserver/templates/vnc.html
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/ssl/cert.pem
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/ssl/key.pem
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/test/__pycache__/ros_test.cpython-310-pytest-8.2.1.pyc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/test/__pycache__/ros_test.cpython-312.pyc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/test/__pycache__/test_joint_diag.cpython-310-pytest-8.2.1.pyc
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/test/maps/test_map.pgm
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/test/maps/test_map.yaml
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/test/ros_test.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/test/test_joint_diag.py
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/ament_index/resource_index/package_run_dependencies/go2_webserver
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/ament_index/resource_index/parent_prefix_path/go2_webserver
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/environment/ament_prefix_path.sh
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/environment/ament_prefix_path.dsv
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/environment/path.sh
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/environment/path.dsv
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/local_setup.bash
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/local_setup.sh
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/local_setup.zsh
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/local_setup.dsv
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/package.dsv
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/ament_index/resource_index/packages/go2_webserver
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/cmake/go2_webserverConfig.cmake
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/cmake/go2_webserverConfig-version.cmake
+-- Symlinking: /opt/mybotshop/install/go2_webserver/share/go2_webserver/package.xml
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver'...
+Compiling '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/__init__.py'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/audio'...
+Compiling '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/libgpsconverter.py'...
+Compiling '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/librealtimemic.py'...
+Compiling '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/libroscustom.py'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/common'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/css'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/drawio'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/fonts/quicksand'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/gps'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/icons'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/logos'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/robots'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/media/wallpaper'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/models'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3d'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/draco_decoder/with_asserts'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/images/icons'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/locale'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/sounds'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/app/styles'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/decoders'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/input'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/core/util'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/docs'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/po'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/snap'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/snap/hooks'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/snap/local'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/tests'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/utils'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/utils'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/scripts/noVNC1.3.0/vendor/pako/lib/zlib'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webaudio'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/static/webfonts'...
+Listing '/opt/mybotshop/install/go2_webserver/lib/python3.8/site-packages/go2_webserver/templates'...
+-- Installing: /opt/mybotshop/install/go2_webserver/lib/go2_webserver/ros_test

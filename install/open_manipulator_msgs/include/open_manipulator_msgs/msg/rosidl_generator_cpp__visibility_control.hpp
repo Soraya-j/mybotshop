@@ -1,0 +1,1 @@
+/opt/mybotshop/build/open_manipulator_msgs/rosidl_generator_cpp/open_manipulator_msgs/msg/rosidl_generator_cpp__visibility_control.hpp

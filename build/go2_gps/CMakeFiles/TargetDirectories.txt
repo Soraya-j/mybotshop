@@ -1,0 +1,9 @@
+/opt/mybotshop/build/go2_gps/CMakeFiles/install/strip.dir
+/opt/mybotshop/build/go2_gps/CMakeFiles/install/local.dir
+/opt/mybotshop/build/go2_gps/CMakeFiles/install.dir
+/opt/mybotshop/build/go2_gps/CMakeFiles/list_install_components.dir
+/opt/mybotshop/build/go2_gps/CMakeFiles/rebuild_cache.dir
+/opt/mybotshop/build/go2_gps/CMakeFiles/edit_cache.dir
+/opt/mybotshop/build/go2_gps/CMakeFiles/test.dir
+/opt/mybotshop/build/go2_gps/CMakeFiles/go2_gps_uninstall.dir
+/opt/mybotshop/build/go2_gps/CMakeFiles/uninstall.dir

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/opt/mybotshop/build/unitree_hg/rosidl_generator_py/unitree_hg/unitree_hg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" "TARGETS" "unitree_hg__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.8/site-packages/unitree_hg")

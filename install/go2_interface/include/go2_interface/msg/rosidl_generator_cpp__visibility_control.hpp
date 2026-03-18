@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_interface/rosidl_generator_cpp/go2_interface/msg/rosidl_generator_cpp__visibility_control.hpp

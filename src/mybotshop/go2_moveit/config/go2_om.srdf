@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="go2">
+    <group name="arm">
+        <joint name="joint1"/>
+        <joint name="joint2"/>
+        <joint name="joint3"/>
+        <joint name="joint4"/>
+        <joint name="end_effector_joint"/>
+    </group>
+
+    <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="stand" group="arm">
+        <joint name="joint1" value="0"/>
+        <joint name="joint2" value="-0.9364"/>
+        <joint name="joint3" value="0.8814"/>
+        <joint name="joint4" value="0"/>
+    </group_state>
+    <group_state name="home" group="arm">
+        <joint name="joint1" value="0"/>
+        <joint name="joint2" value="-1.475"/>
+        <joint name="joint3" value="1.12"/>
+        <joint name="joint4" value="1.11"/>
+    </group_state>
+    <group_state name="right" group="arm">
+        <joint name="joint1" value="-1.5152"/>
+        <joint name="joint2" value="-1.13"/>
+        <joint name="joint3" value="0.7"/>
+        <joint name="joint4" value="0.7291"/>
+    </group_state>
+    <group_state name="left" group="arm">
+        <joint name="joint1" value="1.5152"/>
+        <joint name="joint2" value="-1.13"/>
+        <joint name="joint3" value="0.7"/>
+        <joint name="joint4" value="0.7291"/>
+    </group_state>
+    <group_state name="pick" group="arm">
+        <joint name="joint1" value="0"/>
+        <joint name="joint2" value="0.5"/>
+        <joint name="joint3" value="0.5"/>
+        <joint name="joint4" value="0.5"/>
+    </group_state>
+
+    <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
+    <passive_joint name="gripper_sub"/>
+
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. 
+    This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="FL_calf" link2="FL_foot" reason="Adjacent"/>
+    <disable_collisions link1="FL_calf" link2="FL_hip" reason="Never"/>
+    <disable_collisions link1="FL_calf" link2="FL_thigh" reason="Adjacent"/>
+    <disable_collisions link1="FL_calf" link2="FR_hip" reason="Never"/>
+    <disable_collisions link1="FL_calf" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="FL_calf" link2="RR_thigh" reason="Never"/>
+    <disable_collisions link1="FL_calf" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="FL_calf" link2="link1" reason="Never"/>
+    <disable_collisions link1="FL_calf" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="FL_calf" link2="trunk" reason="Never"/>
+    <disable_collisions link1="FL_foot" link2="FL_hip" reason="Never"/>
+    <disable_collisions link1="FL_foot" link2="FL_thigh" reason="Never"/>
+    <disable_collisions link1="FL_foot" link2="FR_hip" reason="Never"/>
+    <disable_collisions link1="FL_foot" link2="RR_foot" reason="Never"/>
+    <disable_collisions link1="FL_foot" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="FL_foot" link2="RR_thigh" reason="Never"/>
+    <disable_collisions link1="FL_foot" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="FL_foot" link2="link1" reason="Never"/>
+    <disable_collisions link1="FL_foot" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="FL_foot" link2="trunk" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="FL_thigh" reason="Adjacent"/>
+    <disable_collisions link1="FL_hip" link2="FR_calf" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="FR_foot" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="FR_hip" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="FR_thigh" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="RL_hip" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="RL_thigh" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="RR_calf" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="RR_foot" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="RR_thigh" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="link1" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="link2" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="link3" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="open_manipulator_bracket" reason="Never"/>
+    <disable_collisions link1="FL_hip" link2="trunk" reason="Adjacent"/>
+    <disable_collisions link1="FL_thigh" link2="FR_hip" reason="Never"/>
+    <disable_collisions link1="FL_thigh" link2="RL_hip" reason="Never"/>
+    <disable_collisions link1="FL_thigh" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="FL_thigh" link2="RR_thigh" reason="Never"/>
+    <disable_collisions link1="FL_thigh" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="FL_thigh" link2="link1" reason="Never"/>
+    <disable_collisions link1="FL_thigh" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="FL_thigh" link2="trunk" reason="Never"/>
+    <disable_collisions link1="FR_calf" link2="FR_foot" reason="Adjacent"/>
+    <disable_collisions link1="FR_calf" link2="FR_hip" reason="Never"/>
+    <disable_collisions link1="FR_calf" link2="FR_thigh" reason="Adjacent"/>
+    <disable_collisions link1="FR_calf" link2="RL_hip" reason="Never"/>
+    <disable_collisions link1="FR_calf" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="FR_calf" link2="link1" reason="Never"/>
+    <disable_collisions link1="FR_calf" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="FR_calf" link2="trunk" reason="Never"/>
+    <disable_collisions link1="FR_foot" link2="FR_hip" reason="Never"/>
+    <disable_collisions link1="FR_foot" link2="FR_thigh" reason="Never"/>
+    <disable_collisions link1="FR_foot" link2="RL_hip" reason="Never"/>
+    <disable_collisions link1="FR_foot" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="FR_foot" link2="link1" reason="Never"/>
+    <disable_collisions link1="FR_foot" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="FR_foot" link2="trunk" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="FR_thigh" reason="Adjacent"/>
+    <disable_collisions link1="FR_hip" link2="RL_calf" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="RL_foot" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="RL_hip" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="RL_thigh" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="RR_thigh" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="link1" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="link2" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="open_manipulator_bracket" reason="Never"/>
+    <disable_collisions link1="FR_hip" link2="trunk" reason="Adjacent"/>
+    <disable_collisions link1="FR_thigh" link2="RL_hip" reason="Never"/>
+    <disable_collisions link1="FR_thigh" link2="RL_thigh" reason="Never"/>
+    <disable_collisions link1="FR_thigh" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="FR_thigh" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="FR_thigh" link2="link1" reason="Never"/>
+    <disable_collisions link1="FR_thigh" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="FR_thigh" link2="trunk" reason="Never"/>
+    <disable_collisions link1="RL_calf" link2="RL_foot" reason="Adjacent"/>
+    <disable_collisions link1="RL_calf" link2="RL_hip" reason="Never"/>
+    <disable_collisions link1="RL_calf" link2="RL_thigh" reason="Adjacent"/>
+    <disable_collisions link1="RL_calf" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="RL_calf" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="RL_calf" link2="link1" reason="Never"/>
+    <disable_collisions link1="RL_calf" link2="link2" reason="Never"/>
+    <disable_collisions link1="RL_calf" link2="link3" reason="Never"/>
+    <disable_collisions link1="RL_calf" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="RL_calf" link2="trunk" reason="Never"/>
+    <disable_collisions link1="RL_foot" link2="RL_hip" reason="Never"/>
+    <disable_collisions link1="RL_foot" link2="RL_thigh" reason="Never"/>
+    <disable_collisions link1="RL_foot" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="RL_foot" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="RL_foot" link2="link2" reason="Never"/>
+    <disable_collisions link1="RL_foot" link2="link3" reason="Never"/>
+    <disable_collisions link1="RL_foot" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="RL_foot" link2="trunk" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="RL_thigh" reason="Adjacent"/>
+    <disable_collisions link1="RL_hip" link2="RR_calf" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="RR_foot" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="RR_thigh" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="gripper_link_sub" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="link1" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="link2" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="link3" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="link4" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="link5" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="open_manipulator_bracket" reason="Never"/>
+    <disable_collisions link1="RL_hip" link2="trunk" reason="Adjacent"/>
+    <disable_collisions link1="RL_thigh" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="RL_thigh" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="RL_thigh" link2="link1" reason="Never"/>
+    <disable_collisions link1="RL_thigh" link2="link2" reason="Never"/>
+    <disable_collisions link1="RL_thigh" link2="link3" reason="Never"/>
+    <disable_collisions link1="RL_thigh" link2="link4" reason="Never"/>
+    <disable_collisions link1="RL_thigh" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="RL_thigh" link2="open_manipulator_bracket" reason="Never"/>
+    <disable_collisions link1="RL_thigh" link2="trunk" reason="Never"/>
+    <disable_collisions link1="RR_calf" link2="RR_foot" reason="Adjacent"/>
+    <disable_collisions link1="RR_calf" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="RR_calf" link2="RR_thigh" reason="Adjacent"/>
+    <disable_collisions link1="RR_calf" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="RR_calf" link2="link1" reason="Never"/>
+    <disable_collisions link1="RR_calf" link2="link2" reason="Never"/>
+    <disable_collisions link1="RR_calf" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="RR_calf" link2="trunk" reason="Never"/>
+    <disable_collisions link1="RR_foot" link2="RR_hip" reason="Never"/>
+    <disable_collisions link1="RR_foot" link2="RR_thigh" reason="Never"/>
+    <disable_collisions link1="RR_foot" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="RR_foot" link2="link2" reason="Never"/>
+    <disable_collisions link1="RR_foot" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="RR_foot" link2="trunk" reason="Never"/>
+    <disable_collisions link1="RR_hip" link2="RR_thigh" reason="Adjacent"/>
+    <disable_collisions link1="RR_hip" link2="gripper_link" reason="Never"/>
+    <disable_collisions link1="RR_hip" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="RR_hip" link2="link1" reason="Never"/>
+    <disable_collisions link1="RR_hip" link2="link2" reason="Never"/>
+    <disable_collisions link1="RR_hip" link2="link3" reason="Never"/>
+    <disable_collisions link1="RR_hip" link2="link4" reason="Never"/>
+    <disable_collisions link1="RR_hip" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="RR_hip" link2="open_manipulator_bracket" reason="Never"/>
+    <disable_collisions link1="RR_hip" link2="trunk" reason="Adjacent"/>
+    <disable_collisions link1="RR_thigh" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="RR_thigh" link2="link1" reason="Never"/>
+    <disable_collisions link1="RR_thigh" link2="link2" reason="Never"/>
+    <disable_collisions link1="RR_thigh" link2="link3" reason="Never"/>
+    <disable_collisions link1="RR_thigh" link2="link4" reason="Never"/>
+    <disable_collisions link1="RR_thigh" link2="link5" reason="Never"/>
+    <disable_collisions link1="RR_thigh" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="RR_thigh" link2="open_manipulator_bracket" reason="Never"/>
+    <disable_collisions link1="RR_thigh" link2="trunk" reason="Never"/>
+    <disable_collisions link1="gripper_link" link2="gripper_link_sub" reason="Never"/>
+    <disable_collisions link1="gripper_link" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="gripper_link" link2="link4" reason="Never"/>
+    <disable_collisions link1="gripper_link" link2="link5" reason="Adjacent"/>
+    <disable_collisions link1="gripper_link" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="gripper_link_sub" link2="imu_link" reason="Never"/>
+    <disable_collisions link1="gripper_link_sub" link2="link4" reason="Never"/>
+    <disable_collisions link1="gripper_link_sub" link2="link5" reason="Adjacent"/>
+    <disable_collisions link1="gripper_link_sub" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="imu_link" link2="link1" reason="Never"/>
+    <disable_collisions link1="imu_link" link2="link2" reason="Never"/>
+    <disable_collisions link1="imu_link" link2="link3" reason="Never"/>
+    <disable_collisions link1="imu_link" link2="link4" reason="Never"/>
+    <disable_collisions link1="imu_link" link2="link5" reason="Never"/>
+    <disable_collisions link1="imu_link" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="imu_link" link2="open_manipulator_bracket" reason="Never"/>
+    <disable_collisions link1="imu_link" link2="trunk" reason="Adjacent"/>
+    <disable_collisions link1="link1" link2="link2" reason="Adjacent"/>
+    <disable_collisions link1="link1" link2="open_manipulator_base_bracket" reason="Adjacent"/>
+    <disable_collisions link1="link1" link2="open_manipulator_bracket" reason="Adjacent"/>
+    <disable_collisions link1="link1" link2="trunk" reason="Adjacent"/>
+    <disable_collisions link1="link2" link2="link3" reason="Adjacent"/>
+    <disable_collisions link1="link2" link2="link4" reason="Never"/>
+    <disable_collisions link1="link2" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="link2" link2="open_manipulator_bracket" reason="Never"/>
+    <disable_collisions link1="link2" link2="trunk" reason="Never"/>
+    <disable_collisions link1="link3" link2="link4" reason="Adjacent"/>
+    <disable_collisions link1="link3" link2="link5" reason="Never"/>
+    <disable_collisions link1="link3" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="link3" link2="open_manipulator_bracket" reason="Default"/>
+    <disable_collisions link1="link3" link2="trunk" reason="Never"/>
+    <disable_collisions link1="link4" link2="link5" reason="Adjacent"/>
+    <disable_collisions link1="link4" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="link5" link2="open_manipulator_base_bracket" reason="Never"/>
+    <disable_collisions link1="open_manipulator_base_bracket" link2="open_manipulator_bracket" reason="Adjacent"/>
+    <disable_collisions link1="open_manipulator_base_bracket" link2="trunk" reason="Adjacent"/>
+    <disable_collisions link1="open_manipulator_bracket" link2="trunk" reason="Adjacent"/>
+</robot>

@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_depth_camera/ament_cmake_core/go2_depth_cameraConfig.cmake

@@ -1,0 +1,6 @@
+Invoking command in '/opt/mybotshop/build/domain_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/third_party/miscellanious/05Jun2025_domain_bridge_foxy -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/domain_bridge
+Invoked command in '/opt/mybotshop/build/domain_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/third_party/miscellanious/05Jun2025_domain_bridge_foxy -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/domain_bridge
+Invoking command in '/opt/mybotshop/build/domain_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/domain_bridge -- -j6 -l6
+Invoked command in '/opt/mybotshop/build/domain_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/domain_bridge -- -j6 -l6
+Invoking command in '/opt/mybotshop/build/domain_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/domain_bridge
+Invoked command in '/opt/mybotshop/build/domain_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/domain_bridge

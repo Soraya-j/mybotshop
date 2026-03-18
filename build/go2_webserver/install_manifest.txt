@@ -1,0 +1,1 @@
+/opt/mybotshop/install/go2_webserver/lib/go2_webserver/ros_test

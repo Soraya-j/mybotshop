@@ -1,0 +1,15 @@
+/opt/mybotshop/install/open_manipulator/share/ament_index/resource_index/package_run_dependencies/open_manipulator
+/opt/mybotshop/install/open_manipulator/share/ament_index/resource_index/parent_prefix_path/open_manipulator
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/environment/ament_prefix_path.sh
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/environment/ament_prefix_path.dsv
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/environment/path.sh
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/environment/path.dsv
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/local_setup.bash
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/local_setup.sh
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/local_setup.zsh
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/local_setup.dsv
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/package.dsv
+/opt/mybotshop/install/open_manipulator/share/ament_index/resource_index/packages/open_manipulator
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/cmake/open_manipulatorConfig.cmake
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/cmake/open_manipulatorConfig-version.cmake
+/opt/mybotshop/install/open_manipulator/share/open_manipulator/package.xml

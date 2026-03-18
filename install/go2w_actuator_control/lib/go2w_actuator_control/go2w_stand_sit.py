@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2w_actuator_control/scripts/go2w_stand_sit.py

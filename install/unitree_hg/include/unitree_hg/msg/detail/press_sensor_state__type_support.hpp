@@ -1,0 +1,1 @@
+/opt/mybotshop/build/unitree_hg/rosidl_generator_cpp/unitree_hg/msg/detail/press_sensor_state__type_support.hpp

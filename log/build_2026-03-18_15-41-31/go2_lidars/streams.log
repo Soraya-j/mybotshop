@@ -1,0 +1,77 @@
+[2.316s] Invoking command in '/opt/mybotshop/build/go2_lidars': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_lidars -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_lidars
+[2.675s] -- The C compiler identification is GNU 9.4.0
+[2.853s] -- The CXX compiler identification is GNU 9.4.0
+[2.875s] -- Check for working C compiler: /usr/bin/cc
+[3.375s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.375s] -- Detecting C compiler ABI info
+[3.807s] -- Detecting C compiler ABI info - done
+[3.835s] -- Detecting C compile features
+[3.836s] -- Detecting C compile features - done
+[3.842s] -- Check for working CXX compiler: /usr/bin/c++
+[4.204s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.219s] -- Detecting CXX compiler ABI info
+[4.756s] -- Detecting CXX compiler ABI info - done
+[4.808s] -- Detecting CXX compile features
+[4.809s] -- Detecting CXX compile features - done
+[4.818s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[5.001s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[5.001s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.829s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.991s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[6.264s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.301s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[6.762s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[6.976s] -- Found FastRTPS: /opt/ros/foxy/include  
+[7.661s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.803s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[7.807s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[7.809s] -- Looking for pthread.h
+[8.185s] -- Looking for pthread.h - found
+[8.186s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.559s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[8.559s] -- Looking for pthread_create in pthreads
+[8.853s] -- Looking for pthread_create in pthreads - not found
+[8.853s] -- Looking for pthread_create in pthread
+[9.204s] -- Looking for pthread_create in pthread - found
+[9.211s] -- Found Threads: TRUE  
+[9.741s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[9.751s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[9.853s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[10.070s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[10.266s] -- Found go2_interface: 0.1.0 (/opt/mybotshop/install/go2_interface/share/go2_interface/cmake)
+[10.471s] -- Configuring done
+[10.534s] -- Generating done
+[10.542s] -- Build files have been written to: /opt/mybotshop/build/go2_lidars
+[10.647s] Invoked command in '/opt/mybotshop/build/go2_lidars' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_lidars -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_lidars
+[10.648s] Invoking command in '/opt/mybotshop/build/go2_lidars': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/mybotshop/build/go2_lidars -- -j6 -l6
+[10.906s] [35m[1mScanning dependencies of target simple_obstacle_avoidance[0m
+[11.151s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_obstacle_avoidance.dir/src/obstacle_avoidance.cpp.o[0m
+[45.394s] [100%] [32m[1mLinking CXX executable simple_obstacle_avoidance[0m
+[46.522s] [100%] Built target simple_obstacle_avoidance
+[46.564s] Invoked command in '/opt/mybotshop/build/go2_lidars' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/mybotshop/build/go2_lidars -- -j6 -l6
+[46.702s] Invoking command in '/opt/mybotshop/build/go2_lidars': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/mybotshop/build/go2_lidars
+[46.754s] -- Install configuration: ""
+[46.757s] -- Execute custom install script
+[46.758s] -- Symlinking: /opt/mybotshop/install/go2_lidars/lib/go2_lidars/simple_obstacle_avoidance
+[46.784s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/config/livox_mid360.json
+[46.821s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/config/ouster_params.yaml
+[46.845s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/launch/hesai.launch.py
+[46.885s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/launch/livox_mid360.launch.py
+[46.939s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/launch/obstacle_avoidance.launch.py
+[46.969s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/launch/ouster.launch.py
+[47.009s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/ament_index/resource_index/package_run_dependencies/go2_lidars
+[47.039s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/ament_index/resource_index/parent_prefix_path/go2_lidars
+[47.084s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/environment/ament_prefix_path.sh
+[47.121s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/environment/ament_prefix_path.dsv
+[47.160s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/environment/path.sh
+[47.191s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/environment/path.dsv
+[47.226s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/local_setup.bash
+[47.270s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/local_setup.sh
+[47.301s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/local_setup.zsh
+[47.335s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/local_setup.dsv
+[47.358s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/package.dsv
+[47.389s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/ament_index/resource_index/packages/go2_lidars
+[47.429s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/cmake/go2_lidarsConfig.cmake
+[47.471s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/cmake/go2_lidarsConfig-version.cmake
+[47.518s] -- Symlinking: /opt/mybotshop/install/go2_lidars/share/go2_lidars/package.xml
+[47.582s] Invoked command in '/opt/mybotshop/build/go2_lidars' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/mybotshop/build/go2_lidars

@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_webserver/go2_webserver/static/scripts/joystick_native_script.js

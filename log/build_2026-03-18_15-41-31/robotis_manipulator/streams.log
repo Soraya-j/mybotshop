@@ -1,0 +1,83 @@
+[1.700s] Invoking command in '/opt/mybotshop/build/robotis_manipulator': AMENT_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/robotis_manipulator -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/robotis_manipulator
+[16.850s] -- The C compiler identification is GNU 9.4.0
+[16.851s] -- The CXX compiler identification is GNU 9.4.0
+[16.851s] -- Check for working C compiler: /usr/bin/cc
+[16.851s] -- Check for working C compiler: /usr/bin/cc -- works
+[16.851s] -- Detecting C compiler ABI info
+[16.851s] -- Detecting C compiler ABI info - done
+[16.852s] -- Detecting C compile features
+[16.852s] -- Detecting C compile features - done
+[16.852s] -- Check for working CXX compiler: /usr/bin/c++
+[16.852s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[16.852s] -- Detecting CXX compiler ABI info
+[16.852s] -- Detecting CXX compiler ABI info - done
+[16.852s] -- Detecting CXX compile features
+[16.852s] -- Detecting CXX compile features - done
+[16.853s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[16.853s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[16.853s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[16.853s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[16.853s] -- Found cmake_modules: 0.4.1 (/opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake)
+[16.853s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[16.853s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[16.853s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[16.854s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[16.854s] -- Found FastRTPS: /opt/ros/foxy/include  
+[16.854s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[16.854s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[16.854s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[16.854s] -- Looking for pthread.h
+[16.854s] -- Looking for pthread.h - found
+[16.854s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[16.861s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[16.862s] -- Looking for pthread_create in pthreads
+[16.862s] -- Looking for pthread_create in pthreads - not found
+[16.871s] -- Looking for pthread_create in pthread
+[16.871s] -- Looking for pthread_create in pthread - found
+[16.872s] -- Found Threads: TRUE  
+[16.872s] -- Configuring done
+[16.872s] -- Generating done
+[16.872s] -- Build files have been written to: /opt/mybotshop/build/robotis_manipulator
+[16.873s] Invoked command in '/opt/mybotshop/build/robotis_manipulator' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/robotis_manipulator -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/robotis_manipulator
+[16.874s] Invoking command in '/opt/mybotshop/build/robotis_manipulator': AMENT_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/robotis_manipulator -- -j6 -l6
+[17.083s] [35m[1mScanning dependencies of target robotis_manipulator[0m
+[17.262s] [ 14%] [32mBuilding CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator.cpp.o[0m
+[28.930s] [ 28%] [32mBuilding CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_math.cpp.o[0m
+[42.525s] [ 42%] [32mBuilding CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_manager.cpp.o[0m
+[47.556s] [ 57%] [32mBuilding CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_trajectory_generator.cpp.o[0m
+[80.923s] [ 71%] [32mBuilding CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_log.cpp.o[0m
+[81.823s] [ 85%] [32mBuilding CXX object CMakeFiles/robotis_manipulator.dir/src/robotis_manipulator/robotis_manipulator_common.cpp.o[0m
+[88.412s] [100%] [32m[1mLinking CXX shared library librobotis_manipulator.so[0m
+[89.951s] [100%] Built target robotis_manipulator
+[90.015s] Invoked command in '/opt/mybotshop/build/robotis_manipulator' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/robotis_manipulator -- -j6 -l6
+[93.643s] Invoking command in '/opt/mybotshop/build/robotis_manipulator': AMENT_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/robotis_manipulator
+[93.719s] -- Install configuration: ""
+[93.724s] -- Execute custom install script
+[93.728s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/lib/librobotis_manipulator.so
+[93.730s] -- Symlinking: /opt/mybotshop/install/robotis_manipulator/include//robotis_manipulator/robotis_manipulator.h
+[93.829s] -- Symlinking: /opt/mybotshop/install/robotis_manipulator/include//robotis_manipulator/robotis_manipulator_common.h
+[93.874s] -- Symlinking: /opt/mybotshop/install/robotis_manipulator/include//robotis_manipulator/robotis_manipulator_log.h
+[93.918s] -- Symlinking: /opt/mybotshop/install/robotis_manipulator/include//robotis_manipulator/robotis_manipulator_manager.h
+[94.035s] -- Symlinking: /opt/mybotshop/install/robotis_manipulator/include//robotis_manipulator/robotis_manipulator_math.h
+[94.142s] -- Symlinking: /opt/mybotshop/install/robotis_manipulator/include//robotis_manipulator/robotis_manipulator_trajectory_generator.h
+[94.232s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/environment/library_path.sh
+[94.232s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/environment/library_path.dsv
+[94.233s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/ament_index/resource_index/package_run_dependencies/robotis_manipulator
+[94.234s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/ament_index/resource_index/parent_prefix_path/robotis_manipulator
+[94.234s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/environment/ament_prefix_path.sh
+[94.234s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/environment/ament_prefix_path.dsv
+[94.240s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/environment/path.sh
+[94.240s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/environment/path.dsv
+[94.241s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/local_setup.bash
+[94.247s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/local_setup.sh
+[94.248s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/local_setup.zsh
+[94.249s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/local_setup.dsv
+[94.249s] -- Symlinking: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/package.dsv
+[94.335s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/ament_index/resource_index/packages/robotis_manipulator
+[94.338s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/cmake/ament_cmake_export_include_directories-extras.cmake
+[94.339s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/cmake/ament_cmake_export_dependencies-extras.cmake
+[94.344s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/cmake/ament_cmake_export_libraries-extras.cmake
+[94.345s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/cmake/robotis_manipulatorConfig.cmake
+[94.348s] -- Up-to-date symlink: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/cmake/robotis_manipulatorConfig-version.cmake
+[94.349s] -- Symlinking: /opt/mybotshop/install/robotis_manipulator/share/robotis_manipulator/package.xml
+[94.532s] Invoked command in '/opt/mybotshop/build/robotis_manipulator' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/cmake_modules:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/robotis_manipulator

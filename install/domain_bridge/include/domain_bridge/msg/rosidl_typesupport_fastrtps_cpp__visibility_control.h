@@ -1,0 +1,1 @@
+/opt/mybotshop/build/domain_bridge/rosidl_typesupport_fastrtps_cpp/domain_bridge/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h

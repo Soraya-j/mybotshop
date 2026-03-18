@@ -1,0 +1,158 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+# Software License Agreement (BSD)
+#
+# @author    Salman Omar Sohail <support@mybotshop.de>
+# @copyright (c) 2025, MYBOTSHOP GmbH, Inc., All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+# * Redistributions of source code must retain the above copyright notice,
+#   this list of conditions and the following disclaimer.
+# * Redistributions in binary form must reproduce the above copyright notice,
+#   this list of conditions and the following disclaimer in the documentation
+#   and/or other materials provided with the distribution.
+# * Neither the name of MYBOTSHOP GmbH nor the names of its contributors
+#   may be used to endorse or promote products derived from this software
+#   without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
+
+# Redistribution and use in source and binary forms, with or without
+# modification, is not permitted without the express permission
+# of MYBOTSHOP GmbH.
+
+import rclpy
+from go2_interface.srv import Go2Modes
+from go2_manipulation.arm_poses import *
+
+from rclpy.node import Node
+from rclpy.action import ActionClient
+from sensor_msgs.msg import JointState
+from control_msgs.action import FollowJointTrajectory
+
+
+class OpenManipulatorJointState(Node):
+
+    def __init__(self):
+        super().__init__('openmanipulator_bridge')
+        self.get_logger().info(
+            f'{self.colorize("Initializing Open Manipulator State Publisher","yellow")}')
+
+        # Parameters
+        self.param_openmanipulator_jointstates = 'open_manipulator/joint_states'
+
+        # Subscribers
+        self.subscriber_om_js = self.create_subscription(
+            JointState, self.param_openmanipulator_jointstates, self.callback_openmanipulator_js, 10)
+        
+        # Service Server
+        self.service_server_om_poses = self.create_service(
+            Go2Modes, 'moveit2/predefined_pose', self.callback_set_pose)
+
+        # Publishers
+        self.publisher_jointstate_om = self.create_publisher(
+            JointState, 'open_manipulator/corrected_joint_states', 10)
+        self.pub_data_jointstate = JointState()
+
+        # Action Client
+        self.action_client_arm = ActionClient(self, FollowJointTrajectory,
+                                              'open_manipulator/joint_trajectory_controller/follow_joint_trajectory')
+        self.action_client_gripper = ActionClient(self, FollowJointTrajectory,
+                                                  'open_manipulator/gripper_controller/follow_joint_trajectory')
+
+    def colorize(self, text, color):
+        color_codes = {
+            'green': '\033[92m',
+            'yellow': '\033[93m',
+            'orange': '\033[38;5;208m',
+            'blue': '\033[94m',
+            'red': '\033[91m'
+        }
+        return color_codes[color] + text + '\033[0m'
+
+    def callback_set_pose(self, request, response):
+        self.get_logger().info(
+            f'{self.colorize(f"Received request to set pose to {request.request_data}","green")}')
+        request_mode = request.request_data
+        if request_mode == 'home':
+            arm_home(self)
+        elif request_mode == 'transport':
+            arm_transport(self)
+        elif request_mode == 'stand':
+            arm_stand(self)
+        elif request_mode == 'g_open':
+            gripper_open(self)
+        elif request_mode == 'g_close':
+            gripper_close(self)
+        else:
+            response.success = False
+            response.reason = 'Invalid mode'
+            return response
+        
+        response.success = True
+        response.reason = 'Pose set successfully'
+        return response
+
+    def callback_openmanipulator_js(self, data):
+        self.pub_data_jointstate = data
+
+    def map_value(self, input_value):
+        # Define the input range
+        input_min = 1.0
+        input_max = -1.0
+
+        # Define the output range
+        output_min = -0.010
+        output_max = 0.019
+
+        # Perform the linear mapping
+        output_value = ((input_value - input_min) / (input_max -
+                        input_min)) * (output_max - output_min) + output_min
+
+        return output_value
+
+    def update_joint_states(self):
+
+        if self.pub_data_jointstate.name == []:
+            return
+
+        mapped_js = self.map_value(self.pub_data_jointstate.position[0])
+        self.pub_data_jointstate.position[0] = mapped_js
+        self.publisher_jointstate_om.publish(self.pub_data_jointstate)
+
+    def destroy_node(self):
+        self.get_logger().info(
+            f'{self.colorize("Open Manipulator State Publisher is shutting down","red")}')
+        super().destroy_node()
+
+def main(args=None):
+
+    rclpy.init(args=args)
+    js = OpenManipulatorJointState()
+    arm_home(js)
+    gripper_close(js)
+    try:
+        while rclpy.ok():
+            js.update_joint_states()
+            rclpy.spin_once(js)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        js.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()

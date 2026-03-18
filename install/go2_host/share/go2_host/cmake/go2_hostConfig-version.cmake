@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_host/ament_cmake_core/go2_hostConfig-version.cmake

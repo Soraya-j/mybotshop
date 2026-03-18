@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_zt30/ament_cmake_environment_hooks/pythonpath.sh

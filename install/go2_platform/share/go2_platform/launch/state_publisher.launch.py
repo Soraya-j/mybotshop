@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_platform/launch/state_publisher.launch.py

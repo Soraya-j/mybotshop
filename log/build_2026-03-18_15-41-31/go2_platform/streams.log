@@ -1,0 +1,138 @@
+[0.839s] Invoking command in '/opt/mybotshop/build/go2_platform': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_platform -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_platform
+[1.015s] -- The C compiler identification is GNU 9.4.0
+[1.190s] -- The CXX compiler identification is GNU 9.4.0
+[1.202s] -- Check for working C compiler: /usr/bin/cc
+[1.441s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.445s] -- Detecting C compiler ABI info
+[1.733s] -- Detecting C compiler ABI info - done
+[1.779s] -- Detecting C compile features
+[1.782s] -- Detecting C compile features - done
+[1.808s] -- Check for working CXX compiler: /usr/bin/c++
+[2.091s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.096s] -- Detecting CXX compiler ABI info
+[2.431s] -- Detecting CXX compiler ABI info - done
+[2.459s] -- Detecting CXX compile features
+[2.460s] -- Detecting CXX compile features - done
+[2.468s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[2.542s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.542s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.974s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.159s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.178s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.463s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.548s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.753s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.966s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[4.125s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[4.129s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[4.131s] -- Looking for pthread.h
+[4.394s] -- Looking for pthread.h - found
+[4.394s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.640s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[4.654s] -- Looking for pthread_create in pthreads
+[4.941s] -- Looking for pthread_create in pthreads - not found
+[4.942s] -- Looking for pthread_create in pthread
+[5.249s] -- Looking for pthread_create in pthread - found
+[5.250s] -- Found Threads: TRUE  
+[6.218s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[6.363s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[6.365s] -- Found go2_interface: 0.1.0 (/opt/mybotshop/install/go2_interface/share/go2_interface/cmake)
+[6.385s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[6.529s] -- Found unitree_go: 0.0.0 (/opt/mybotshop/install/unitree_go/share/unitree_go/cmake)
+[6.641s] -- Found unitree_api: 0.0.0 (/opt/mybotshop/install/unitree_api/share/unitree_api/cmake)
+[6.765s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[6.789s] -- Found rosbag2_cpp: 0.3.11 (/opt/ros/foxy/share/rosbag2_cpp/cmake)
+[6.861s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[6.873s] -- Found camera_info_manager: 2.4.0 (/opt/ros/foxy/share/camera_info_manager/cmake)
+[7.050s] -- Checking for module 'eigen3'
+[7.113s] --   Found eigen3, version 3.3.9
+[7.243s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[7.245s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[7.374s] -- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex 
+[7.414s] -- Checking for module 'flann'
+[7.488s] --   Found flann, version 1.9.1
+[7.680s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[7.684s] -- looking for PCL_COMMON
+[7.690s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[7.692s] -- looking for PCL_KDTREE
+[7.697s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[7.701s] -- looking for PCL_OCTREE
+[7.705s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[7.705s] -- looking for PCL_SEARCH
+[7.714s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[7.714s] -- looking for PCL_SAMPLE_CONSENSUS
+[7.714s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[7.721s] -- looking for PCL_FILTERS
+[7.726s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[7.728s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;/usr/lib/aarch64-linux-gnu/libboost_system.so;/usr/lib/aarch64-linux-gnu/libboost_filesystem.so;/usr/lib/aarch64-linux-gnu/libboost_date_time.so;/usr/lib/aarch64-linux-gnu/libboost_iostreams.so;/usr/lib/aarch64-linux-gnu/libboost_regex.so;FLANN::FLANN  
+[7.742s] -- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)
+[8.086s] -- Found OpenCV: /usr/local (found version "4.1.1") 
+[8.091s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[8.123s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[8.125s] -- Checking for modules 'gstreamer-1.0;gstreamer-video-1.0;gstreamer-app-1.0'
+[8.215s] --   Found gstreamer-1.0, version 1.16.3
+[8.268s] --   Found gstreamer-video-1.0, version 1.16.3
+[8.316s] --   Found gstreamer-app-1.0, version 1.16.3
+[9.291s] -- Configuring done
+[9.515s] -- Generating done
+[9.524s] -- Build files have been written to: /opt/mybotshop/build/go2_platform
+[9.580s] Invoked command in '/opt/mybotshop/build/go2_platform' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_platform -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_platform
+[9.582s] Invoking command in '/opt/mybotshop/build/go2_platform': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/mybotshop/build/go2_platform -- -j6 -l6
+[9.724s] [35m[1mScanning dependencies of target go2_video_publisher[0m
+[10.021s] [ 12%] [32mBuilding CXX object CMakeFiles/go2_video_publisher.dir/src/go2_video_publisher.cpp.o[0m
+[26.794s] [ 25%] [32m[1mLinking CXX executable go2_video_publisher[0m
+[27.410s] [ 25%] Built target go2_video_publisher
+[27.441s] [35m[1mScanning dependencies of target go2_scan[0m
+[27.835s] [ 37%] [32mBuilding CXX object CMakeFiles/go2_scan.dir/src/go2_scan_node.cpp.o[0m
+[67.949s] [ 50%] [32m[1mLinking CXX executable go2_scan[0m
+[69.631s] [ 50%] Built target go2_scan
+[69.661s] [35m[1mScanning dependencies of target go2_highroscontrol[0m
+[69.910s] [ 62%] [32mBuilding CXX object CMakeFiles/go2_highroscontrol.dir/src/go2_highroscontrol.cpp.o[0m
+[93.861s] [ 75%] [32m[1mLinking CXX executable go2_highroscontrol[0m
+[95.799s] [ 75%] Built target go2_highroscontrol
+[95.829s] [35m[1mScanning dependencies of target go2_lowroscontrol[0m
+[95.860s] [ 87%] [32mBuilding CXX object CMakeFiles/go2_lowroscontrol.dir/src/go2_lowlevel_example.cpp.o[0m
+[95.931s] [100%] [32m[1mLinking CXX executable go2_lowroscontrol[0m
+[96.361s] [100%] Built target go2_lowroscontrol
+[96.394s] Invoked command in '/opt/mybotshop/build/go2_platform' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/mybotshop/build/go2_platform -- -j6 -l6
+[96.502s] Invoking command in '/opt/mybotshop/build/go2_platform': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/mybotshop/build/go2_platform
+[96.531s] -- Install configuration: ""
+[96.532s] -- Execute custom install script
+[96.533s] -- Symlinking: /opt/mybotshop/install/go2_platform/lib/go2_platform/go2_statepublisher
+[96.560s] -- Symlinking: /opt/mybotshop/install/go2_platform/lib/go2_platform/go2_highroscontrol
+[96.594s] -- Symlinking: /opt/mybotshop/install/go2_platform/lib/go2_platform/go2_lowroscontrol
+[96.619s] -- Symlinking: /opt/mybotshop/install/go2_platform/lib/go2_platform/go2_scan
+[96.647s] -- Symlinking: /opt/mybotshop/install/go2_platform/lib/go2_platform/go2_video_publisher
+[96.673s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/launch/bridge.launch.py
+[96.696s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/launch/camera.launch.py
+[96.724s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/launch/hardware.launch.py
+[96.749s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/launch/laserscan.launch.py
+[96.775s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/launch/state_publisher.launch.py
+[96.803s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/config/go2_cam.yaml
+[96.828s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/config/go2_domain_bridge.yaml
+[96.853s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/config/go2_platform.yaml
+[96.878s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/environment/pythonpath.sh
+[96.901s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/environment/pythonpath.dsv
+[96.927s] -- Symlinking: /opt/mybotshop/install/go2_platform/lib/python3.8/site-packages/go2_platform/__init__.py
+[96.951s] -- Symlinking: /opt/mybotshop/install/go2_platform/lib/python3.8/site-packages/go2_platform/go2_statepublisher
+[96.975s] -- Symlinking: /opt/mybotshop/install/go2_platform/lib/python3.8/site-packages/go2_platform/utils/transforms.py
+[96.999s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/ament_index/resource_index/package_run_dependencies/go2_platform
+[97.025s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/ament_index/resource_index/parent_prefix_path/go2_platform
+[97.051s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/environment/ament_prefix_path.sh
+[97.078s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/environment/ament_prefix_path.dsv
+[97.103s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/environment/path.sh
+[97.130s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/environment/path.dsv
+[97.155s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/local_setup.bash
+[97.179s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/local_setup.sh
+[97.206s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/local_setup.zsh
+[97.233s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/local_setup.dsv
+[97.260s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/package.dsv
+[97.284s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/ament_index/resource_index/packages/go2_platform
+[97.309s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/cmake/go2_platformConfig.cmake
+[97.332s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/cmake/go2_platformConfig-version.cmake
+[97.357s] -- Symlinking: /opt/mybotshop/install/go2_platform/share/go2_platform/package.xml
+[97.447s] Listing '/opt/mybotshop/install/go2_platform/lib/python3.8/site-packages/go2_platform'...
+[97.448s] Compiling '/opt/mybotshop/install/go2_platform/lib/python3.8/site-packages/go2_platform/__init__.py'...
+[97.448s] Listing '/opt/mybotshop/install/go2_platform/lib/python3.8/site-packages/go2_platform/utils'...
+[97.448s] Compiling '/opt/mybotshop/install/go2_platform/lib/python3.8/site-packages/go2_platform/utils/transforms.py'...
+[97.464s] Invoked command in '/opt/mybotshop/build/go2_platform' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/mybotshop/build/go2_platform

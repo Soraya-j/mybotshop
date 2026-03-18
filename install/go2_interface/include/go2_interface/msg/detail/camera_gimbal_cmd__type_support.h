@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_interface/rosidl_generator_c/go2_interface/msg/detail/camera_gimbal_cmd__type_support.h

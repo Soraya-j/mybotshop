@@ -1,0 +1,9 @@
+/opt/mybotshop/build/go2_manipulation/CMakeFiles/install/strip.dir
+/opt/mybotshop/build/go2_manipulation/CMakeFiles/install/local.dir
+/opt/mybotshop/build/go2_manipulation/CMakeFiles/edit_cache.dir
+/opt/mybotshop/build/go2_manipulation/CMakeFiles/test.dir
+/opt/mybotshop/build/go2_manipulation/CMakeFiles/install.dir
+/opt/mybotshop/build/go2_manipulation/CMakeFiles/list_install_components.dir
+/opt/mybotshop/build/go2_manipulation/CMakeFiles/rebuild_cache.dir
+/opt/mybotshop/build/go2_manipulation/CMakeFiles/go2_manipulation_uninstall.dir
+/opt/mybotshop/build/go2_manipulation/CMakeFiles/uninstall.dir

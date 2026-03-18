@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_webserver/go2_webserver/static/scripts/draco_decoder/npm/draco3dgltf/draco_encoder_gltf_nodejs.js

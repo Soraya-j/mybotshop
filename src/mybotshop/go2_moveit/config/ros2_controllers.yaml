@@ -1,0 +1,71 @@
+required_namespace/open_manipulator:
+  controller_manager:
+    ros__parameters:
+      update_rate: 150  # Hz
+
+      velocity_controller:
+        type: velocity_controllers/JointGroupVelocityController
+
+      joint_trajectory_controller:
+        type: joint_trajectory_controller/JointTrajectoryController
+
+      gripper_controller:
+        type: joint_trajectory_controller/JointTrajectoryController
+
+      joint_state_broadcaster:
+        type: joint_state_broadcaster/JointStateBroadcaster
+
+  velocity_controller:
+    ros__parameters:
+      joints:
+        - joint1
+        - joint2
+        - joint3
+        - joint4
+        - gripper
+
+  joint_trajectory_controller:
+    ros__parameters:
+      joints:
+        - joint1
+        - joint2
+        - joint3
+        - joint4
+
+      command_interfaces:
+        - position
+
+      state_interfaces:
+        - position
+
+      constraints:
+        goal_time: 0.2
+
+      action_server:
+        qos_overrides:
+          goal:
+            history: keep_last
+            depth: 1
+            reliability: best_effort
+          result:
+            history: keep_last
+            depth: 1
+            reliability: best_effort
+      
+      allow_partial_joints_goal: true     # Accept goals with subset of joints
+      open_loop_control: true             # Disable state feedback for faster execution
+      allowed_execution_duration_scaling: 3.0  # More flexible timing
+
+      # state_publish_rate: 200.0  
+      # action_monitor_rate: 100.0 
+
+  gripper_controller:
+    ros__parameters:
+      joints:
+        - gripper
+
+      command_interfaces:
+        - position
+
+      state_interfaces:
+        - position

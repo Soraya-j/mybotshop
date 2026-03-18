@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_gps/ament_cmake_environment_hooks/local_setup.bash

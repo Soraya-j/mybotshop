@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/opt/mybotshop/build/open_manipulator_msgs/rosidl_generator_py/open_manipulator_msgs/libopen_manipulator_msgs__python.so" "TARGETS" "open_manipulator_msgs__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

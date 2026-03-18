@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/opt/mybotshop/build/go2_interface/rosidl_generator_py/go2_interface/go2_interface_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" "TARGETS" "go2_interface__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.8/site-packages/go2_interface")

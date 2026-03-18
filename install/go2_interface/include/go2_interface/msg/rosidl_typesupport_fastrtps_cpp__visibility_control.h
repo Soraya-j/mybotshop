@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_interface/rosidl_typesupport_fastrtps_cpp/go2_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h

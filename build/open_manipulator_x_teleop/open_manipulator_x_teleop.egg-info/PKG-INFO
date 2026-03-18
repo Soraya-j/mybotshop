@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: open-manipulator-x-teleop
+Version: 2.3.0
+Summary: Teleoperation node using keyboard for OpenMANIPULATOR-X.
+Home-page: UNKNOWN
+Author: Will Son
+Author-email: willson@robotis.com
+Maintainer: Will Son
+Maintainer-email: willson@robotis.com
+License: Apache License, Version 2.0
+Description: UNKNOWN
+Keywords: ROS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development

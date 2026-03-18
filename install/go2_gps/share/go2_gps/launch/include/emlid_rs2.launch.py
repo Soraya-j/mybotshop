@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_gps/launch/include/emlid_rs2.launch.py

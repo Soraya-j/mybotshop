@@ -1,0 +1,1 @@
+/opt/mybotshop/build/domain_bridge/rosidl_typesupport_introspection_c/domain_bridge/msg/rosidl_typesupport_introspection_c__visibility_control.h

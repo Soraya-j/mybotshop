@@ -1,0 +1,16 @@
+{
+  "package_name": "unitree_hg",
+  "non_idl_tuples": [
+    "/opt/mybotshop/src/third_party/unitree/18Mar2025_unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg:msg/BmsCmd.msg",
+    "/opt/mybotshop/src/third_party/unitree/18Mar2025_unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg:msg/BmsState.msg",
+    "/opt/mybotshop/src/third_party/unitree/18Mar2025_unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg:msg/HandCmd.msg",
+    "/opt/mybotshop/src/third_party/unitree/18Mar2025_unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg:msg/HandState.msg",
+    "/opt/mybotshop/src/third_party/unitree/18Mar2025_unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg:msg/IMUState.msg",
+    "/opt/mybotshop/src/third_party/unitree/18Mar2025_unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg:msg/LowCmd.msg",
+    "/opt/mybotshop/src/third_party/unitree/18Mar2025_unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg:msg/LowState.msg",
+    "/opt/mybotshop/src/third_party/unitree/18Mar2025_unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg:msg/MainBoardState.msg",
+    "/opt/mybotshop/src/third_party/unitree/18Mar2025_unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg:msg/MotorCmd.msg",
+    "/opt/mybotshop/src/third_party/unitree/18Mar2025_unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg:msg/MotorState.msg",
+    "/opt/mybotshop/src/third_party/unitree/18Mar2025_unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg:msg/PressSensorState.msg"
+  ]
+}

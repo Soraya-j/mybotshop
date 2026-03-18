@@ -1,0 +1,1 @@
+/opt/mybotshop/build/domain_bridge/rosidl_generator_c/domain_bridge/msg/compressed_msg.h

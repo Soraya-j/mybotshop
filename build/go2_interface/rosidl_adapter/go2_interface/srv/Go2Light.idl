@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from go2_interface/srv/Go2Light.srv
+// generated code does not contain a copyright notice
+
+
+module go2_interface {
+  module srv {
+    struct Go2Light_Request {
+      int32 light_level;
+    };
+    struct Go2Light_Response {
+      boolean success;
+
+      string reason;
+    };
+  };
+};

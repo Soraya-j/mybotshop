@@ -1,0 +1,49 @@
+[1.200s] Invoking command in '/opt/mybotshop/build/go2_control': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_control
+[1.379s] -- The C compiler identification is GNU 9.4.0
+[1.537s] -- The CXX compiler identification is GNU 9.4.0
+[1.564s] -- Check for working C compiler: /usr/bin/cc
+[1.875s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.877s] -- Detecting C compiler ABI info
+[2.170s] -- Detecting C compiler ABI info - done
+[2.209s] -- Detecting C compile features
+[2.210s] -- Detecting C compile features - done
+[2.220s] -- Check for working CXX compiler: /usr/bin/c++
+[2.518s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.521s] -- Detecting CXX compiler ABI info
+[2.876s] -- Detecting CXX compiler ABI info - done
+[2.908s] -- Detecting CXX compile features
+[2.914s] -- Detecting CXX compile features - done
+[2.926s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.036s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.037s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.575s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.663s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[3.878s] -- Configuring done
+[3.891s] -- Generating done
+[3.895s] -- Build files have been written to: /opt/mybotshop/build/go2_control
+[3.906s] Invoked command in '/opt/mybotshop/build/go2_control' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_control
+[3.913s] Invoking command in '/opt/mybotshop/build/go2_control': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/mybotshop/build/go2_control -- -j6 -l6
+[4.111s] Invoked command in '/opt/mybotshop/build/go2_control' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/mybotshop/build/go2_control -- -j6 -l6
+[4.192s] Invoking command in '/opt/mybotshop/build/go2_control': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/mybotshop/build/go2_control
+[4.245s] -- Install configuration: ""
+[4.246s] -- Execute custom install script
+[4.250s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/config/localization.yaml
+[4.280s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/config/teleop_control.yaml
+[4.322s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/launch/ekf_localization.launch.py
+[4.357s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/launch/teleop.launch.py
+[4.383s] -- Symlinking: /opt/mybotshop/install/go2_control/share/ament_index/resource_index/package_run_dependencies/go2_control
+[4.408s] -- Symlinking: /opt/mybotshop/install/go2_control/share/ament_index/resource_index/parent_prefix_path/go2_control
+[4.433s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/environment/ament_prefix_path.sh
+[4.462s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/environment/ament_prefix_path.dsv
+[4.485s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/environment/path.sh
+[4.507s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/environment/path.dsv
+[4.543s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/local_setup.bash
+[4.571s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/local_setup.sh
+[4.598s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/local_setup.zsh
+[4.643s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/local_setup.dsv
+[4.671s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/package.dsv
+[4.698s] -- Symlinking: /opt/mybotshop/install/go2_control/share/ament_index/resource_index/packages/go2_control
+[4.740s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/cmake/go2_controlConfig.cmake
+[4.790s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/cmake/go2_controlConfig-version.cmake
+[4.831s] -- Symlinking: /opt/mybotshop/install/go2_control/share/go2_control/package.xml
+[4.881s] Invoked command in '/opt/mybotshop/build/go2_control' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/unitree_go:/opt/mybotshop/install/unitree_api:/opt/mybotshop/install/go2_interface:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy LD_LIBRARY_PATH=/opt/mybotshop/install/unitree_go/lib:/opt/mybotshop/install/unitree_api/lib:/opt/mybotshop/install/go2_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/install/unitree_go/lib/python3.8/site-packages:/opt/mybotshop/install/unitree_api/lib/python3.8/site-packages:/opt/mybotshop/install/go2_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/mybotshop/build/go2_control

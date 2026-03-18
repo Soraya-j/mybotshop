@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_moveit/launch/system_openmanipulator.launch.py

@@ -1,0 +1,19 @@
+[4.344s] Invoking command in '/opt/mybotshop/build/open_manipulator_x_teleop': AMENT_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/opt/mybotshop/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/build/open_manipulator_x_teleop/prefix_override:/opt/mybotshop/install/open_manipulator_x_teleop/lib/python3.8/site-packages:/opt/mybotshop/install/open_manipulator_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /opt/mybotshop/build/open_manipulator_x_teleop/build --no-deps install_data
+[5.232s] running develop
+[5.659s] running egg_info
+[5.659s] creating open_manipulator_x_teleop.egg-info
+[5.660s] writing open_manipulator_x_teleop.egg-info/PKG-INFO
+[5.661s] writing dependency_links to open_manipulator_x_teleop.egg-info/dependency_links.txt
+[5.661s] writing entry points to open_manipulator_x_teleop.egg-info/entry_points.txt
+[5.661s] writing requirements to open_manipulator_x_teleop.egg-info/requires.txt
+[5.662s] writing top-level names to open_manipulator_x_teleop.egg-info/top_level.txt
+[5.667s] writing manifest file 'open_manipulator_x_teleop.egg-info/SOURCES.txt'
+[5.786s] reading manifest file 'open_manipulator_x_teleop.egg-info/SOURCES.txt'
+[5.788s] writing manifest file 'open_manipulator_x_teleop.egg-info/SOURCES.txt'
+[5.919s] running build_ext
+[5.924s] Creating /opt/mybotshop/install/open_manipulator_x_teleop/lib/python3.8/site-packages/open-manipulator-x-teleop.egg-link (link to .)
+[5.928s] Installing teleop_keyboard script to /opt/mybotshop/install/open_manipulator_x_teleop/lib/open_manipulator_x_teleop
+[5.928s] 
+[5.928s] Installed /opt/mybotshop/build/open_manipulator_x_teleop
+[5.929s] running install_data
+[6.103s] Invoked command in '/opt/mybotshop/build/open_manipulator_x_teleop' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/open_manipulator_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/opt/mybotshop/install/open_manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/opt/mybotshop/build/open_manipulator_x_teleop/prefix_override:/opt/mybotshop/install/open_manipulator_x_teleop/lib/python3.8/site-packages:/opt/mybotshop/install/open_manipulator_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /opt/mybotshop/build/open_manipulator_x_teleop/build --no-deps install_data

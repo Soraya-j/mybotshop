@@ -1,0 +1,1 @@
+/opt/mybotshop/build/open_manipulator_msgs/ament_cmake_core/open_manipulator_msgsConfig.cmake

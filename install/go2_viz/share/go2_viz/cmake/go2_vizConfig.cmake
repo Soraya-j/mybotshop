@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_viz/ament_cmake_core/go2_vizConfig.cmake

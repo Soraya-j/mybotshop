@@ -1,0 +1,140 @@
+[0.721s] Invoking command in '/opt/mybotshop/build/go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_description
+[1.397s] -- The C compiler identification is GNU 9.4.0
+[1.398s] -- The CXX compiler identification is GNU 9.4.0
+[1.398s] -- Check for working C compiler: /usr/bin/cc
+[1.734s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.740s] -- Detecting C compiler ABI info
+[2.037s] -- Detecting C compiler ABI info - done
+[2.075s] -- Detecting C compile features
+[2.075s] -- Detecting C compile features - done
+[2.090s] -- Check for working CXX compiler: /usr/bin/c++
+[2.552s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.554s] -- Detecting CXX compiler ABI info
+[2.967s] -- Detecting CXX compiler ABI info - done
+[2.996s] -- Detecting CXX compile features
+[2.997s] -- Detecting CXX compile features - done
+[3.004s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.123s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.123s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.881s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.977s] -- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)
+[4.182s] -- Found xacro: 2.0.7 (/opt/ros/foxy/share/xacro/cmake)
+[4.548s] -- Configuring done
+[4.564s] -- Generating done
+[4.565s] -- Build files have been written to: /opt/mybotshop/build/go2_description
+[5.799s] Invoked command in '/opt/mybotshop/build/go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_description
+[5.802s] Invoking command in '/opt/mybotshop/build/go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/go2_description -- -j6 -l6
+[6.050s] Invoked command in '/opt/mybotshop/build/go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/go2_description -- -j6 -l6
+[6.202s] Invoking command in '/opt/mybotshop/build/go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/go2_description
+[14.260s] -- Install configuration: ""
+[14.260s] -- Execute custom install script
+[14.260s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/launch/go2_description.launch.py
+[14.261s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/launch/view_robot.launch.py
+[14.261s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/GO2_Openmanipulator_Base.stl
+[14.261s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/Go2_Openmanipulator_Halterung.stl
+[14.261s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/d405_bracket.dae
+[14.261s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/d405_bracket.stl
+[14.261s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/livox_base.dae
+[14.261s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/livox_base.stl
+[14.261s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/open_manipulator_casing.stl
+[14.262s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/open_manipulator_combined_fixture.stl
+[14.262s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/open_manipulator_fixture.stl
+[14.262s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/realsense_d435i_bracket.dae
+[14.262s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/realsense_d435i_bracket.stl
+[14.262s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/rig_ouster.dae
+[14.262s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/rig_steamdeck.dae
+[14.262s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/rig_z.dae
+[14.262s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/3d_brackets/robosense_fixture.stl
+[14.263s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/d1_base.dae
+[14.263s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/d1_gripper_left.dae
+[14.263s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/d1_gripper_right.dae
+[14.263s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/d1_link1.dae
+[14.263s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/d1_link2.dae
+[14.263s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/d1_link3.dae
+[14.263s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/d1_link4.dae
+[14.263s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/d1_link5.dae
+[14.263s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/d1_link6.dae
+[14.264s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/unitree/d1_base_link.stl
+[14.264s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/unitree/d1_link1.stl
+[14.264s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/unitree/d1_link2.stl
+[14.269s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/unitree/d1_link3.stl
+[14.270s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/unitree/d1_link4.stl
+[14.270s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/unitree/d1_link5.stl
+[14.271s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/unitree/d1_link6.stl
+[14.271s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/unitree/d1_link_l.stl
+[14.271s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/d1/unitree/d1_link_r.stl
+[14.271s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/go2/calf.dae
+[14.271s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/go2/calf_mirror.dae
+[14.271s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/go2/computer_dock.dae
+[14.271s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/go2/foot.dae
+[14.272s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/go2/hip.dae
+[14.272s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/go2/thigh.dae
+[14.272s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/go2/thigh_mirror.dae
+[14.272s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/go2/trunk.dae
+[14.272s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/go2/wheel.dae
+[14.272s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/gps/gps.dae
+[14.272s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/gps/gps.glb
+[14.272s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/open_manipulator/OpenManipulator Chain.stl
+[14.273s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/open_manipulator/chain_link1.stl
+[14.273s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/open_manipulator/chain_link2.stl
+[14.273s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/open_manipulator/chain_link3_mod.stl
+[14.273s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/open_manipulator/chain_link4_mod.stl
+[14.273s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/open_manipulator/chain_link5.stl
+[14.273s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/open_manipulator/chain_link_grip_l.stl
+[14.274s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/open_manipulator/chain_link_grip_r.stl
+[14.274s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/open_manipulator/connection_road.stl
+[14.274s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/ouster/os1_64.dae
+[14.274s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/realsense/d405.dae
+[14.274s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/realsense/d405.stl
+[14.274s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/sensors/hesai_jt16.dae
+[14.275s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/sensors/pandar_xt16.dae
+[14.275s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/zt30/zt30_base.dae
+[14.275s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/zt30/zt30_camera.dae
+[14.275s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/meshes/zt30/zt30_stand.dae
+[14.275s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/urdf/go2_description.urdf
+[14.275s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/urdf/go2_om.urdf
+[14.276s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/3d_rigs/rig_ouster.xacro
+[14.276s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/3d_rigs/rig_steamdeck.xacro
+[14.276s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/3d_rigs/rig_z.xacro
+[14.276s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/accessories.xacro
+[14.276s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/d1/d1_qre.xacro
+[14.276s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/d1/d1_unitree.xacro
+[14.277s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/go2/computer_dock.urdf.xacro
+[14.277s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/go2/const.xacro
+[14.277s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/go2/foot_fix.xacro
+[14.277s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/go2/foot_wheeled.xacro
+[14.277s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/go2/gazebo_fortress.xacro
+[14.277s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/go2/leg.xacro
+[14.277s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/go2/materials.xacro
+[14.277s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/go2/transmission.xacro
+[14.278s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/hesai/pandar_xt16.xacro
+[14.278s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/livox/mid360.urdf.xacro
+[14.278s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/open_manipulator/om_complete.urdf.xacro
+[14.278s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/open_manipulator/open_manipulator.gazebo.xacro
+[14.310s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/open_manipulator/open_manipulator.transmission.xacro
+[14.310s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/open_manipulator/open_manipulator.urdf.xacro
+[14.311s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/open_manipulator/open_manipulator_robot.urdf.xacro
+[14.314s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/open_manipulator/open_manipulator_ros2_control.xacro
+[14.315s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/ouster/ouster.xacro
+[14.315s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/realsense/d405.urdf.xacro
+[14.315s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/realsense/d435i.urdf.xacro
+[14.315s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/robot.xacro
+[14.315s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/xacro/zt30/zt30.xacro
+[14.315s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/config/go2_ros2_controller_gazebo.yaml
+[14.315s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/ament_index/resource_index/package_run_dependencies/go2_description
+[14.316s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/ament_index/resource_index/parent_prefix_path/go2_description
+[14.316s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/go2_description/environment/ament_prefix_path.sh
+[14.316s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/go2_description/environment/ament_prefix_path.dsv
+[14.316s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/go2_description/environment/path.sh
+[14.316s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/go2_description/environment/path.dsv
+[14.316s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/go2_description/local_setup.bash
+[14.316s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/go2_description/local_setup.sh
+[14.316s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/go2_description/local_setup.zsh
+[14.317s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/go2_description/local_setup.dsv
+[14.318s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/package.dsv
+[14.318s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/ament_index/resource_index/packages/go2_description
+[14.318s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/go2_description/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.318s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/go2_description/cmake/go2_descriptionConfig.cmake
+[14.318s] -- Up-to-date symlink: /opt/mybotshop/install/go2_description/share/go2_description/cmake/go2_descriptionConfig-version.cmake
+[14.318s] -- Symlinking: /opt/mybotshop/install/go2_description/share/go2_description/package.xml
+[14.319s] Invoked command in '/opt/mybotshop/build/go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/go2_description

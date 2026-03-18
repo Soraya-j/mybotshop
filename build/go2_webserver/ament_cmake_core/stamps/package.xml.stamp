@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>go2_webserver</name>
+  <version>2.0.0</version>
+  <description>
+    Web-based remote operation interface for the GO2 robot platform.
+    Provides HTTP/HTTPS server, VNC desktop streaming via websockify, ROS bridge
+    WebSocket interface, GPS waypoint management, and AI/LLM integration.
+
+    Note: This package requires additional Python dependencies.
+    Install with: pip install -r requirements.txt
+  </description>
+
+  <maintainer email="support@mybotshop.de">Salman Omar Sohail</maintainer>
+  <author email="support@mybotshop.de">Salman Omar Sohail</author>
+
+  <license>Proprietary</license>
+
+  <url type="website">https://mybotshop.de</url>
+  <url type="bugtracker">mailto:support@mybotshop.de</url>
+
+  <!-- Build Tools -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- Core ROS 2 Dependencies -->
+  <depend>rclcpp</depend>
+  <depend>rclpy</depend>
+
+  <!-- Message Dependencies -->
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>visualization_msgs</depend>
+
+  <!-- Transform Dependencies -->
+  <depend>tf2_ros</depend>
+
+  <!-- Custom Interface Dependencies -->
+  <depend>go2_interface</depend>
+
+  <!-- Web Interface Dependencies -->
+  <exec_depend>rosbridge_server</exec_depend>
+  <exec_depend>rosbridge_suite</exec_depend>
+
+  <!-- Runtime Dependencies -->
+  <exec_depend>ros2launch</exec_depend>
+
+  <!--
+    Python pip Dependencies (install separately):
+    - flask, werkzeug, waitress (web server)
+    - numpy (data processing)
+    - psutil (system monitoring)
+    - pyproj (GPS coordinate conversion)
+    - edge-tts, playsound, pydub, SpeechRecognition (audio - optional)
+    - google-genai, inflect (LLM integration - optional)
+
+    Install with: pip install -r requirements.txt
+  -->
+
+  <!-- Test Dependencies -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_moveit/launch/warehouse_db.launch.py

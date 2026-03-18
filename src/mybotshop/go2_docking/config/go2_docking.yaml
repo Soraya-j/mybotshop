@@ -1,0 +1,23 @@
+/**:  
+  ros__parameters:
+
+    camera_type: "d435i"                     # "go2" camera or "d435i" Camera ([TODO] Go2 Camera not working)
+
+    april_tag_topic: "/apriltag/detections"
+    cmd_vel_topic: "/cmd_vel"
+
+    detection_link: "tag_1"
+    base_link: "trunk"
+
+    linear_speed: 0.06                      # Linear speed in m/s
+    angular_speed: 0.1                     # Angular speed in rad/s
+
+    # Docking Ideal Pose (ros2 run tf2_ros tf2_echo trunk tag_1)
+    docking_x: 0.67                        # Docking desired x position in meters
+    docking_y: 0.02                        # Docking desired y position in meters
+    docking_z: 0.0                         # Docking desired z position in meters
+    docking_a: -1.57                       # Docking desired yaw position in meters go2: 1.52 d435i:-1.57 
+    docking_tolerance_angle: 0.01          # Docking angle threshold to the target in degrees
+    docking_tolerance_translation: 0.005   # Docking translation threshold to the target in meters
+
+    timeout: 60                            # Timeout in seconds

@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_gps/ament_cmake_core/go2_gpsConfig-version.cmake

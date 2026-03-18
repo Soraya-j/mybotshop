@@ -1,0 +1,9 @@
+/opt/mybotshop/build/go2_depth_camera/CMakeFiles/install/local.dir
+/opt/mybotshop/build/go2_depth_camera/CMakeFiles/install.dir
+/opt/mybotshop/build/go2_depth_camera/CMakeFiles/list_install_components.dir
+/opt/mybotshop/build/go2_depth_camera/CMakeFiles/rebuild_cache.dir
+/opt/mybotshop/build/go2_depth_camera/CMakeFiles/edit_cache.dir
+/opt/mybotshop/build/go2_depth_camera/CMakeFiles/test.dir
+/opt/mybotshop/build/go2_depth_camera/CMakeFiles/install/strip.dir
+/opt/mybotshop/build/go2_depth_camera/CMakeFiles/go2_depth_camera_uninstall.dir
+/opt/mybotshop/build/go2_depth_camera/CMakeFiles/uninstall.dir

@@ -1,0 +1,1 @@
+/opt/mybotshop/build/unitree_hg/rosidl_generator_c/unitree_hg/msg/detail/bms_state__functions.h

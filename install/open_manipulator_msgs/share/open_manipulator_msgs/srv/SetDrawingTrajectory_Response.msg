@@ -1,0 +1,1 @@
+/opt/mybotshop/build/open_manipulator_msgs/rosidl_cmake/srv/SetDrawingTrajectory_Response.msg

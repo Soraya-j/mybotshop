@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_interface/rosidl_cmake/srv/Go2Volume_Request.msg

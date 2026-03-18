@@ -1,0 +1,78 @@
+[0.831s] Invoking command in '/opt/mybotshop/build/go2_moveit': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_description:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_moveit -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_moveit
+[9.080s] -- The C compiler identification is GNU 9.4.0
+[9.082s] -- The CXX compiler identification is GNU 9.4.0
+[9.082s] -- Check for working C compiler: /usr/bin/cc
+[9.083s] -- Check for working C compiler: /usr/bin/cc -- works
+[9.083s] -- Detecting C compiler ABI info
+[9.083s] -- Detecting C compiler ABI info - done
+[9.083s] -- Detecting C compile features
+[9.083s] -- Detecting C compile features - done
+[9.083s] -- Check for working CXX compiler: /usr/bin/c++
+[9.083s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[9.084s] -- Detecting CXX compiler ABI info
+[9.084s] -- Detecting CXX compiler ABI info - done
+[9.084s] -- Detecting CXX compile features
+[9.084s] -- Detecting CXX compile features - done
+[9.084s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[9.084s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[9.084s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[9.084s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[9.085s] -- Configuring done
+[9.085s] -- Generating done
+[9.085s] -- Build files have been written to: /opt/mybotshop/build/go2_moveit
+[9.086s] Invoked command in '/opt/mybotshop/build/go2_moveit' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_description:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_moveit -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_moveit
+[9.087s] Invoking command in '/opt/mybotshop/build/go2_moveit': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_description:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/go2_moveit -- -j6 -l6
+[9.327s] Invoked command in '/opt/mybotshop/build/go2_moveit' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_description:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/go2_moveit -- -j6 -l6
+[9.610s] Invoking command in '/opt/mybotshop/build/go2_moveit': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_description:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/go2_moveit
+[18.406s] -- Install configuration: ""
+[18.407s] -- Execute custom install script
+[18.407s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/ament_index/resource_index/package_run_dependencies/go2_moveit
+[18.407s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/ament_index/resource_index/parent_prefix_path/go2_moveit
+[18.407s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/environment/ament_prefix_path.sh
+[18.407s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/environment/ament_prefix_path.dsv
+[18.408s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/environment/path.sh
+[18.408s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/environment/path.dsv
+[18.408s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/local_setup.bash
+[18.408s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/local_setup.sh
+[18.408s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/local_setup.zsh
+[18.408s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/local_setup.dsv
+[18.408s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/package.dsv
+[18.409s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/ament_index/resource_index/packages/go2_moveit
+[18.409s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/cmake/go2_moveitConfig.cmake
+[18.409s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/cmake/go2_moveitConfig-version.cmake
+[18.409s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/package.xml
+[18.409s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/go2_om.srdf
+[18.413s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/go2_om_li.srdf
+[18.414s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/initial_positions.yaml
+[18.414s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/joint_limits.yaml
+[18.414s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/kinematics.yaml
+[18.414s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/moveit.rviz
+[18.414s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/moveit_controllers.yaml
+[18.414s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/moveit_servo.yaml
+[18.415s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/moveit_teleop.rviz
+[18.415s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/ompl_planning.yaml
+[18.415s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/ros2_controllers.yaml
+[18.415s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/launch/custom_moveit.launch.py
+[18.415s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/launch/move_group.launch.py
+[18.415s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/launch/moveit_fake.launch.py
+[18.415s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/launch/moveit_gazebo.launch.py
+[18.415s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/launch/moveit_rviz.launch.py
+[18.416s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/launch/rsp.launch.py
+[18.416s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/launch/spawn_controllers.launch.py
+[18.416s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/launch/static_virtual_joint_tfs.launch.py
+[18.416s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/launch/system_openmanipulator.launch.py
+[18.416s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/launch/system_servo.launch.py
+[18.416s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/launch/warehouse_db.launch.py
+[18.416s] -- Up-to-date symlink: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/go2_om.srdf
+[18.416s] -- Up-to-date symlink: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/go2_om_li.srdf
+[18.417s] -- Up-to-date symlink: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/initial_positions.yaml
+[18.417s] -- Up-to-date symlink: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/joint_limits.yaml
+[18.417s] -- Up-to-date symlink: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/kinematics.yaml
+[18.417s] -- Up-to-date symlink: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/moveit.rviz
+[18.417s] -- Up-to-date symlink: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/moveit_controllers.yaml
+[18.430s] -- Up-to-date symlink: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/moveit_servo.yaml
+[18.430s] -- Up-to-date symlink: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/moveit_teleop.rviz
+[18.430s] -- Up-to-date symlink: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/ompl_planning.yaml
+[18.430s] -- Up-to-date symlink: /opt/mybotshop/install/go2_moveit/share/go2_moveit/config/ros2_controllers.yaml
+[18.431s] -- Symlinking: /opt/mybotshop/install/go2_moveit/share/go2_moveit/.setup_assistant
+[18.459s] Invoked command in '/opt/mybotshop/build/go2_moveit' returned '0': AMENT_PREFIX_PATH=/opt/mybotshop/install/go2_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/mybotshop/install/go2_description:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/go2_moveit

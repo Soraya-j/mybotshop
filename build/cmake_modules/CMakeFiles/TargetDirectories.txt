@@ -1,0 +1,9 @@
+/opt/mybotshop/build/cmake_modules/CMakeFiles/install/strip.dir
+/opt/mybotshop/build/cmake_modules/CMakeFiles/install/local.dir
+/opt/mybotshop/build/cmake_modules/CMakeFiles/install.dir
+/opt/mybotshop/build/cmake_modules/CMakeFiles/list_install_components.dir
+/opt/mybotshop/build/cmake_modules/CMakeFiles/rebuild_cache.dir
+/opt/mybotshop/build/cmake_modules/CMakeFiles/edit_cache.dir
+/opt/mybotshop/build/cmake_modules/CMakeFiles/test.dir
+/opt/mybotshop/build/cmake_modules/CMakeFiles/cmake_modules_uninstall.dir
+/opt/mybotshop/build/cmake_modules/CMakeFiles/uninstall.dir

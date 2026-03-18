@@ -1,0 +1,5 @@
+/**:
+  ros__parameters:
+    remote_user: "unitree"
+    remote_host: "192.168.68.160"
+    remote_host_pswd: "123"

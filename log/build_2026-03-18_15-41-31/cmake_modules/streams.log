@@ -1,0 +1,55 @@
+[2.340s] Invoking command in '/opt/mybotshop/build/cmake_modules': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_dependencies/cmake_modules -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/cmake_modules
+[2.551s] -- The C compiler identification is GNU 9.4.0
+[2.772s] -- The CXX compiler identification is GNU 9.4.0
+[2.805s] -- Check for working C compiler: /usr/bin/cc
+[3.155s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.155s] -- Detecting C compiler ABI info
+[3.490s] -- Detecting C compiler ABI info - done
+[3.526s] -- Detecting C compile features
+[3.526s] -- Detecting C compile features - done
+[3.535s] -- Check for working CXX compiler: /usr/bin/c++
+[3.913s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.917s] -- Detecting CXX compiler ABI info
+[4.341s] -- Detecting CXX compiler ABI info - done
+[4.375s] -- Detecting CXX compile features
+[4.376s] -- Detecting CXX compile features - done
+[4.399s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.489s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.490s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.187s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.675s] -- Configuring done
+[5.707s] -- Generating done
+[5.731s] -- Build files have been written to: /opt/mybotshop/build/cmake_modules
+[5.750s] Invoked command in '/opt/mybotshop/build/cmake_modules' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/third_party/robotic_arms/05Jun2025_open_manipulator/open_manipulator_dependencies/cmake_modules -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/cmake_modules
+[5.756s] Invoking command in '/opt/mybotshop/build/cmake_modules': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/cmake_modules -- -j6 -l6
+[8.053s] Invoked command in '/opt/mybotshop/build/cmake_modules' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/cmake_modules -- -j6 -l6
+[8.354s] Invoking command in '/opt/mybotshop/build/cmake_modules': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/cmake_modules
+[10.328s] -- Install configuration: ""
+[10.328s] -- Execute custom install script
+[10.328s] -- Symlinking: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/Modules/FindGSL.cmake
+[10.328s] -- Symlinking: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/Modules/FindGflags.cmake
+[10.329s] -- Symlinking: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/Modules/FindNUMPY.cmake
+[10.329s] -- Symlinking: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/Modules/FindPoco.cmake
+[10.329s] -- Symlinking: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/Modules/FindTBB.cmake
+[10.329s] -- Symlinking: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/Modules/FindTinyXML.cmake
+[10.329s] -- Symlinking: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/Modules/FindTinyXML2.cmake
+[10.329s] -- Symlinking: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/Modules/FindUUID.cmake
+[10.329s] -- Symlinking: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/Modules/FindXenomai.cmake
+[10.329s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/ament_index/resource_index/package_run_dependencies/cmake_modules
+[10.330s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/ament_index/resource_index/parent_prefix_path/cmake_modules
+[10.330s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/environment/ament_prefix_path.sh
+[10.330s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/environment/ament_prefix_path.dsv
+[10.330s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/environment/path.sh
+[10.330s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/environment/path.dsv
+[10.331s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/local_setup.bash
+[10.332s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/local_setup.sh
+[10.333s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/local_setup.zsh
+[10.333s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/local_setup.dsv
+[10.333s] -- Symlinking: /opt/mybotshop/install/cmake_modules/share/cmake_modules/package.dsv
+[10.333s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/ament_index/resource_index/packages/cmake_modules
+[10.333s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/cmake_modules-extras.cmake
+[10.333s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.334s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/cmake_modulesConfig.cmake
+[10.334s] -- Up-to-date symlink: /opt/mybotshop/install/cmake_modules/share/cmake_modules/cmake/cmake_modulesConfig-version.cmake
+[10.334s] -- Symlinking: /opt/mybotshop/install/cmake_modules/share/cmake_modules/package.xml
+[10.390s] Invoked command in '/opt/mybotshop/build/cmake_modules' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/cmake_modules

@@ -1,0 +1,6 @@
+Invoking command in '/opt/mybotshop/build/go2_zt30': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_zt30 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_zt30
+Invoked command in '/opt/mybotshop/build/go2_zt30' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /opt/mybotshop/src/mybotshop/go2_zt30 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/mybotshop/install/go2_zt30
+Invoking command in '/opt/mybotshop/build/go2_zt30': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/go2_zt30 -- -j6 -l6
+Invoked command in '/opt/mybotshop/build/go2_zt30' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /opt/mybotshop/build/go2_zt30 -- -j6 -l6
+Invoking command in '/opt/mybotshop/build/go2_zt30': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/go2_zt30
+Invoked command in '/opt/mybotshop/build/go2_zt30' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /opt/mybotshop/build/go2_zt30

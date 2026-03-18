@@ -1,0 +1,1 @@
+/opt/mybotshop/build/domain_bridge/rosidl_cmake/rosidl_cmake-extras.cmake

@@ -1,0 +1,11 @@
+/opt/mybotshop/build/unitree_hg/rosidl_adapter/unitree_hg:msg/BmsCmd.idl
+/opt/mybotshop/build/unitree_hg/rosidl_adapter/unitree_hg:msg/BmsState.idl
+/opt/mybotshop/build/unitree_hg/rosidl_adapter/unitree_hg:msg/HandCmd.idl
+/opt/mybotshop/build/unitree_hg/rosidl_adapter/unitree_hg:msg/HandState.idl
+/opt/mybotshop/build/unitree_hg/rosidl_adapter/unitree_hg:msg/IMUState.idl
+/opt/mybotshop/build/unitree_hg/rosidl_adapter/unitree_hg:msg/LowCmd.idl
+/opt/mybotshop/build/unitree_hg/rosidl_adapter/unitree_hg:msg/LowState.idl
+/opt/mybotshop/build/unitree_hg/rosidl_adapter/unitree_hg:msg/MainBoardState.idl
+/opt/mybotshop/build/unitree_hg/rosidl_adapter/unitree_hg:msg/MotorCmd.idl
+/opt/mybotshop/build/unitree_hg/rosidl_adapter/unitree_hg:msg/MotorState.idl
+/opt/mybotshop/build/unitree_hg/rosidl_adapter/unitree_hg:msg/PressSensorState.idl

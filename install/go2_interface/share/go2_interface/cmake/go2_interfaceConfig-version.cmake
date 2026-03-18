@@ -1,0 +1,1 @@
+/opt/mybotshop/build/go2_interface/ament_cmake_core/go2_interfaceConfig-version.cmake

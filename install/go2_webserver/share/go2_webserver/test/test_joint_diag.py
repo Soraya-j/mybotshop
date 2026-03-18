@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_webserver/test/test_joint_diag.py

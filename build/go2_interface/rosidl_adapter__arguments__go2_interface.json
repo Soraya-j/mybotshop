@@ -1,0 +1,10 @@
+{
+  "package_name": "go2_interface",
+  "non_idl_tuples": [
+    "/opt/mybotshop/src/mybotshop/go2_interface:msg/CameraGimbalCmd.msg",
+    "/opt/mybotshop/src/mybotshop/go2_interface:srv/CameraMode.srv",
+    "/opt/mybotshop/src/mybotshop/go2_interface:srv/Go2Modes.srv",
+    "/opt/mybotshop/src/mybotshop/go2_interface:srv/Go2Light.srv",
+    "/opt/mybotshop/src/mybotshop/go2_interface:srv/Go2Volume.srv"
+  ]
+}

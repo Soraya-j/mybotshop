@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_navigation/launch/map_navi.launch.py

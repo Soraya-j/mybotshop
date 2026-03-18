@@ -1,0 +1,1 @@
+/opt/mybotshop/src/mybotshop/go2_bringup/scripts/startup_installer.py
