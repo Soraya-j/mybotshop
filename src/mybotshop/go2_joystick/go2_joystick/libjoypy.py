@@ -56,6 +56,8 @@ class CustomJoyControls:
         self.euler = False
         self.jump_requested = False
         self.jump_request_time = 0
+        self.jump_cooldown = 5.0  
+        self.last_jump_time = 0
 
     def execute_program(self):
         rclpy.spin(self.node)
@@ -67,7 +69,7 @@ class CustomJoyControls:
         
 
         # Damp mode command      ->      LZ
-        if msg.buttons[8] == 1:         
+        if msg.buttons[8] == 1 and not self.emergency_stop:         
             self.node.get_logger().info(f'{self.colorize("Damp mode","red")}')  
             self.emergency_stop = True
             # Reset everything
@@ -128,7 +130,7 @@ class CustomJoyControls:
 
 
         # Jump Forward command      ->      push on the LeftJoystick (button)
-        if msg.buttons[13] == 1 and not self.jump_requested and not self.emergency_stop:     
+        if msg.buttons[13] == 1 and not self.jump_requested and not self.emergency_stop and (time.time() - self.last_jump_time > self.jump_cooldown):
             self.node.get_logger().info(self.colorize("Jump requested - make sure there is space in front of the robot \n And press + to confirm", "red"))
             self.jump_requested = True
             self.jump_request_time = time.time()
@@ -138,7 +140,7 @@ class CustomJoyControls:
             command = "ros2 service call /go2_unit_49702/modes go2_interface/srv/Go2Modes \"{request_data: 'front_jump'}\""
             self.execute_ros2_command(command)
             self.jump_requested = False
-        
+            self.last_jump_time = time.time()
         # Jump forward time out after 3sec
         if self.jump_requested and (time.time() - self.jump_request_time > 3)  and not self.emergency_stop:
             self.node.get_logger().info(self.colorize("Jump request timeout", "blue"))
